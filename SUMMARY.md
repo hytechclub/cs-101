@@ -6,3 +6,7 @@ Welcome to the C# 101 Hy-Tech Club course!
     - [Recap](Variables/VariablesRecap.md)
     - [About Me Code-Along](Variables/AboutMeCodeAlong.md)
     - [About Me Individual Exercises](Variables/AboutMeIndividualExercises.md)
+- [Week 3 - Conditionals](Conditionals/StudentDesc.md)
+    - [Recap](Conditionals/ConditionalsRecap.md)
+    - [Exercises](Conditionals/ConditionalExercises.md)
+    - [Challenges](Conditionals/ConditionalChallenges.md)
