@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Recap · GitBook</title>
+        <title>Even Numbers Individual Exercise · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AboutMeCodeAlong.html" />
+    <link rel="next" href="WhileLoopChallenges.html" />
     
     
-    <link rel="prev" href="StudentDesc.html" />
+    <link rel="prev" href="FactorialFollowAlong.html" />
     
 
     </head>
@@ -119,9 +119,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.3" data-path="../Variables/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Variables/StudentDesc.html">
             
                     
                     Week 2 - Variables
@@ -133,9 +133,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="VariablesRecap.html">
+        <li class="chapter " data-level="1.3.1" data-path="../Variables/VariablesRecap.html">
             
-                <a href="VariablesRecap.html">
+                <a href="../Variables/VariablesRecap.html">
             
                     
                     Recap
@@ -146,9 +146,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.3.2" data-path="../Variables/AboutMeCodeAlong.html">
             
-                <a href="AboutMeCodeAlong.html">
+                <a href="../Variables/AboutMeCodeAlong.html">
             
                     
                     About Me Code-Along
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.3.3" data-path="../Variables/AboutMeIndividualExercises.html">
             
-                <a href="AboutMeIndividualExercises.html">
+                <a href="../Variables/AboutMeIndividualExercises.html">
             
                     
                     About Me Individual Exercises
@@ -390,9 +390,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../WhileLoops/StudentDesc.html">
+        <li class="chapter " data-level="1.8" data-path="StudentDesc.html">
             
-                <a href="../WhileLoops/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 7 - While Loops
@@ -404,9 +404,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../WhileLoops/WhileLoopRecap.html">
+        <li class="chapter " data-level="1.8.1" data-path="WhileLoopRecap.html">
             
-                <a href="../WhileLoops/WhileLoopRecap.html">
+                <a href="WhileLoopRecap.html">
             
                     
                     Recap
@@ -417,9 +417,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../WhileLoops/FactorialFollowAlong.html">
+        <li class="chapter " data-level="1.8.2" data-path="FactorialFollowAlong.html">
             
-                <a href="../WhileLoops/FactorialFollowAlong.html">
+                <a href="FactorialFollowAlong.html">
             
                     
                     Factorial Follow-Along
@@ -430,9 +430,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../WhileLoops/EvenNumbersIndividualExercise.html">
+        <li class="chapter active" data-level="1.8.3" data-path="EvenNumbersIndividualExercise.html">
             
-                <a href="../WhileLoops/EvenNumbersIndividualExercise.html">
+                <a href="EvenNumbersIndividualExercise.html">
             
                     
                     Even Numbers Individual Exercise
@@ -443,9 +443,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../WhileLoops/WhileLoopChallenges.html">
+        <li class="chapter " data-level="1.8.4" data-path="WhileLoopChallenges.html">
             
-                <a href="../WhileLoops/WhileLoopChallenges.html">
+                <a href="WhileLoopChallenges.html">
             
                     
                     Challenges
@@ -672,7 +672,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Recap</a>
+        <a href=".." >Even Numbers Individual Exercise</a>
     </h1>
 </div>
 
@@ -687,24 +687,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="variables-recap">Variables Recap</h1>
-<p>A <strong>variable</strong> is a named location in memory.</p>
-<h2 id="user-input">User Input</h2>
-<pre><code class="lang-cs"><span class="hljs-keyword">string</span> userResponse = Console.ReadLine();
-</code></pre>
-<p>The computer waits until the user has type in any text and an enter key. <code>Console.ReadLine</code> will then return the text provided, as a string value.</p>
-<p>In this example, we choose to store the string as the value of the variable <code>userResponse</code>. </p>
-<p>If we want to store the data returned as a variable who&apos;s datatype is not a string, then we need to convert it the desired datatype, using <code>Convert.To</code>... </p>
-<p>Here are some examples:</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What is your Age?&quot;</span>);    
-<span class="hljs-keyword">string</span> ageResponse = Console.ReadLine();
-<span class="hljs-keyword">int</span> myAge = Convert.ToInt32(ageResponse);
-
-<span class="hljs-comment">// the double and bool converts works the same            </span>
-<span class="hljs-keyword">double</span> battingAverage = Convert.ToDouble(baResponse);
-<span class="hljs-keyword">bool</span> isSnowing = Convert.ToBoolean(snowingResponse);
-</code></pre>
-<p>In the <code>int</code> example, we have a <code>string</code> variable, <code>ageResponse</code>, that we need to convert to an integer. Suppose we want to do math with the value, we will need a datatype, like an <code>int</code>, to be able to do it. So we pass the string to <code>Convert.ToInt32</code>, and it returns an integer value if it can. Above we can see, the returned <code>int</code> is stored in a new variable, <code>myAge</code>. We have to use a different variable, because the datatype is not string!</p>
+                                <h1 id="even-numbers-using-a-while-loop---individual-exercise">Even numbers using a While Loop - Individual Exercise</h1>
+<p>Start by creating a new <code>.cs</code> file/project. Then, follow the instructions below to create a program that prints some even numbers.</p>
+<h2 id="part-1---starting-from-0">Part 1 - Starting from 0</h2>
+<ol>
+<li>Declare a new variable <code>x</code> and set its value to <code>0</code></li>
+<li>Use an <code>if</code> statement to check if <code>x</code> is even<ul>
+<li>Use the <code>%</code> operator to accomplish this: if any number <code>%</code> 2 equals 0, that means it is even</li>
+</ul>
+</li>
+<li>If <code>x</code> <em>is</em> even, print it to the console</li>
+</ol>
+<p>At the end of this part, the program should print <code>0</code> to the console (it is already known that <code>x</code> is even)</p>
+<h2 id="part-2---while-loop">Part 2 - While Loop</h2>
+<p>Instead of simply using <code>0</code>, the program should iterate through 0, 1, 2, 3, ..., all the way to 100.</p>
+<ol>
+<li>Above the <code>if</code> statement, create the <code>while</code> loop<ul>
+<li><code>while</code> keyword</li>
+<li>Parentheses <code>()</code></li>
+<li>Curly brackets <code>{}</code></li>
+</ul>
+</li>
+<li>Within the parentheses, use a condition to make sure the count is capped at 100<ul>
+<li>HINT: Compare <code>x</code> to <code>100</code> in some way</li>
+</ul>
+</li>
+<li>In the body of the <code>while</code> loop (between the curly braces), increment the value of <code>x</code> by 1</li>
+</ol>
+<p>At the end of this part, the loop should execute 101 times... but it&apos;s missing something</p>
+<h2 id="part-3---putting-it-all-together">Part 3 - Putting it all together</h2>
+<p>The last step is to put the check for evenness within the body of the <code>while</code>!</p>
+<ol>
+<li>Copy the <code>if</code> code that checks a number&apos;s evenness<ul>
+<li>Include the <code>if</code>, and the body that prints to the console</li>
+</ul>
+</li>
+<li>Paste the <code>if</code> code within the <code>while</code> loop<ul>
+<li>Make sure it comes before the increment of <code>x</code></li>
+</ul>
+</li>
+</ol>
+<p>Now, the program should print out each even number: 0, 2, 4, 6, ..., 100!</p>
+<h2 id="bonus---user-input">BONUS - User Input</h2>
+<p>Lastly, instead of using <code>100</code> as the cap, the program should ask the user which number to use.</p>
 
                                 
                                 </section>
@@ -732,12 +757,12 @@
 
             
                 
-                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 2 - Variables">
+                <a href="FactorialFollowAlong.html" class="navigation navigation-prev " aria-label="Previous page: Factorial Follow-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AboutMeCodeAlong.html" class="navigation navigation-next " aria-label="Next page: About Me Code-Along">
+                <a href="WhileLoopChallenges.html" class="navigation navigation-next " aria-label="Next page: Challenges">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -748,7 +773,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Recap","level":"1.3.1","depth":2,"next":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"path":"Variables/AboutMeCodeAlong.md","ref":"Variables/AboutMeCodeAlong.md","articles":[]},"previous":{"title":"Week 2 - Variables","level":"1.3","depth":1,"path":"Variables/StudentDesc.md","ref":"Variables/StudentDesc.md","articles":[{"title":"Recap","level":"1.3.1","depth":2,"path":"Variables/VariablesRecap.md","ref":"Variables/VariablesRecap.md","articles":[]},{"title":"About Me Code-Along","level":"1.3.2","depth":2,"path":"Variables/AboutMeCodeAlong.md","ref":"Variables/AboutMeCodeAlong.md","articles":[]},{"title":"About Me Individual Exercises","level":"1.3.3","depth":2,"path":"Variables/AboutMeIndividualExercises.md","ref":"Variables/AboutMeIndividualExercises.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/VariablesRecap.md","mtime":"2020-01-31T15:59:51.332Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-31T16:00:27.016Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Even Numbers Individual Exercise","level":"1.8.3","depth":2,"next":{"title":"Challenges","level":"1.8.4","depth":2,"path":"WhileLoops/WhileLoopChallenges.md","ref":"WhileLoops/WhileLoopChallenges.md","articles":[]},"previous":{"title":"Factorial Follow-Along","level":"1.8.2","depth":2,"path":"WhileLoops/FactorialFollowAlong.md","ref":"WhileLoops/FactorialFollowAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"COMPLETESUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"WhileLoops/EvenNumbersIndividualExercise.md","mtime":"2020-01-31T15:59:51.332Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-31T16:00:27.016Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
