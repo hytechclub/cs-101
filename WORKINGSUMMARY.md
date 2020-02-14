@@ -1,1 +1,3 @@
 - [Week 1 - C# Introduction](HelloCs/StudentDesc.md)
+- [Week 2 - Variables](Variables/StudentDesc.md)
+    - [About Me Individual Exercises](Variables/AboutMeIndividualExercises.md)
