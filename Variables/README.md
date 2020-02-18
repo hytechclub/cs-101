@@ -30,4 +30,4 @@ Students will also need to become familiar with the concept of a Variable, a nam
 - [About Me Individual Exercises](AboutMeIndividualExercises.md)
 
 ## Kahoot
-https://create.kahoot.it/share/c-101-data-types/a142514b-5ce3-4f11-8e5e-d534ba815f4b
+https://create.kahoot.it/share/duplicate-of-c-101-data-types/9378165b-38f3-4a00-b266-8ca49976db1d
