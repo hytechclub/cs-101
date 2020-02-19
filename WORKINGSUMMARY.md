@@ -1,3 +1,5 @@
 - [Week 1 - C# Introduction](HelloCs/StudentDesc.md)
 - [Week 2 - Variables](Variables/StudentDesc.md)
+    - [Recap](Variables/VariablesRecap.md)
+    - [About Me Code-Along](Variables/AboutMeCodeAlong.md)
     - [About Me Individual Exercises](Variables/AboutMeIndividualExercises.md)
