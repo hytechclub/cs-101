@@ -5,14 +5,8 @@ In week 3 we will introduce the concept of adding logic to applications using if
 
 After students have some exposure with if(), introduce them to else if() and the catch-all else. Students should develop an understanding of when an if(), else if(), else() logic tree executes the code in each segment (why we skip blocks after we enter one) and why using a serious of if() statements doesn’t work. 
 
-## Warmup
-Pose the following question to the students:
-> What leads you to make the decisions you make?
-
-Examples:
-- If I am hungry, I will eat
-- If I am cold, I will wear a sweater
-- If I am tired, I will sleep
+## Warmup - Variables Review Kahoot
+https://create.kahoot.it/share/duplicate-of-c-101-data-types/9378165b-38f3-4a00-b266-8ca49976db1d
 
 ## Lecture
 * Lecture: PowerPoint "Reading User Input"
