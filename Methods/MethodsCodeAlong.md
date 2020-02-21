@@ -3,9 +3,9 @@
 ```cs
 using System;
 					
-class Program
+public class Program
 {
-	static void Main()
+	public static void Main()
 	{
         Console.WriteLine();
 		Console.WriteLine(" () ()");
@@ -20,16 +20,16 @@ class Program
 ```cs
 using System;
 					
-class Program
+public class Program
 {
-	static void Main()
+	public static void Main()
 	{
         drawBunny();
         drawBunny();
         drawBunny();
 	}
 
-    static void drawBunny()
+    public static void drawBunny()
     {
         Console.WriteLine();
 		Console.WriteLine(" () ()");
@@ -46,16 +46,16 @@ This illustrates the usefulness of methods
 ```cs
 using System;
 					
-class Program
+public class Program
 {
-	static void Main()
+	public static void Main()
 	{
 		drawBunny();
         drawBunny();
         drawBunny();
 	}
     
-	static void drawBunny()
+	public static void drawBunny()
 	{
         Console.WriteLine();
 		Console.WriteLine(" () ()");
