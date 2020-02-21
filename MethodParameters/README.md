@@ -1,7 +1,11 @@
-# Methods
+# Method Paremeters
 
 ## Overview
 Introduce the students to Parameters and Return types.
+
+## Lecture
+- [Method Parameters PowerPoint](MethodParameters.pptx)
+- [Method Returns PowerPoint](MethodReturns.pptx)
 
 ## Method Parameters Unplugged Activity
 Use this activity during the Calculator Follow-Along. It should help illustrate the concepts behind parameters and return statements.
