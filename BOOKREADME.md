@@ -27,7 +27,7 @@ Points can be redeemed for a variety of rewards.
 | 1 | Raffle ticket |
 | 2 | Shoot a paper basket for an extra point |
 | 2 | Play rock paper scissors against an instructor for an extra point |
-| 2 | Guess an instructor's age for 5 extra points |
+| 2 | Guess an instructor's age correctly for 5 extra points |
 | 5 | Instructors will give you a solution for a problem |
 | 5 | An instructor has to show you an old picture of themselves |
 | 10 | Short game with an instructor (e.g. [Connect 4](https://www.mathsisfun.com/games/connect4.html), or a Nintendo Switch game) |
