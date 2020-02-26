@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 3 - Conditionals · GitBook</title>
+        <title>Recap · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ConditionalsRecap.html" />
+    <link rel="next" href="ConditionalExercises.html" />
     
     
-    <link rel="prev" href="../Variables/AboutMeIndividualExercises.html" />
+    <link rel="prev" href="StudentDesc.html" />
     
 
     </head>
@@ -177,7 +177,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.4" data-path="StudentDesc.html">
             
                 <a href="StudentDesc.html">
             
@@ -191,7 +191,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="ConditionalsRecap.html">
+        <li class="chapter active" data-level="1.4.1" data-path="ConditionalsRecap.html">
             
                 <a href="ConditionalsRecap.html">
             
@@ -265,7 +265,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Week 3 - Conditionals</a>
+        <a href=".." >Recap</a>
     </h1>
 </div>
 
@@ -280,17 +280,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="c-101-conditionals">C# 101: Conditionals</h1>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="ConditionalStatements.pptx" target="_blank">Conditional Statements PowerPoint Presentation</a></li>
-<li><a href="ConditionalsRecap.html">Conditionals Recap</a></li>
-</ul>
-<h2 id="activities">Activities</h2>
-<ul>
-<li><a href="ConditionalExercises.html">Conditional Exercises</a></li>
-<li><a href="ConditionalChallenges.html">Conditional Challenges</a></li>
-</ul>
+                                <h1 id="conditionals">Conditionals</h1>
+<p>We use conditional statements in code to help us make decisions if a condition is true or false.
+The section in the parentheses is what we&apos;re evaluating to either <code>true</code> or <code>false</code>. If the value we evaluate is <code>true</code>, we&apos;ll do the section inside the <code>if</code> block. 
+We also looked at <code>else</code> statements which allow us to run another section of code if the condition we&apos;re checking is <code>false</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What percent did you get on your test??&quot;</span>); 
+<span class="hljs-keyword">string</span> testResult = Console.ReadLine();
+<span class="hljs-keyword">int</span> myScore = Convert.ToInt32(testResult);
+
+<span class="hljs-keyword">if</span>(myScore &gt;= <span class="hljs-number">90</span>)
+{
+     Console.WriteLine(<span class="hljs-string">&quot;Awesome! You got an A.&quot;</span>);
+}
+<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">myScore &gt;= <span class="hljs-number">80</span></span>)
+</span>{
+     Console.WriteLine(<span class="hljs-string">&quot;Good job, you got a B.&quot;</span>);
+}
+<span class="hljs-keyword">else</span>
+{
+     Console.WriteLine(<span class="hljs-string">&quot;You should keep studying.&quot;</span>);
+}
+</code></pre>
+<p>In this example, if the user enters an test score greater than or equal to <code>90</code>, then the section inside the parenthesis evaluates to true, and the first block of code is run.</p>
+<p>If we don&#x2019;t enter the first code block because our score is say, <code>85</code>, we would then evaluate the 2nd block, <code>(myScore &gt;= 80)</code>. This expression would equate to true so we would then write to the console &quot;Good job, you got a B&quot;.</p>
+<p>If the test score is <code>79</code> or less the code inside the <code>else</code> block runs!</p>
 
                                 
                                 </section>
@@ -318,12 +332,12 @@
 
             
                 
-                <a href="../Variables/AboutMeIndividualExercises.html" class="navigation navigation-prev " aria-label="Previous page: About Me Individual Exercises">
+                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: Week 3 - Conditionals">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ConditionalsRecap.html" class="navigation navigation-next " aria-label="Next page: Recap">
+                <a href="ConditionalExercises.html" class="navigation navigation-next " aria-label="Next page: Exercises">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -334,7 +348,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 3 - Conditionals","level":"1.4","depth":1,"next":{"title":"Recap","level":"1.4.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},"previous":{"title":"About Me Individual Exercises","level":"1.3.3","depth":2,"path":"Variables/AboutMeIndividualExercises.md","ref":"Variables/AboutMeIndividualExercises.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/StudentDesc.md","mtime":"2020-02-26T15:33:02.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-26T15:33:47.902Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Recap","level":"1.4.1","depth":2,"next":{"title":"Exercises","level":"1.4.2","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},"previous":{"title":"Week 3 - Conditionals","level":"1.4","depth":1,"path":"Conditionals/StudentDesc.md","ref":"Conditionals/StudentDesc.md","articles":[{"title":"Recap","level":"1.4.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},{"title":"Exercises","level":"1.4.2","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},{"title":"Challenges","level":"1.4.3","depth":2,"path":"Conditionals/ConditionalChallenges.md","ref":"Conditionals/ConditionalChallenges.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalsRecap.md","mtime":"2020-02-26T15:33:02.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-26T15:33:47.902Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
