@@ -79,37 +79,37 @@ Repeat the steps for the addition method, but use subtraction instead of additio
 ## Final Code
 ```cs
 using System;
-					
+
 public class Program
 {
 	public static void Main()
 	{
 		Console.WriteLine("Enter a:");
 		int a = Convert.ToInt32(Console.ReadLine());
-		
+
 		Console.WriteLine("Enter b:");
 		int a = Convert.ToInt32(Console.ReadLine());
-		
+
 		Console.WriteLine("What operation to perform?");
 		string operation = Console.ReadLine();
-		
+
 		if (operation == "+")
 		{
 			int sum = AddNumbers(a, b);
-            Console.WriteLine(sum);
+			Console.WriteLine(sum);
 		}
 		else if (operation == "-")
 		{
 			int difference = SubtractNumbers(a, b);
-            Console.WriteLine(difference);
+			Console.WriteLine(difference);
 		}
 	}
-    
+
 	public static int AddNumbers(int integer1, int integer2)
 	{		
 		return integer1 + integer2;
 	}
-	
+
 	public static int SubtractNumbers(int integer1, int integer2)
 	{		
 		return integer1 - integer2;
