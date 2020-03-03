@@ -7,11 +7,11 @@ public class Program
 {
 	public static void Main()
 	{
-        Console.WriteLine();
+		Console.WriteLine();
 		Console.WriteLine(" () ()");
-        Console.WriteLine(" (* *) ");
-        Console.WriteLine(" (u u) ");
-        Console.WriteLine();
+		Console.WriteLine(" (* *) ");
+		Console.WriteLine(" (u u) ");
+		Console.WriteLine();
 	}
 }
 ```
@@ -24,19 +24,19 @@ public class Program
 {
 	public static void Main()
 	{
-        drawBunny();
-        drawBunny();
-        drawBunny();
+		drawBunny();
+		drawBunny();
+		drawBunny();
 	}
 
-    public static void drawBunny()
-    {
-        Console.WriteLine();
+	public static void drawBunny()
+	{
+		Console.WriteLine();
 		Console.WriteLine(" () ()");
-        Console.WriteLine(" (* *) ");
-        Console.WriteLine(" (u u) ");
-        Console.WriteLine();
-    }
+		Console.WriteLine(" (* *) ");
+		Console.WriteLine(" (u u) ");
+		Console.WriteLine();
+	}
 }
 ```
 
@@ -51,17 +51,17 @@ public class Program
 	public static void Main()
 	{
 		drawBunny();
-        drawBunny();
-        drawBunny();
+		drawBunny();
+		drawBunny();
 	}
-    
+	
 	public static void drawBunny()
 	{
-        Console.WriteLine();
+		Console.WriteLine();
 		Console.WriteLine(" () ()");
-        Console.WriteLine(" (. .) ");
-        Console.WriteLine(" (u u) ");
-        Console.WriteLine();
+		Console.WriteLine(" (. .) ");
+		Console.WriteLine(" (u u) ");
+		Console.WriteLine();
 	}
 }
 ```
