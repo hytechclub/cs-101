@@ -7,3 +7,7 @@
     - [Recap](Conditionals/ConditionalsRecap.md)
     - [Exercises](Conditionals/ConditionalExercises.md)
     - [Challenges](Conditionals/ConditionalChallenges.md)
+- [Week 4 - Methods](Methods/StudentDesc.md)
+- [Week 5 - Method Parameters](MethodParameters/StudentDesc.md)
+    - [Calculator Individual Instructions](MethodParameters/CalculatorIndividualInstructions.md)
+    - [Challenges](MethodParameters/MethodsChallenges.md)
