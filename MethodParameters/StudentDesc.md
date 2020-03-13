@@ -5,7 +5,7 @@
 - <a href="MethodReturns.pptx" target="_blank">Method Returns PowerPoint Presentation</a>
 
 ## Activities
-- Calculator Follow-Along
+- [Calculator Follow-Along](CalculatorFollowAlong.md)
 
 ## Practice
 - [Calculator Individual Instructions](CalculatorIndividualInstructions.md)
