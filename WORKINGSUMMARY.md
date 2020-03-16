@@ -1,3 +1,4 @@
+- [Using Repl.it](UsingRepl.md)
 - [Week 1 - C# Introduction](HelloCs/StudentDesc.md)
 - [Week 2 - Variables](Variables/StudentDesc.md)
     - [Recap](Variables/VariablesRecap.md)

@@ -15,6 +15,9 @@ Welcome to the C# 101 Hy-Tech Club course!
 - Week 11 - Project Work
 - Week 12 - Project Presentations
 
+## Using Repl.it
+[Using Repl.it](UsingRepl.md)
+
 ## Points
 Earn points throughout the semester by asking good questions, answering questions, helping others, working hard, and behaving well!
 
