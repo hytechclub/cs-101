@@ -1,11 +1,11 @@
-# C# 101: Introduction to C\#
+# C# 101: Introduction to <span>C#</span>
 Welcome to the C# 101 Hy-Tech Club course!
 
 ## Online Learning
 - Read through [this guide](UsingRepl.md) to learn about using `repl.it`
     - This is much more lightweight than Visual Studio and can be used for all C# 101 coding
 - Recordings for lectures and code-alongs will be posted to [this playlist](https://www.youtube.com/playlist?list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u)
-- Office Hours will be held on Tuesdays from 5:30PM-6:30PM
+- Office Hours will be held via [Zoom](https://hyland.zoom.us/j/226881964) on Tuesdays from 5:30PM-6:30PM
 
 ### Weekly Plan
 Each week, follow the same type of agenda we normally would follow in class:
@@ -30,9 +30,6 @@ Follow the links below to view each week of material.
 - Week 10 (4/21) - [Final Project](FinalProject/FinalProject.md)
 - Week 11 (4/28) - Project Work
 - Week 12 (5/05) - Project Presentations
-
-## Using Repl.it
-
 
 ## Points
 Earn points throughout the semester by asking good questions, answering questions, helping others, working hard, and behaving well!
