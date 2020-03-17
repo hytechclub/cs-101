@@ -1,10 +1,25 @@
 # C# 101: Boolean Operators
 
-## Reference
+## Online Learning
+If you are working on this from home, follow these steps:
+
+1. Watch the Lecture video before Office Hours
+1. Watch the Code-Along video and complete the activity before or during Office Hours
+1. Review the Recap
+1. Complete the Individual Exercise before or during Office Hours
+1. Complete the Challenge before, during, or after Office Hours
+
+## Lecture
+- Video
 - <a href="BooleanOperators.pptx" target="_blank">Boolean Operators PowerPoint Presentation</a>
-- [Boolean Operators Recap](BooleanOperatorsRecap.md)
+
+## Code-Along
+- Video
 - [Boolean Operators Follow-Along](BooleanOperatorsFollowAlong.md)
 
-## Activities
+## Recap
+- [Boolean Operators Recap](BooleanOperatorsRecap.md)
+
+## Individual Exercises & Challenge
 - [Boolean Operators Exercises](BooleanOperatorsExercises.md)
 - [Logic Gates Challenge](LogicGatesChallenge.md)
