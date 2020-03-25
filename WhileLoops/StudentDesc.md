@@ -10,11 +10,11 @@ If you are working on this from home, follow these steps:
 1. Complete the Challenge before, during, or after Office Hours
 
 ## Lecture
-- Video
+- [Video](https://www.youtube.com/watch?v=KkF4hyoPQOs&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=22&t=0s)
 - <a href="WhileLoops.pptx" target="_blank">While Loops PowerPoint Presentation</a>
 
 ## Code-Along
-- Video
+- [Video](https://www.youtube.com/watch?v=bFeo4Ho47cw&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=22)
 - [Factorial Follow-Along](FactorialFollowAlong.md)
 
 ## Recap
