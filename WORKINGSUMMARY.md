@@ -19,3 +19,8 @@
     - [Follow-Along](BooleanOperators/BooleanOperatorsFollowAlong.md)
     - [Exercises](BooleanOperators/BooleanOperatorsExercises.md)
     - [Logic Gates Challenge](BooleanOperators/LogicGatesChallenge.md)
+- [Week 7 - While Loops](WhileLoops/StudentDesc.md)
+    - [Recap](WhileLoops/WhileLoopRecap.md)
+    - [Factorial Follow-Along](WhileLoops/FactorialFollowAlong.md)
+    - [Even Numbers Individual Exercise](WhileLoops/EvenNumbersIndividualExercise.md)
+    - [Challenges](WhileLoops/WhileLoopChallenges.md)
