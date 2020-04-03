@@ -1,20 +1,12 @@
 # C# 101: Collections
 
 ## Online Learning
-If you are working on this from home, follow these steps:
-
-1. Watch the Lecture video before Office Hours
-1. Watch the Code-Along video and complete the activity before or during Office Hours
-1. Review the Recap
-1. Complete the Individual Exercise before or during Office Hours
-1. Complete the Challenges before, during, or after Office Hours
+If you are participating in Hy-Tech Club remotely, please join the [Zoom office hours](https://hyland.zoom.us/j/238669260?pwd=YmxDL042Q3lZTllKeGIwQkdrSlRvdz09) from 5:30-7pm on Tuesday 4/7 for this lesson. Instructors will be doing a live lecture and code-along at that time. Make sure to set up [repl.it](https://repl.it/) before that time!
 
 ## Lecture
-- Video
 - <a href="Collections.pptx" target="_blank">Collections PowerPoint Presentation</a>
 
 ## Code-Along
-- Video
 - [To-Do List Follow-Along](ToDoListFollowAlong.md)
 
 ## Recap
