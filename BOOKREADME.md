@@ -5,6 +5,7 @@ Welcome to the C# 101 Hy-Tech Club course!
 - Read through [this guide](UsingRepl.md) to learn about using `repl.it`
     - This is much more lightweight than Visual Studio and can be used for all C# 101 coding
 - Recordings for lectures and code-alongs will be posted to [this playlist](https://www.youtube.com/playlist?list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u)
+- Join the [Campfire Chat Room](https://hylandsoftware.campfirenow.com/3d4e8) chat with instructors and other students
 - Office Hours will be held via [Zoom](https://hyland.zoom.us/j/238669260?pwd=YmxDL042Q3lZTllKeGIwQkdrSlRvdz09) on Tuesdays from 5:30PM-7PM
     - If asked, the password for the meeting is **c101**
 - Email [c101@hyland.com](mailto:c101@hyland.com) with any questions
