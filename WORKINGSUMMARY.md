@@ -31,3 +31,8 @@
     - [Square Count Challenge](Collections/SquareCountChallenge.md)
     - [To-Do List Challenges](Collections/ToDoListChallenges.md)
     - [Additional Challenges](Collections/AdditionalChallenges.md)
+- [Week 9 - For Loops](ForLoops/StudentDesc.md)
+    - [Recap](ForLoops/ForLoopRecap.md)
+    - [FizzBuzz Follow-Along](ForLoops/FizzBuzzFollowAlong.md)
+    - [Sum Individual Exercise](ForLoops/SumIndividual.md)
+    - [Challenges](ForLoops/ForLoopChallenges.md)
