@@ -36,3 +36,4 @@
     - [FizzBuzz Follow-Along](ForLoops/FizzBuzzFollowAlong.md)
     - [Sum Individual Exercise](ForLoops/SumIndividual.md)
     - [Challenges](ForLoops/ForLoopChallenges.md)
+- [Week 10 - Final Project](FinalProject/FinalProject.md)
