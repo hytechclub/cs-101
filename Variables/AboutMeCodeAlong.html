@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AboutMeIndividualExercises.html" />
+    <link rel="next" href="AboutMeIndividualExercises.md" />
     
     
-    <link rel="prev" href="VariablesRecap.html" />
+    <link rel="prev" href="VariablesRecap.md" />
     
 
     </head>
@@ -106,9 +106,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../UsingRepl.html">
+        <li class="chapter " data-level="1.2" data-path="../ReplSetup.html">
             
-                <a href="../UsingRepl.html">
+                <a href="../ReplSetup.html">
             
                     
                     Using Repl.it
@@ -146,9 +146,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="VariablesRecap.html">
+        <li class="chapter " data-level="1.4.1" data-path="VariablesRecap.md">
             
-                <a href="VariablesRecap.html">
+                <span>
             
                     
                     Recap
@@ -172,9 +172,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.4.3" data-path="AboutMeIndividualExercises.md">
             
-                <a href="AboutMeIndividualExercises.html">
+                <span>
             
                     
                     About Me Individual Exercises
@@ -700,12 +700,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="about-me-code-along">About Me Code-Along</h1>
-<h2 id="hard-coded-values">Hard-coded Values</h2>
-<pre><code class="lang-CS"><span class="hljs-keyword">string</span> userName = <span class="hljs-string">&quot;Jordan Conrad&quot;</span>;
-<span class="hljs-keyword">int</span> userAge = <span class="hljs-number">26</span>;
+                                <h1 id="about-me-code-along-hard-coded-values">About Me Code-Along: Hard-Coded Values</h1>
+<pre><code class="lang-cs"><span class="hljs-keyword">string</span> userName = <span class="hljs-string">&quot;Jordan Conrad&quot;</span>;
+<span class="hljs-keyword">int</span> userAge = <span class="hljs-number">27</span>;
 <span class="hljs-keyword">int</span> numberOfPets = <span class="hljs-number">2</span>;
-<span class="hljs-keyword">string</span> schoolAttended = <span class="hljs-string">&quot;Medina High School &amp; Baldwin Wallace University!&quot;</span>;
+<span class="hljs-keyword">string</span> schoolAttended = <span class="hljs-string">&quot;Medina High School &amp; Baldwin Wallace University&quot;</span>;
 
 
 Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
@@ -716,28 +715,6 @@ Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge +
 
 Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</span> + schoolAttended + <span class="hljs-string">&quot;!&quot;</span>);
 <span class="hljs-comment">//I went to school at Medina High School &amp; Baldwin Wallace University!</span>
-</code></pre>
-<h2 id="asking-the-user-for-values">Asking the User for Values</h2>
-<pre><code class="lang-CS"><span class="hljs-comment">//reading user input example</span>
-Console.WriteLine(<span class="hljs-string">&quot;What is your name?&quot;</span>);
-String userName = Console.ReadLine();
-
-Console.WriteLine(<span class="hljs-string">&quot;What is your age?&quot;</span>);
-<span class="hljs-keyword">int</span> userAge = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(<span class="hljs-string">&quot;How many pets do you have?&quot;</span>);
-<span class="hljs-keyword">int</span> numberOfPets = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(<span class="hljs-string">&quot;What school do you go to?&quot;</span>);
-String strSchool = Console.ReadLine();
-
-
-Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
-Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old.&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;I have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets.&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;I attend &quot;</span> + strSchool);
-
-Console.ReadLine();
 </code></pre>
 
                                 
@@ -766,12 +743,12 @@ Console.ReadLine();
 
             
                 
-                <a href="VariablesRecap.html" class="navigation navigation-prev " aria-label="Previous page: Recap">
+                <a href="VariablesRecap.md" class="navigation navigation-prev " aria-label="Previous page: Recap">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AboutMeIndividualExercises.html" class="navigation navigation-next " aria-label="Next page: About Me Individual Exercises">
+                <a href="AboutMeIndividualExercises.md" class="navigation navigation-next " aria-label="Next page: About Me Individual Exercises">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -782,7 +759,7 @@ Console.ReadLine();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.4.2","depth":2,"next":{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"path":"Variables/AboutMeIndividualExercises.md","ref":"Variables/AboutMeIndividualExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.4.1","depth":2,"path":"Variables/VariablesRecap.md","ref":"Variables/VariablesRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeCodeAlong.md","mtime":"2020-07-21T16:14:17.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-21T16:14:54.970Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.4.2","depth":2,"next":{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"path":"Variables/AboutMeIndividualExercises.md","ref":"Variables/AboutMeIndividualExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.4.1","depth":2,"path":"Variables/VariablesRecap.md","ref":"Variables/VariablesRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"WORKINGSUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeCodeAlong.md","mtime":"2020-07-23T18:07:30.429Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-23T18:08:06.863Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
