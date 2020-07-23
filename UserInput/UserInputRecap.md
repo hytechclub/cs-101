@@ -1,7 +1,4 @@
-# Variables Recap
-A **variable** is a named location in memory.
-
-## User Input
+# User Input Recap
 ```cs
 string userResponse = Console.ReadLine();
 ```
@@ -10,7 +7,7 @@ The computer waits until the user has type in any text and an enter key. `Consol
 
 In this example, we choose to store the string as the value of the variable `userResponse`. 
 
-If we want to store the data returned as a variable who's datatype is not a string, then we need to convert it the desired datatype, using `Convert.To`... 
+If we want to store the data returned as a variable who's datatype is not a string, then we need to convert it the desired datatype, using `Convert.To`.
 
 Here are some examples:
 
@@ -19,8 +16,11 @@ Console.WriteLine("What is your Age?");
 string ageResponse = Console.ReadLine();
 int myAge = Convert.ToInt32(ageResponse);
 
-// the double and bool converts works the same			
+// the double and bool converts works the same
+string baResponse = Console.ReadLine();
 double battingAverage = Convert.ToDouble(baResponse);
+
+string snowingResponse = Console.ReadLine();
 bool isSnowing = Convert.ToBoolean(snowingResponse);
 ```
 

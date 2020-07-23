@@ -2,7 +2,7 @@
 Welcome to the C# 101 Hy-Tech Club course!
 
 ## Online Learning
-- Read through [this guide](UsingRepl.md) to learn about using `repl.it`
+- Read through [this guide](ReplSetup.md) to learn about using `repl.it`
     - This is much more lightweight than Visual Studio and can be used for all C# 101 coding
 - Recordings for lectures and code-alongs will be posted to [this playlist](https://www.youtube.com/playlist?list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u)
 - Join the [Campfire Chat Room](https://hylandsoftware.campfirenow.com/3d4e8) chat with instructors and other students

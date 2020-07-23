@@ -1,4 +1,4 @@
-# Week 1: Class Introductions
+# Introduction to <span>C#</span>
 
 ## Overview
 - Icebreaker
@@ -13,7 +13,5 @@ This should be a quick activity so that the students can get to know each other 
 
 https://create.kahoot.it/details/intro-to-c-review/652bf6af-dc8e-4714-9228-6f282e197c0a
 
-## Lecture
-Lecture for each section should be simple. 
-
-When all main topics are covered moved into the 'Building your first C# Program' PowerPoint and guide the class through a simple "Hello World!" program.
+## Code-Along
+Explain the basics of C# during the [Hello World](HelloWorld.md) code-along activity.
