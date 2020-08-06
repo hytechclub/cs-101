@@ -1,8 +1,8 @@
 # <span>C# 101: User Input</span>
 Learn how to use `Console.ReadLine` to read input from the console.
 
-## Reference
-- <a href="UserInput.pptx" target="_blank">User Input PowerPoint Presentation</a>
+## User Input PowerPoint Presentation
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/UserInput/UserInput.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Code-Along
 - [About Me Code-Along](AboutMeCodeAlong.md)

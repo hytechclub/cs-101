@@ -3,7 +3,6 @@
 ## Overview
 - Icebreaker
 - Kahoot
-- Lecture
 
 ## Icebreaker
 This should be a quick activity so that the students can get to know each other a little bit.
@@ -15,3 +14,6 @@ https://create.kahoot.it/details/intro-to-c-review/652bf6af-dc8e-4714-9228-6f282
 
 ## Code-Along
 Explain the basics of C# during the [Hello World](HelloWorld.md) code-along activity.
+
+## Next
+After the brief introduction to C#, the next step should be the [Variables](../Variables/) lesson.

@@ -1,5 +1,5 @@
 # Hello World!
-In this lesson, create a simple application to show a message in the console using C#. **C#** is an object-oriented programming language, often used to make desktop applications.
+In this lesson, create a simple application to show a message in the console using C#. **C#** is a general purpose, multi-paradigm programming language designed by Microsoft. Developers use C# to make web servers, desktop applications, games, and much more.
 
 ## Getting Started with a New Repl Account
 Follow the [Repl Setup guide](../ReplSetup.md) to create an account and a new Repl project.
