@@ -1,4 +1,4 @@
-# Even numbers using a While Loop - Individual Exercise
+# Even Numbers - Individual Exercise
 Start by creating a new `.cs` file/project. Then, follow the instructions below to create a program that prints some even numbers.
 
 ## Part 1 - Starting from 0
