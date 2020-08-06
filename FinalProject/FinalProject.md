@@ -1,7 +1,7 @@
 # Final 3 weeks: Project time!
 Show us what you learned!
 
-The last 2 weeks are for students to create their projects, what specifically they create is up to you! These projects should be done individually.
+The last 2 weeks are for you to create a project. What specifically you create is up to you! These projects should be done individually.
 
 ## Examples
 - Hangman
@@ -11,7 +11,9 @@ The last 2 weeks are for students to create their projects, what specifically th
 - Rock paper scissors!
 
 ## Technical Requirements
-1. Use a loop! Can be `for`, `foreach` or `while`. Up to you!
+1. Use at least one `Console.ReadLine`
+1. Use at least one `if` statement
+1. Use at least one `while` loop
 1. Use at least one method, show us you understand how to use them
 
 ## Presentations
