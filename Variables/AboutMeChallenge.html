@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Factorial Follow-Along · GitBook</title>
+        <title>About Me Challenge · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="EvenNumbersIndividualExercise.html" />
+    <link rel="next" href="../UserInput/StudentDesc.html" />
     
     
-    <link rel="prev" href="WhileLoopRecap.html" />
+    <link rel="prev" href="AboutMeCodeAlong.html" />
     
 
     </head>
@@ -146,9 +146,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../Variables/AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.3.2" data-path="AboutMeCodeAlong.html">
             
-                <a href="../Variables/AboutMeCodeAlong.html">
+                <a href="AboutMeCodeAlong.html">
             
                     
                     About Me Code-Along
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../Variables/AboutMeChallenge.html">
+        <li class="chapter active" data-level="1.3.3" data-path="AboutMeChallenge.html">
             
-                <a href="../Variables/AboutMeChallenge.html">
+                <a href="AboutMeChallenge.html">
             
                     
                     About Me Challenge
@@ -448,9 +448,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.9" data-path="../WhileLoops/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../WhileLoops/StudentDesc.html">
             
                     
                     Week 7 - While Loops
@@ -462,9 +462,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="WhileLoopRecap.html">
+        <li class="chapter " data-level="1.9.1" data-path="../WhileLoops/WhileLoopRecap.html">
             
-                <a href="WhileLoopRecap.html">
+                <a href="../WhileLoops/WhileLoopRecap.html">
             
                     
                     Recap
@@ -475,9 +475,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.2" data-path="FactorialFollowAlong.html">
+        <li class="chapter " data-level="1.9.2" data-path="../WhileLoops/FactorialFollowAlong.html">
             
-                <a href="FactorialFollowAlong.html">
+                <a href="../WhileLoops/FactorialFollowAlong.html">
             
                     
                     Factorial Follow-Along
@@ -488,9 +488,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="EvenNumbersIndividualExercise.html">
+        <li class="chapter " data-level="1.9.3" data-path="../WhileLoops/EvenNumbersIndividualExercise.html">
             
-                <a href="EvenNumbersIndividualExercise.html">
+                <a href="../WhileLoops/EvenNumbersIndividualExercise.html">
             
                     
                     Even Numbers Individual Exercise
@@ -501,9 +501,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="WhileLoopChallenges.html">
+        <li class="chapter " data-level="1.9.4" data-path="../WhileLoops/WhileLoopChallenges.html">
             
-                <a href="WhileLoopChallenges.html">
+                <a href="../WhileLoops/WhileLoopChallenges.html">
             
                     
                     Challenges
@@ -730,7 +730,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Factorial Follow-Along</a>
+        <a href=".." >About Me Challenge</a>
     </h1>
 </div>
 
@@ -745,83 +745,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="factorial-using-a-while-loop---followalong">Factorial using a While Loop - FollowAlong</h1>
-<p>Start by creating a new <code>.cs</code> file/project. Then, follow the instructions below to create a factorial while loop application.</p>
-<blockquote>
-<p>Factorial is the product of an integer and all the integers below it; e.g. factorial four (<code>4!</code>) is equal to <code>4 * 3 * 2 * 1 = 24</code></p>
-</blockquote>
-<h2 id="part-1---user-input">Part 1 - User Input</h2>
-<p>First, ask the user for an integer to find the factorial. </p>
-<h3 id="input">Input</h3>
+                                <h1 id="about-me-challenge">About Me Challenge</h1>
+<p>Add more information to the &quot;About Me&quot; program. For each piece of information:</p>
 <ol>
-<li>Use <code>Console.WriteLine</code> to ask the user to enter an integer. </li>
-<li>Use <code>Console.ReadLine</code> to receive the input from the user.</li>
-<li>Use <code>Convert.ToInt32</code> to conver the user&apos;s input from a <code>string</code> to an <code>int</code>.</li>
-<li>Make sure to store the result in a variable. </li>
+<li>Figure out the data type: <code>string</code>, <code>int</code>, <code>double</code>, <code>boolean</code></li>
+<li>Figure out a good name for the variable</li>
+<li>Declare and set the variable&apos;s value</li>
+<li>Display the information to the console in a nice message</li>
 </ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Enter a whole number: &quot;</span>);
-<span class="hljs-keyword">int</span> num = Convert.ToInt32(Console.ReadLine());
-</code></pre>
-<h2 id="part-2---while-loop">Part 2 - While Loop</h2>
-<p>Second, we will create the while loop. To start, we will initialize the counter and the result variable.</p>
-<h3 id="counter--sum">Counter &amp; Sum</h3>
-<p>We want to use a counter that starts at the integer the user provided and the result starts at 1. </p>
-<ol>
-<li><p>Since we will be counting backwards, we want to start the counter at the number the user provides.</p>
-</li>
-<li><p>Also, we are going to be multiplying the result by the counter, so we don&apos;t want to start at 0 or the result will always be 0!</p>
-</li>
-</ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs"><span class="hljs-keyword">int</span> i = num, result = <span class="hljs-number">1</span>;
-</code></pre>
-<h3 id="while-loop-condition">While Loop Condition</h3>
-<p>We are going to be counting down and want to stop when we are out of integers to multiply, so we want to go until the counter is equal to 0 but not if the counter is 0.</p>
-<p>We will accomplish this by using the boolean operator <code>&gt;</code>.</p>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs"><span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">0</span>)
-</code></pre>
-<h3 id="while-loop-body">While Loop Body</h3>
-<p>Now, we need to do the math funtion! Start with brackets and then add the arithmetic statement that we learned last week to multiply the variable by a number and assign the result to the variable. </p>
-<p>We also need to decrement the counter to keep the loop going. We do this with <code>i--;</code>.</p>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs"><span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">0</span>)
-{
-    result *= i;
-
-    i--;
-}
-</code></pre>
-<h2 id="part-3---print-the-results-to-screen">Part 3 - Print the results to screen</h2>
-<p>Finally, we need to let the user know what the answer is! We will do this with <code>Console.WriteLine()</code> outside of the while loop.</p>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Factorial of &quot;</span> + num + <span class="hljs-string">&quot;is &quot;</span> + result);
-</code></pre>
-<h2 id="final-code">Final Code</h2>
-<pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
-
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
-{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
-    </span>{
-
-         Console.WriteLine(<span class="hljs-string">&quot;Enter a whole number&quot;</span>);
-         <span class="hljs-keyword">int</span> num = Convert.ToInt32(Console.ReadLine());
-
-         <span class="hljs-keyword">int</span> i = num, result = <span class="hljs-number">1</span>;
-
-         <span class="hljs-keyword">while</span> (i &gt; <span class="hljs-number">0</span>)
-         {
-             result *= i;
-
-             i--;
-         }
-
-         Console.WriteLine(<span class="hljs-string">&quot;Factorial of &quot;</span> + num + <span class="hljs-string">&quot;is &quot;</span> + result);
-    }
-}
-</code></pre>
+<h2 id="ideas-for-information">Ideas for Information</h2>
+<ul>
+<li>Favorite Sport</li>
+<li>GPA</li>
+<li>Temperature</li>
+<li>Favorite Movie</li>
+<li>Organ Donor</li>
+<li>Birth Year</li>
+<li>Height</li>
+<li>Number of Siblings</li>
+<li>Right-Handed</li>
+<li>Favorite Song</li>
+<li>Amount of Money in Savings Account (feel free to lie)</li>
+<li>Vegetarian</li>
+<li>Grade Level</li>
+</ul>
 
                                 
                                 </section>
@@ -849,12 +796,12 @@
 
             
                 
-                <a href="WhileLoopRecap.html" class="navigation navigation-prev " aria-label="Previous page: Recap">
+                <a href="AboutMeCodeAlong.html" class="navigation navigation-prev " aria-label="Previous page: About Me Code-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="EvenNumbersIndividualExercise.html" class="navigation navigation-next " aria-label="Next page: Even Numbers Individual Exercise">
+                <a href="../UserInput/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 2 - UserInput">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -865,7 +812,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Factorial Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Even Numbers Individual Exercise","level":"1.9.3","depth":2,"path":"WhileLoops/EvenNumbersIndividualExercise.md","ref":"WhileLoops/EvenNumbersIndividualExercise.md","articles":[]},"previous":{"title":"Recap","level":"1.9.1","depth":2,"path":"WhileLoops/WhileLoopRecap.md","ref":"WhileLoops/WhileLoopRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"WhileLoops/FactorialFollowAlong.md","mtime":"2020-08-06T13:08:48.917Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T13:09:25.895Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"About Me Challenge","level":"1.3.3","depth":2,"next":{"title":"Week 2 - UserInput","level":"1.4","depth":1,"path":"UserInput/StudentDesc.md","ref":"UserInput/StudentDesc.md","articles":[{"title":"Recap","level":"1.4.1","depth":2,"path":"UserInput/UserInputRecap.md","ref":"UserInput/UserInputRecap.md","articles":[]},{"title":"About Me Code-Along","level":"1.4.2","depth":2,"path":"UserInput/AboutMeCodeAlong.md","ref":"UserInput/AboutMeCodeAlong.md","articles":[]},{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"path":"UserInput/AboutMeIndividualExercises.md","ref":"UserInput/AboutMeIndividualExercises.md","articles":[]}]},"previous":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"path":"Variables/AboutMeCodeAlong.md","ref":"Variables/AboutMeCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeChallenge.md","mtime":"2020-08-06T13:08:48.913Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T13:09:25.895Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
