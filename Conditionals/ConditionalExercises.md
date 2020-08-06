@@ -1,5 +1,5 @@
 # Conditional Statements Challenges - Number Guessing
-Challenges 1-3 build on each other, so you do not need to create three separate programs.
+Challenges 1-3 build on each other, so do not create three separate programs.
 
 ## Part 1 - Just an `if`
 1. Ask the user to guess a number between 1 and 10

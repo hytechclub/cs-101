@@ -1,34 +1,25 @@
-# Week 3: User Input and Conditional Statements
+# Conditional Statements
 
 ## Overview
-In week 3 we will introduce the concept of adding logic to applications using if() statements. Students will be introduced to the structure of the logic, ‘if something is true (or false) then do this work’. Since if() statements assess some type of conditional statement,  students will need to learn the simple Boolean operators, <, >, =, <=, >=. These conditional statements take a set of values or parameters and equate them to a true or false value. Starting conditionals will be if and int == int or string == string. 
+Introduce the concept of adding logic to applications using `if` statements. Students will be introduced to the structure of the logic: "if something is true (or false) then do this." Since `if` statements assess some type of conditional statement, students will need to learn the simple Boolean operators: `<`, `>`, `==`, `<=`, `>=`. These conditional statements take a set of values or parameters and equate them to a `true` or `false` value. Starting conditionals use `==`.
 
-After students have some exposure with if(), introduce them to else if() and the catch-all else. Students should develop an understanding of when an if(), else if(), else() logic tree executes the code in each segment (why we skip blocks after we enter one) and why using a serious of if() statements doesn’t work. 
+After students have some exposure to `if`, introduce them to `else if` and the catch-all `else`. Students should develop an understanding of when an `if`, `else if`, `else` logic tree executes the code in each segment (why some blocks may be skipped) and why using a series of `if` statements might not work. 
 
-## Warmup - Variables Review Kahoot
-https://create.kahoot.it/share/duplicate-of-c-101-data-types/9378165b-38f3-4a00-b266-8ca49976db1d
+## Warmup - Variables & User Input Review Kahoot
+Re-run the previous [Kahoot quiz](https://create.kahoot.it/share/1604df76-071b-4777-92e3-1f13559d874c) to review concepts covered thus far.
 
 ## Lecture
-* Lecture: PowerPoint "Reading User Input"
-    * Use `Console.ReadLine` to read input from the user
-    * Use `Convert.ToInt32` to convert strings into integers
+Present the [Conditional Statements](ConditionalStatements.pptx) PowerPoint.
 
-* Lecture: PowerPoint "Conditional Statements"
-    * Use conditional statements to traverse different logic paths.
-        * `if()`
-        * `else if()`	
-        * `else()`
+## Group Activity: Code-Along
+Follow these steps to show the students some conditional statements in action:
 
-    * Use simple Boolean operators to check conditional statements
-        * `<`, `>`, `==`
+1. Construct basic `if` statement (plug in `true`) that runs a `WriteLine()`
+2. Next, gather user input (what grade are you in?) and run a conditional statement: `if (grade <= 5) {}`
+3. Add the else if statement: `else if (grade <= 8) {}`
+4. Add the else statement: `else {}`
 
-## Group Activity
-* Code Along
-    1. Construct basic `if` statement (plug in `true`) that runs a `WriteLine()`
-    2. Next, gather user input (what grade are you in?) and run a conditional statement. `if (grade >= 5 elementary)` 
-    3. Introduce else statement `else if (grade >= 8 middle school)`
-    4. Introduce else if statement `else (grade >= 12 highschool)`
-
+### Code
 ```cs
 /*
 if(true)
@@ -40,22 +31,22 @@ if(true)
 Console.WriteLine("What grade are you in?");
 int studentGrade = Convert.toInt32(Console.ReadLine());
 
-if (grade >= 5)
+if (grade <= 5)
 {
     Console.WriteLine("Elementary");
 }
-else if(grade >= 8)
+else if (grade <= 8)
 {
     Console.WriteLine("Middle School");
 }
-else if(grade >= 12)
+else
 {
     Console.WriteLine("High School")
 }
 ```
 
 ## Individual Exercises
-Read user input/ If/else logic exercises. There are also challenges.
+Students should complete the [Conditional Exercises](ConditionalExercises.md).
 
-## Kahoot
-Use [Kahoot](https://play.kahoot.it/#/k/7bcbcc28-adaf-46d9-847b-0291f528e62a) as an exit evaluation 
+## Challenges
+If a student has completed the individual exercises, they should work on the [Challenges](ConditionalChallenges.md).
