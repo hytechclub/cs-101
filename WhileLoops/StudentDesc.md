@@ -1,25 +1,17 @@
-# C# 101: While Loops
+# <span>C# 101</span>: While Loops
 
-## Online Learning
-If you are working on this from home, follow these steps:
-
-1. Watch the Lecture video before Office Hours
-1. Watch the Code-Along video and complete the activity before or during Office Hours
-1. Review the Recap
-1. Complete the Individual Exercise before or during Office Hours
-1. Complete the Challenge before, during, or after Office Hours
-
-## Lecture
-- [Video](https://www.youtube.com/watch?v=KkF4hyoPQOs&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=22&t=0s)
-- <a href="WhileLoops.pptx" target="_blank">While Loops PowerPoint Presentation</a>
+## While Loops PowerPoint Presentation
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/UserInput/UserInput.pptx' width='100%' height='450px' frameborder='0'></iframe>
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/KkF4hyoPQOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Code-Along
-- [Video](https://www.youtube.com/watch?v=bFeo4Ho47cw&list=PL1P_sExxi-9PSNwmays_UE8JYllVu7P7u&index=22)
-- [Factorial Follow-Along](FactorialFollowAlong.md)
+[Factorial Follow-Along](FactorialFollowAlong.md)  
+
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/bFeo4Ho47cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Recap
 - [While Loops Recap](WhileLoopRecap.md)
 
-## Individual Exercise & Challenges
+## Individual Work
 - [Even Numbers Individual Exercise](EvenNumbersIndividualExercise.md)
 - [While Loop Challenges](WhileLoopChallenges.md)

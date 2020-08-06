@@ -1,5 +1,5 @@
 # While Loops Challenges
-Complete the following challenges
+Complete the following challenges. It may be helpful to create a new `.cs` file for each challenge, or create a new project entirely.
 
 ## 1. While Loop Guessing game
 Randomly pick a number, and use a `while` loop to ask a user to guess a number between 1 and 20. Make them guess until they are correct.
@@ -26,7 +26,7 @@ as long as `xValue` remains positive. Start by asking the user for a number, the
 Print the square of the first 25 odd positive integers.
 
 ## 5. Sums
-Write a method with a `while` loop that computes the sum of first `n` positive integers:
+Write a program with a `while` loop that computes the sum of first `n` positive integers:
 ```
 sum = 1 + 2 + 3 + ... + n
 ```
@@ -38,7 +38,7 @@ sum = 1 + 2 + 3 + ... + n
 Allow the user to input the value of `n`.
 
 ## 6. Factors
-Write a method that calculates the largest factor of a number (not including the number itself).
+Write a program that calculates the largest factor of a number (not including the number itself).
 
 ### Examples
 `n = 24`: `output = 12`
@@ -48,7 +48,7 @@ Write a method that calculates the largest factor of a number (not including the
 Allow the user to input the value of `n`.
 
 ## 7. Diamond
-Write a method that prints out an ASCII diamond of stars, with a height supplied by the user. The height is defined by the distance between the top line of stars and the middle line of stars.
+Write a program that prints out an ASCII diamond of stars, with a height supplied by the user. The height is defined by the distance between the top line of stars and the middle line of stars.
 
 ### Examples
 User inputs `1`:
