@@ -9,9 +9,7 @@
 
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/bFeo4Ho47cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Recap
+## Other Material
 - [While Loops Recap](WhileLoopRecap.md)
-
-## Individual Work
 - [Even Numbers Individual Exercise](EvenNumbersIndividualExercise.md)
 - [While Loop Challenges](WhileLoopChallenges.md)

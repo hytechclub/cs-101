@@ -1,5 +1,5 @@
-# Conditional Statements Challenges - Number Guessing
-Challenges 1-3 build on each other, so do not create three separate programs.
+# Conditional Exercise - Number Guessing
+Challenges 1-3 build on each other, so do not create three separate programs. Start with a new C# project, and complete the activity in the `Main` method.
 
 ## Part 1 - Just an `if`
 1. Ask the user to guess a number between 1 and 10

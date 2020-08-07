@@ -5,5 +5,6 @@
 
 ## Material
 - [Conditionals Recap](ConditionalsRecap.md)
+- [Conditionals Code-Along](ConditionalsCodeAlong.md)
 - [Conditional Exercises](ConditionalExercises.md)
 - [Conditional Challenges](ConditionalChallenges.md)

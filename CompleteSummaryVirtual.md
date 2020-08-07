@@ -9,6 +9,7 @@
     - [About Me Individual Exercises](UserInput/AboutMeIndividualExercises.md)
 - [Week 3 - Conditionals](Conditionals/StudentDesc.md)
     - [Recap](Conditionals/ConditionalsRecap.md)
+    - [Code-Along](Conditionals/ConditionalsCodeAlong.md)
     - [Exercises](Conditionals/ConditionalExercises.md)
     - [Challenges](Conditionals/ConditionalChallenges.md)
 - [Week 4 - While Loops](WhileLoops/StudentDesc.md)
