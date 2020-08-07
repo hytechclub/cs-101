@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>About Me Code-Along · GitBook</title>
+        <title>Code-Along · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AboutMeChallenge.html" />
+    <link rel="next" href="ConditionalExercises.html" />
     
     
-    <link rel="prev" href="../HelloCs/HelloWorld.html" />
+    <link rel="prev" href="ConditionalsRecap.html" />
     
 
     </head>
@@ -146,9 +146,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.2" data-path="AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.3.2" data-path="../Variables/AboutMeCodeAlong.html">
             
-                <a href="AboutMeCodeAlong.html">
+                <a href="../Variables/AboutMeCodeAlong.html">
             
                     
                     About Me Code-Along
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="AboutMeChallenge.html">
+        <li class="chapter " data-level="1.3.3" data-path="../Variables/AboutMeChallenge.html">
             
-                <a href="AboutMeChallenge.html">
+                <a href="../Variables/AboutMeChallenge.html">
             
                     
                     About Me Challenge
@@ -235,9 +235,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../Conditionals/StudentDesc.html">
+        <li class="chapter " data-level="1.5" data-path="StudentDesc.html">
             
-                <a href="../Conditionals/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 3 - Conditionals
@@ -249,9 +249,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../Conditionals/ConditionalsRecap.html">
+        <li class="chapter " data-level="1.5.1" data-path="ConditionalsRecap.html">
             
-                <a href="../Conditionals/ConditionalsRecap.html">
+                <a href="ConditionalsRecap.html">
             
                     
                     Recap
@@ -262,9 +262,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../Conditionals/ConditionalsCodeAlong.html">
+        <li class="chapter active" data-level="1.5.2" data-path="ConditionalsCodeAlong.html">
             
-                <a href="../Conditionals/ConditionalsCodeAlong.html">
+                <a href="ConditionalsCodeAlong.html">
             
                     
                     Code-Along
@@ -275,9 +275,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../Conditionals/ConditionalExercises.html">
+        <li class="chapter " data-level="1.5.3" data-path="ConditionalExercises.html">
             
-                <a href="../Conditionals/ConditionalExercises.html">
+                <a href="ConditionalExercises.html">
             
                     
                     Exercises
@@ -288,9 +288,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../Conditionals/ConditionalChallenges.html">
+        <li class="chapter " data-level="1.5.4" data-path="ConditionalChallenges.html">
             
-                <a href="../Conditionals/ConditionalChallenges.html">
+                <a href="ConditionalChallenges.html">
             
                     
                     Challenges
@@ -549,7 +549,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >About Me Code-Along</a>
+        <a href=".." >Code-Along</a>
     </h1>
 </div>
 
@@ -564,21 +564,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="about-me-code-along-hard-coded-values">About Me Code-Along: Hard-Coded Values</h1>
-<pre><code class="lang-cs"><span class="hljs-keyword">string</span> userName = <span class="hljs-string">&quot;Jordan Conrad&quot;</span>;
-<span class="hljs-keyword">int</span> userAge = <span class="hljs-number">27</span>;
-<span class="hljs-keyword">int</span> numberOfPets = <span class="hljs-number">2</span>;
-<span class="hljs-keyword">string</span> schoolAttended = <span class="hljs-string">&quot;Medina High School &amp; Baldwin Wallace University&quot;</span>;
+                                <h1 id="grade-level-condition">Grade Level Condition</h1>
+<p>Follow these steps to see some conditional statements in action:</p>
+<ol>
+<li>Construct basic <code>if</code> statement (plug in <code>true</code>) that runs a <code>WriteLine()</code></li>
+<li>Next, gather user input (what grade are you in?) and run a conditional statement: <code>if (grade &lt;= 5) {}</code></li>
+<li>Add the else if statement: <code>else if (grade &lt;= 8) {}</code></li>
+<li>Add the else statement: <code>else {}</code></li>
+</ol>
+<h3 id="code">Code</h3>
+<pre><code class="lang-cs"><span class="hljs-comment">/*
+if(true)
+{
+    Console.WriteLine(&quot;I&apos;m inside the &apos;if&apos; statement!&quot;);
+}
+*/</span>
 
+Console.WriteLine(<span class="hljs-string">&quot;What grade are you in?&quot;</span>);
+<span class="hljs-keyword">int</span> studentGrade = Convert.toInt32(Console.ReadLine());
 
-Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
-<span class="hljs-comment">//Hello! My name is Jordan Conrad</span>
-
-Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old and have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets!&quot;</span>);
-<span class="hljs-comment">// I am 26 years old and have 2 pets!</span>
-
-Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</span> + schoolAttended + <span class="hljs-string">&quot;!&quot;</span>);
-<span class="hljs-comment">//I went to school at Medina High School &amp; Baldwin Wallace University!</span>
+<span class="hljs-keyword">if</span> (grade &lt;= <span class="hljs-number">5</span>)
+{
+    Console.WriteLine(<span class="hljs-string">&quot;Elementary&quot;</span>);
+}
+<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">grade &lt;= <span class="hljs-number">8</span></span>)
+</span>{
+    Console.WriteLine(<span class="hljs-string">&quot;Middle School&quot;</span>);
+}
+<span class="hljs-keyword">else</span>
+{
+    Console.WriteLine(<span class="hljs-string">&quot;High School&quot;</span>)
+}
 </code></pre>
 
                                 
@@ -607,12 +623,12 @@ Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</sp
 
             
                 
-                <a href="../HelloCs/HelloWorld.html" class="navigation navigation-prev " aria-label="Previous page: Hello World">
+                <a href="ConditionalsRecap.html" class="navigation navigation-prev " aria-label="Previous page: Recap">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AboutMeChallenge.html" class="navigation navigation-next " aria-label="Next page: About Me Challenge">
+                <a href="ConditionalExercises.html" class="navigation navigation-next " aria-label="Next page: Exercises">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -623,7 +639,7 @@ Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"next":{"title":"About Me Challenge","level":"1.3.3","depth":2,"path":"Variables/AboutMeChallenge.md","ref":"Variables/AboutMeChallenge.md","articles":[]},"previous":{"title":"Hello World","level":"1.3.1","depth":2,"path":"HelloCs/HelloWorld.md","ref":"HelloCs/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeCodeAlong.md","mtime":"2020-08-07T16:02:58.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-07T16:03:40.368Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.5.2","depth":2,"next":{"title":"Exercises","level":"1.5.3","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.5.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalsCodeAlong.md","mtime":"2020-08-07T16:02:58.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-07T16:03:40.368Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
