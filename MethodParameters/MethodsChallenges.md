@@ -1,5 +1,5 @@
 # Methods Challenges
-Complete the exercises below using a single `.cs` file. In the `Main` method, appropriately _call_ each of the methods you _define_.
+Complete the exercises below using a single `.cs` file. In the `Main` method, _call_ each of the methods you _define_.
 
 ## 1 - Calculate the next leap years
 Write a method that takes in a year and determines if it is a leap year.
@@ -12,11 +12,44 @@ Leap years are defined as follows:
 Write a program that asks the user for a year, and writes a message to the console telling the user whether or not the year they entered was a leap year.
 
 ### Challenge
-Write a program that does the following:
+Write a method that does the following:
 * Using the current year, generate the next 50 leap years
 * Print these years out to the console
 
-## 2 - Countdown
+## 2 - Bunny Eyes
+Define a method named `drawBunny` that prints an ASCII bunny to the console. It should look something like this:
+
+```
+() ()
+(. .)
+(u u)
+```
+
+Once the method has been defined, update it so that it has a _parameter_. The parameter should determine the eyes for the bunny.
+
+### Example 1
+```cs
+drawBunny("*");
+```
+
+```
+() ()
+(* *)
+(u u)
+```
+
+### Example 2
+```cs
+drawBunny("-");
+```
+
+```
+() ()
+(- -)
+(u u)
+```
+
+## 3 - Countdown
 Create a program that will ask the user for a date and the name of an event, and then display how many days there are until that date. For example, if today was 03/10/20 and the user entered `05/01/2020` as the date and `my birthday` as the event name, the program should say "There are 52 days until my birthday."
 
 1. Write a method that takes the date and determines the number of days until that date
@@ -31,7 +64,10 @@ Create a program that will ask the user for a date and the name of an event, and
 - The program should be able to display multiple countdowns at once
 - The program should store each countdown name/date in a text file, and load them from the text file each time the program runs
 
-## 3 - Recursion
+## 4 - While Loop Methods
+Update the code from the [While Loop Challenges](../WhileLoops/WhileLoopChallenges.md) so that each program is defined as one method. The `Main` method should have a menu that allows the user to select which method to run.
+
+## 5 - Recursion
 >[Land of Lakes Example](https://media0.giphy.com/media/l0HUi9wxwHRrYBKSY/giphy.gif)
 
 In computer science, [**recursion**](https://en.wikipedia.org/wiki/Recursion) occurs when a method calls itself in its own definition. Read through [this article](https://www.geeksforgeeks.org/recursion/) to learn more.

@@ -1,4 +1,4 @@
-# <span>C# 101: User Input</span>
+# <span>C# 101:</span> User Input
 Learn how to use `Console.ReadLine` to read input from the console.
 
 ## User Input PowerPoint Presentation
