@@ -2,8 +2,10 @@
 Introduce methods
 
 ## Lecture
-- [Methods PowerPoint](Methods.pptx)
+Present the [Methods PowerPoint](Methods.pptx).
 
-## Group Activities
-- [Quizizz Quiz](https://quizizz.com/admin/quiz/5e4feefd458215001b73be90)
-- [Methods Code-Along](MethodsCodeAlong.md)
+## Quiz
+Go through the [Quizizz quiz](https://quizizz.com/admin/quiz/5e4feefd458215001b73be90) to gauge the students' understanding.
+
+## Code-Along
+Walk through the [Methods Code-Along](MethodsCodeAlong.md).

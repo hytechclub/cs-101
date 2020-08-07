@@ -1,8 +1,8 @@
-# <span>C# 101</span>: Variables & Data Types
+# <span>C# 101:</span> Variables & Data Types
 
 ## Reference
-- <a href="Variables.pptx" target="_blank">Variables & Data Types PowerPoint Presentation</a>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/Variables/Variables.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
 ## Activities
-- [About Me Code-Along](../Variables/AboutMeCodeAlong.md)
-- [About Me Challenge](../Variables/AboutMeChallenge.md)
+- [About Me Code-Along](AboutMeCodeAlong.md)
+- [About Me Challenge](AboutMeChallenge.md)

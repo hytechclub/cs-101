@@ -7,17 +7,19 @@ The smiley face method should print a certain number of smiley faces based on a 
 1. Define a new method named `PrintSmiley` in the `Program.cs` file
     - The method should take in one `int` parameter (`numSmileys`)
     - The method should return `void` (nothing)
-1. In the body of the `PrintSmiley` method, create a `for` loop
-    - The `for` loop should execute `numSmileys` times
-1. In the body of the `for` loop, print a smiley face (`:)`)
+1. In the body of the `PrintSmiley` method, create a `while` loop
+    - The `while` loop should execute `numSmileys` times
+1. In the body of the `while` loop, print a smiley face (`:)`)
 
 #### Code
 ```cs
 public static void PrintSmileys(int numSmileys)
 {
-    for (int i = 0; i < numSmileys; i++)
+    int i = 0;
+    while (i < numSmileys)
     {
         Console.WriteLine(":)");
+        i++;
     }
 }
 ```
