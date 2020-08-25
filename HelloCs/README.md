@@ -2,7 +2,6 @@
 
 ## Overview
 - Icebreaker
-- Kahoot
 
 ## Icebreaker
 This should be a quick activity so that the students can get to know each other a little bit.

@@ -3,7 +3,7 @@
     - [Hello World](HelloCs/HelloWorld.md)
     - [About Me Code-Along](Variables/AboutMeCodeAlong.md)
     - [About Me Challenge](Variables/AboutMeChallenge.md)
-- [Week 2 - UserInput](UserInput/StudentDesc.md)
+- [Week 2 - User Input](UserInput/StudentDesc.md)
     - [Recap](UserInput/UserInputRecap.md)
     - [About Me Code-Along](UserInput/AboutMeCodeAlong.md)
     - [About Me Individual Exercises](UserInput/AboutMeIndividualExercises.md)

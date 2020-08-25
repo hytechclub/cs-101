@@ -1,4 +1,4 @@
-# C# 101: Introduction to <span>C#</span>
+# <span>C# 101: Introduction to C#</span>
 Welcome to the C# 101 Hy-Tech Club course!
 
 ## Online Learning
