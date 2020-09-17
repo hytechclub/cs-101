@@ -2,7 +2,7 @@
 A session devoted to practicing the material covered so far.
 
 ## Follow-Along: Print Smileys
-[PrintSmileysFollowAlong](PrintSmileysFollowAlong.md)
+- [PrintSmileysFollowAlong](PrintSmileysFollowAlong.md)
 
 ## Individual Practice
 - [BugsPractice](BugsPractice.md)
