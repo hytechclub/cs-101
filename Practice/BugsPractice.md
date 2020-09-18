@@ -1,5 +1,5 @@
 # Bugs Practice
-Complete the following exercises in a `Program.cs` file.
+Complete the following exercises in a new C# project.
 
 ## Setup
 1. Define a new method named `Bugs` with return type `void` that takes no input arguments

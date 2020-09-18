@@ -1,4 +1,4 @@
-# Calculator - FollowAlong
+# Calculator: Code-Along
 Start by creating a new `.cs` file/project. Then, follow the instructions below to create a simple calculator application.
 
 ## Part 1 - User Input

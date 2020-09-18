@@ -26,4 +26,7 @@
     - [Calculator Individual Instructions](MethodParameters/CalculatorIndividualInstructions.md)
     - [Challenges](MethodParameters/MethodsChallenges.md)
 - [Week 8 - Review and Practice](Practice/StudentDesc.md)
+    - [Print Smileys](Practice/PrintSmileysFollowAlong.md)
+    - [Bug Fixing](Practice/BugsPractice.md)
+    - [Methods Practice](Practice/MethodsPractice.md)
 - [Week 9 - Final Project](FinalProject/FinalProject.md)

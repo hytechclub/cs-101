@@ -1,5 +1,5 @@
 # Methods Code-Along
-Build a spimple program to draw bunnies to the C# console using methods.
+Build a simple program to draw bunnies to the C# console using methods.
 
 ## Part 1 - Basic Code
 Start by adding `Console.WriteLine` statements to draw an ASCII art bunny in the `Main` method. The bunny should look something like this:
@@ -54,7 +54,7 @@ public class Program
 }
 ```
 
-### 3 - Updating the Method
+## Part 3 - Updating the Method
 Now, if there is some change required to the bunny drawing, it is easy to change it! Update the method so that the bunny has dots for eyes instead of stars. 
 
 ### Code

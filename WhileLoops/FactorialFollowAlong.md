@@ -1,4 +1,4 @@
-# Factorial using a While Loop - FollowAlong
+# Factorial using a While Loop: Follow-Along
 Start by creating a new `.cs` file/project. Then, follow the instructions below to create a factorial while loop application.
 
 >Factorial is the product of an integer and all the integers below it; e.g. factorial four (`4!`) is equal to `4 * 3 * 2 * 1 = 24`
