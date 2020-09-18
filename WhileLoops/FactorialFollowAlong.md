@@ -9,7 +9,7 @@ First, ask the user for an integer to find the factorial.
 ### Input
 1. Use `Console.WriteLine` to ask the user to enter an integer. 
 1. Use `Console.ReadLine` to receive the input from the user.
-1. Use `Convert.ToInt32` to conver the user's input from a `string` to an `int`.
+1. Use `Convert.ToInt32` to convert the user's input from a `string` to an `int`.
 1. Make sure to store the result in a variable. 
 
 ### Code
@@ -46,7 +46,7 @@ while (i > 0)
 ```
 
 ### While Loop Body
-Now, we need to do the math funtion! Start with brackets and then add the arithmetic statement that we learned last week to multiply the variable by a number and assign the result to the variable. 
+Now, we need to do the math function! Start with brackets and then add the arithmetic statement that we learned last week to multiply the variable by a number and assign the result to the variable. 
 
 We also need to decrement the counter to keep the loop going. We do this with `i--;`.
 
