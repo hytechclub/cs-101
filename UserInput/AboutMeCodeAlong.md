@@ -72,18 +72,18 @@ Finally, it's time to print out all of the information!
 1. Create a `Console.WriteLine` statement
 1. Set the message to say "Hello! My name is "
 1. Add the `userName` variable to the end of the message string using `+`
-1. Create another `Console.WriteLine` statement
+1. Under that statement, create another `Console.WriteLine`
 1. Set the message to say "I am "
 1. Add the `userAge` variable to the end of the message string using `+`
 1. Add " years old" to the end of the message string using `+`
-1. Create another `Console.WriteLine` statement
+1. Under that statement, create another `Console.WriteLine`
 1. Set the message to say "Next year I will be "
 1. Add the `userNextAge` variable to the end of the message string using `+`
-1. Create another `Console.WriteLine` statement
+1. Under that statement, create another `Console.WriteLine`
 1. Set the message to say "I have "
 1. Add the `numberOfPets` variable to the end of the message string using `+`
 1. Add " pets" to the end of the message string using `+`
-1. Create another `Console.WriteLine` statement
+1. Under that statement, create another `Console.WriteLine`
 1. Set the message to say "I attend "
 1. Add the `school` variable to the end of the message string using `+`
 
