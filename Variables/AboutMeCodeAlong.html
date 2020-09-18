@@ -504,6 +504,51 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Practice/PrintSmileysFollowAlong.html">
+            
+                <a href="../Practice/PrintSmileysFollowAlong.html">
+            
+                    
+                    Print Smileys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Practice/BugsPractice.html">
+            
+                <a href="../Practice/BugsPractice.html">
+            
+                    
+                    Bug Fixing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Practice/MethodsPractice.html">
+            
+                <a href="../Practice/MethodsPractice.html">
+            
+                    
+                    Methods Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.11" data-path="../FinalProject/FinalProject.html">
@@ -565,20 +610,85 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="about-me-code-along-hard-coded-values">About Me Code-Along: Hard-Coded Values</h1>
+<p>Create a program that stores some information about a user, and then prints it out in a sentence format. Start by creating a new C# Repl, and then follow the steps below.</p>
+<h2 id="name-variable">Name Variable</h2>
+<p>First, <em>declare</em> and <em>set</em> a new variable. This variable will hold a name; feel free to use your own name, or any other name you&apos;d like.</p>
+<ol>
+<li>Remove any code from the <code>Main</code> code block</li>
+<li>Create a new <code>string</code> variable named <code>userName</code> with <code>string userName</code></li>
+<li>Set the value of the variable to a new string with <code>= &quot;&quot;</code></li>
+<li>Fill out the name between the opening and closing quotation marks</li>
+<li>Add a semi-colon at the end</li>
+</ol>
+<pre><code class="lang-cs"><span class="hljs-keyword">string</span> userName = <span class="hljs-string">&quot;Jordan Conrad&quot;</span>;
+</code></pre>
+<h2 id="other-variables">Other Variables</h2>
+<p>After the first variable is declared and set, it&apos;s time to add some additional variables. Remember to end each statement with a semi-colon!</p>
+<ol>
+<li>Make a new line under the first variable</li>
+<li>Declare a new <code>int</code> variable named <code>userAge</code>, and set it equal to any age (e.g. <code>27</code>)</li>
+<li>Make another new line</li>
+<li>Declare another <code>int</code> variable named <code>numberOfPets</code>, and set it equal to any number (e.g. <code>2</code>)</li>
+<li>Make another new line</li>
+<li>Declare a <code>string</code> variable named <code>school</code>, and set it equal to a value between quotes (<code>&quot;&quot;</code>)</li>
+<li>Fill out a value for the <code>school</code> variable (e.g. <code>&quot;Medina High School&quot;</code>)</li>
+</ol>
+<p>Run the program, and make sure there are no errors.</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> userAge = <span class="hljs-number">27</span>;
+<span class="hljs-keyword">int</span> numberOfPets = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">string</span> school = <span class="hljs-string">&quot;Medina High School&quot;</span>;
+</code></pre>
+<h2 id="displaying-the-name-information">Displaying the Name Information</h2>
+<p>Now that the information is properly stored in variables, try displaying it in a sentence format. Start with the <code>userName</code> value.</p>
+<ol>
+<li>Make a new line under the variables</li>
+<li>Create a <code>Console.WriteLine();</code> statement to display a message</li>
+<li>Within the parentheses for the <code>Console.WriteLine();</code>, add a set of double quotes (<code>&quot;&quot;</code>)</li>
+<li>Within the double quotes, type out &quot;Hello! My name is &quot;<ul>
+<li>Make sure to include the space</li>
+</ul>
+</li>
+<li>After the ending quote, add a <code>+</code> and the <code>userName</code> variable</li>
+</ol>
+<p>Run the program, and verify that the sentence appears in the console!</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
+</code></pre>
+<h2 id="displaying-the-other-information">Displaying the Other Information</h2>
+<p>Next, display the rest of the information.</p>
+<ol>
+<li>Under the previous statement, add another <code>Console.WriteLine();</code></li>
+<li>Within the parentheses, add a string that says &quot;I am &quot;</li>
+<li>After the quote, use <code>+</code> to add the <code>userAge</code> variable</li>
+<li>After the variable, use <code>+</code> <em>again</em> to complete the message with &quot; years old&quot;</li>
+</ol>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old&quot;</span>);
+</code></pre>
+<ol>
+<li>Under that, add another <code>Console.WriteLine();</code></li>
+<li>Within the parentheses, add a string that says &quot;I have &quot;</li>
+<li>After the quote, use <code>+</code> to add the <code>numberOfPets</code> variable</li>
+<li>After the variable, use <code>+</code> <em>again</em> to complete the message with &quot; pets</li>
+</ol>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;I have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets&quot;</span>);
+</code></pre>
+<ol>
+<li>Under that, add another <code>Console.WriteLine();</code></li>
+<li>Within the parentheses, add a string that says &quot;I went to school at &quot;</li>
+<li>After the quote, use <code>+</code> to add the <code>school</code> variable</li>
+</ol>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</span> + school);
+</code></pre>
+<p>Run the code, and make sure all the information is displayed properly!</p>
+<h2 id="final-code">Final Code</h2>
 <pre><code class="lang-cs"><span class="hljs-keyword">string</span> userName = <span class="hljs-string">&quot;Jordan Conrad&quot;</span>;
 <span class="hljs-keyword">int</span> userAge = <span class="hljs-number">27</span>;
 <span class="hljs-keyword">int</span> numberOfPets = <span class="hljs-number">2</span>;
-<span class="hljs-keyword">string</span> schoolAttended = <span class="hljs-string">&quot;Medina High School &amp; Baldwin Wallace University&quot;</span>;
-
+<span class="hljs-keyword">string</span> school = <span class="hljs-string">&quot;Medina High School&quot;</span>;
 
 Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
-<span class="hljs-comment">//Hello! My name is Jordan Conrad</span>
-
-Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old and have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets!&quot;</span>);
-<span class="hljs-comment">// I am 26 years old and have 2 pets!</span>
-
-Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</span> + schoolAttended + <span class="hljs-string">&quot;!&quot;</span>);
-<span class="hljs-comment">//I went to school at Medina High School &amp; Baldwin Wallace University!</span>
+Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;I have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</span> + school);
 </code></pre>
 
                                 
@@ -623,7 +733,7 @@ Console.WriteLine(<span class="hljs-string">&quot;I went to school at &quot;</sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"next":{"title":"About Me Challenge","level":"1.3.3","depth":2,"path":"Variables/AboutMeChallenge.md","ref":"Variables/AboutMeChallenge.md","articles":[]},"previous":{"title":"Hello World","level":"1.3.1","depth":2,"path":"HelloCs/HelloWorld.md","ref":"HelloCs/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeCodeAlong.md","mtime":"2020-09-17T11:59:45.212Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T12:00:25.773Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"next":{"title":"About Me Challenge","level":"1.3.3","depth":2,"path":"Variables/AboutMeChallenge.md","ref":"Variables/AboutMeChallenge.md","articles":[]},"previous":{"title":"Hello World","level":"1.3.1","depth":2,"path":"HelloCs/HelloWorld.md","ref":"HelloCs/HelloWorld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeCodeAlong.md","mtime":"2020-09-18T18:03:40.431Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-18T18:04:22.103Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
