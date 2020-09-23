@@ -1,5 +1,5 @@
 # C# 101 - Introduction to C#
-This course introduces fundamental programming concepts using C# Console Apps. Material includes:
+This course introduces fundamental programming concepts using C# console applications. Material includes:
 - Variables
 - Input/Output
 - Conditionals
