@@ -1,5 +1,5 @@
-# <span>C# 101:</span> Methods
-Learn how to use _methods_ to organize and manage code projects.
+# Methods
+Learn how to use _methods_ to organize and manage code projects. Review the PowerPoint presentation, and then complete the  After that, complete the [Methods Code-Along](MethodsCodeAlong.md) activity.
 
 ## Methods PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/Methods/Methods.pptx' width='100%' height='450px' frameborder='0'></iframe>

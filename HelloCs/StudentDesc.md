@@ -1,5 +1,8 @@
-# <span>C# 101: Hello C#</span>
-Complete the [Hello World](HelloWorld.md) activity to get started with C#!
+# <span>Hello C#</span>
+Get started with C#. First, complete the [Hello World](HelloWorld.md) activity as an introduction. Then, review the PowerPoint presentation below, and complete the [About Me Code-Along](../Variables/AboutMeCodeAlong.md) activity. After that, work on the [About Me Challenge](../Variables/AboutMeChallenge.md) to practice basic C# coding skills.
+
+## Introduction
+- [Hello World](HelloWorld.md)
 
 ## Variables & Data Types PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/Variables/Variables.pptx' width='100%' height='450px' frameborder='0'></iframe>

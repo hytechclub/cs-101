@@ -1,4 +1,4 @@
-# <span>C# 101</span>: While Loops Practice
+# While Loops Practice
 Build a program that uses `while` loops to accomplish something. Refer to the [While Loops material](StudentDesc.md) for help.
 
 ## Ideas
