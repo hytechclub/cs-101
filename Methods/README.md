@@ -9,3 +9,6 @@ Go through the [Quizizz quiz](https://quizizz.com/admin/quiz/5e4feefd458215001b7
 
 ## Code-Along
 Walk through the [Methods Code-Along](MethodsCodeAlong.md).
+
+## Challenges
+Give the students some time to complete the [challenges](MethodsChallenges.md).
