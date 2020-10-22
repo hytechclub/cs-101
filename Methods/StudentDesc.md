@@ -7,3 +7,4 @@ Learn how to use _methods_ to organize and manage code projects. Review the Powe
 
 ## Material
 - [Methods Code-Along](MethodsCodeAlong.md)
+- [Methods Challenges](MethodsChallenges.md)
