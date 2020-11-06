@@ -1,5 +1,5 @@
 # Methods
-Learn how to use _methods_ to organize and manage code projects. Review the PowerPoint presentation, and then complete the  After that, complete the [Methods Code-Along](MethodsCodeAlong.md) activity.
+Learn how to use _methods_ to organize and manage code projects. Review the PowerPoint presentation, and then complete the [Methods Code-Along](MethodsCodeAlong.md) activity. After that, start working on the [Methods Challenges](MethodsChallenges.md).
 
 ## Session Recording
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/2AmAkt0Sk-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
