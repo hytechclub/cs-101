@@ -1,4 +1,4 @@
-# About Me Code-Along: Asking the User for Values
+# About You Code-Along: Asking the User for Values
 Create a program that asks the user for information, and then prints it out in a sentence format. Start by creating a new C# Repl, and then follow the steps below.
 
 ## Asking for a Name

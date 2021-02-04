@@ -1,9 +1,6 @@
 # <span>Hello C#</span>
 Get started with C#. First, complete the [Hello World](HelloWorld.md) activity as an introduction. Then, review the PowerPoint presentation below, and complete the [About Me Code-Along](../Variables/AboutMeCodeAlong.md) activity. After that, work on the [About Me Challenge](../Variables/AboutMeChallenge.md) to practice basic C# coding skills.
 
-## Session Recording
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/851zIPOfG6E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Introduction
 - [Hello World](HelloWorld.md)
 

@@ -1,6 +1,8 @@
 # Hello World!
 In this lesson, create a simple application to show a message in the console using C#. **C#** is a general purpose, multi-paradigm programming language designed by Microsoft. Developers use C# to make web servers, desktop applications, games, and much more.
 
+![](https://preview.redd.it/j0gld2s2skq31.jpg?auto=webp&s=0f76300784177a603a9743a369a5f39be86c1ec4)
+
 ## Getting Started with a New Repl Account
 Follow the [Repl Setup guide](../ReplSetup.md) to create an account and a new Repl project.
 

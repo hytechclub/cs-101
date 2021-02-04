@@ -1,8 +1,8 @@
 # Conditional Challenges
-Complete the following challenges within the `Main` method of your program. Or, create additional program files/methods to complete these challenges. Use `if`, `else`, and `else if` (do not use any other control flow statements)!
+Complete the following challenges within the `Main` block of your program. Or, create additional program files to complete these challenges. Use `if`, `else`, and `else if` (do not use any other control flow statements)!
 
 #### 1. Even or Odd
-Write a program that reads an integer from the user. Then your program should display a message indicating whether the integer is even or odd.
+Write a program that reads an integer from the user. Then your program should display a message indicating whether the integer is even or odd. Use [this guide](https://csharp-station.com/how-to-test-for-even-or-odd-numbers-in-c/) to help determine if an integer number is even or odd.
 
 #### 2. Maximum of Three
 Write a program that asks the user for three numbers. Then, your program should tell the user which of the numbers is the largest.

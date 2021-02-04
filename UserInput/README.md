@@ -8,7 +8,10 @@ Present the [User Input](UserInput.pptx) PowerPoint presentation to introduce th
 Present the [Kahoot quiz](https://create.kahoot.it/share/1604df76-071b-4777-92e3-1f13559d874c).
 
 ## Code-Along
-Create a new Repl project, and add code for the [About Me](AboutMeCodeAlong.md) code-along activity.
+Create a new Repl project, and add code for the [About You](AboutYouCodeAlong.md) code-along activity.
+
+## Bug Fixing
+Go through a [debugging activity](Debugging.md) to give the students some strategies to figure out what's going on when their code is not working. This will also give them a chance to practice fixing some bugs.
 
 ## Individual Work
-Students can complete the [About Me](AboutMeIndividualExercises.md) individual exercises.
+Students can complete the [About You](AboutYouIndividualExercises.md) individual exercises.
