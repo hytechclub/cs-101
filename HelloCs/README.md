@@ -1,10 +1,7 @@
 # Introduction to <span>C#</span>
 
-## Overview
-- Icebreaker
-
 ## Icebreaker
-This should be a quick activity so that the students can get to know each other a little bit.
+This should be a quick activity so that the students can get to know each other a little bit. Use this [random question generator](https://repl.it/@JosephMaxwell/Icebreaker#main.cs) written in C# to kick things off.
 
 ## Code-Along
 Explain the basics of C# during the [Hello World](HelloWorld.md) code-along activity.

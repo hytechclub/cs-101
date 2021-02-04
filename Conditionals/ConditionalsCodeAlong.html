@@ -204,12 +204,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutYouCodeAlong.html">
             
-                <a href="../UserInput/AboutMeCodeAlong.html">
+                <a href="../UserInput/AboutYouCodeAlong.html">
             
                     
-                    About Me Code-Along
+                    About You Code-Along
             
                 </a>
             
@@ -217,12 +217,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../UserInput/AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.4.3" data-path="../UserInput/Debugging.html">
             
-                <a href="../UserInput/AboutMeIndividualExercises.html">
+                <a href="../UserInput/Debugging.html">
             
                     
-                    About Me Individual Exercises
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../UserInput/AboutYouIndividualExercises.html">
+            
+                <a href="../UserInput/AboutYouIndividualExercises.html">
+            
+                    
+                    About You Individual Exercises
             
                 </a>
             
@@ -622,36 +635,311 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="grade-level-condition">Grade Level Condition</h1>
-<p>Follow these steps to see some conditional statements in action:</p>
+                                <h1 id="choose-your-path">Choose Your Path</h1>
+<p>In this code-along activity, create a basic game that allows the player to choose from a number of possible paths. In the story, the player will make choices that will determine their fate. The game will track their <code>health</code>, which will change based on the choices. At the end, if the player survives, they will find a treasure. Otherwise, they will not be so lucky.</p>
+<h2 id="setup">Setup</h2>
+<p>First, do some basic setup for the game.</p>
 <ol>
-<li>Construct basic <code>if</code> statement (plug in <code>true</code>) that runs a <code>WriteLine()</code></li>
-<li>Next, gather user input (what grade are you in?) and run a conditional statement: <code>if (grade &lt;= 5) {}</code></li>
-<li>Add the else if statement: <code>else if (grade &lt;= 8) {}</code></li>
-<li>Add the else statement: <code>else {}</code></li>
+<li>Create a <a href="https://repl.it/new/csharp" target="_blank">new C# Repl project</a></li>
+<li>Name it &quot;Choose Your Path&quot;</li>
+<li>In the <strong>main.cs</strong> file, in the <code>Main</code> body, set the text color:  <pre><code class="lang-cs"> Console.ForegroundColor = ConsoleColor.Red;
+</code></pre>
+</li>
+<li>Under that, set the background color:  <pre><code class="lang-cs"> Console.BackgroundColor = ConsoleColor.White;
+</code></pre>
+</li>
+<li>Under that, clear the console to make it a little cleaner:  <pre><code class="lang-cs"> Console.Clear();
+</code></pre>
+</li>
+<li>Next, use <code>Console.WriteLine</code> to display a message saying &quot;Welcome to the Path&quot;</li>
+<li>Under that, add an empty <code>Console.WriteLine</code> to make some extra space</li>
 </ol>
-<h3 id="code">Code</h3>
-<pre><code class="lang-cs"><span class="hljs-comment">/*
-if(true)
-{
-    Console.WriteLine(&quot;I&apos;m inside the &apos;if&apos; statement!&quot;);
-}
-*/</span>
+<p>Run the program, and verify that the message appears in the proper color.</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
 
-Console.WriteLine(<span class="hljs-string">&quot;What grade are you in?&quot;</span>);
-<span class="hljs-keyword">int</span> studentGrade = Convert.toInt32(Console.ReadLine());
-
-<span class="hljs-keyword">if</span> (grade &lt;= <span class="hljs-number">5</span>)
+<span class="hljs-keyword">class</span> <span class="hljs-title">MainClass</span>
 {
-    Console.WriteLine(<span class="hljs-string">&quot;Elementary&quot;</span>);
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span> (<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+    </span>{
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.BackgroundColor = ConsoleColor.White;
+        Console.Clear();
+
+        Console.WriteLine(<span class="hljs-string">&quot;Welcome to the Path.&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+    }
 }
-<span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">grade &lt;= <span class="hljs-number">8</span></span>)
-</span>{
-    Console.WriteLine(<span class="hljs-string">&quot;Middle School&quot;</span>);
+</code></pre>
+<h2 id="using-a-variable">Using a Variable</h2>
+<p>The game should track the <code>health</code> of the player throughout the story. This will help determine the ultimate outcome.</p>
+<ol>
+<li>In the <strong>main.cs</strong> file, find the bottom of the <code>Main</code> body</li>
+<li>There, declare a new <code>int</code> variable named <code>health</code></li>
+<li>Set the <code>health</code> variable to <code>5</code></li>
+<li>Under that, display a message printing the current <code>health</code> value</li>
+</ol>
+<p>Run the program, and verify that the proper <code>health</code> value appears.</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> health = <span class="hljs-number">5</span>;
+Console.WriteLine(<span class="hljs-string">&quot;Your current health level is: &quot;</span> + health);
+</code></pre>
+<h2 id="asking-a-question">Asking a Question</h2>
+<p>Now it&apos;s time to display a choice for the player! This can be done using <code>Console.WriteLine</code> statements. For this question, say the player comes across a large pastry, and they have to decide whether or not to eat it.</p>
+<ol>
+<li>Display a message asking the question</li>
+<li>Display option <code>&quot;A&quot;</code>: eat the pastry<ul>
+<li>Add some space in front of the option text to make it a little more readable</li>
+</ul>
+</li>
+<li>Display option <code>&quot;B&quot;</code>: do not eat the pastry</li>
+<li>Display an empty line just for some space</li>
+</ol>
+<p>Run the program, and verify that the new messages appear in a readable format.</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;You see a giant donut. What do you do?&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  A. Eat it&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  B. Ignore it&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+</code></pre>
+<h2 id="getting-an-answer">Getting an Answer</h2>
+<p>Next, the player should be able to answer the question. This can be done using <code>Console.ReadLine</code>.</p>
+<ol>
+<li>First, use <code>Console.Write</code> (not <code>WriteLine</code>) to show the user where to type: <code>&quot;&gt; &quot;</code></li>
+<li>Create a new <code>string</code> variable named <code>choice</code></li>
+<li>Set the <code>choice</code> variable to the result of a <code>Console.ReadLine()</code></li>
+<li>Under that, use <code>Console.Clear()</code> to clean things up</li>
+</ol>
+<p>Run the program again, and verify that it is possible to enter a choice!</p>
+<pre><code class="lang-cs">Console.Write(<span class="hljs-string">&quot;&gt; &quot;</span>);
+<span class="hljs-keyword">string</span> choice = Console.ReadLine();
+Console.Clear();
+</code></pre>
+<h2 id="handling-the-players-choice">Handling the Player&apos;s Choice</h2>
+<p>Now comes the actual game part. The code should look at what the player chose, and do different things depending on the choice.</p>
+<ul>
+<li>If the player chose &quot;A&quot;, their <code>health</code> should go down by <code>1</code>, and a message should say the pastry tasted good.</li>
+<li>If the player chose &quot;B&quot;, their <code>health</code> should go down by <code>2</code>, and a message should say they are dealing with emotional pain.</li>
+</ul>
+<p>This will be possible using conditional statements.</p>
+<h3 id="if-setup"><code>if</code> Setup</h3>
+<p>Start with an <code>if</code> statement. This statement should check <em>if</em> the player chose &quot;A&quot; as their option.</p>
+<ol>
+<li>Under the <code>Console.Clear()</code>, make a new line</li>
+<li>Type in <code>if</code></li>
+<li>After that, type in parentheses <code>()</code></li>
+<li>After the parentheses, type in curly brackets <code>{}</code></li>
+<li>Press enter within the curly brackets to space them out</li>
+<li>Within the <code>(</code> and <code>)</code>, add a boolean expression checking if the <code>choice</code> variable value is equal to <code>&quot;A&quot;</code></li>
+</ol>
+<pre><code class="lang-cs"><span class="hljs-keyword">if</span> (choice == <span class="hljs-string">&quot;A&quot;</span>)
+{
+
+}
+</code></pre>
+<h3 id="if-body"><code>if</code> Body</h3>
+<p>Now the <code>if</code> condition is set up, but it needs to do something if the condition is <code>true</code>!</p>
+<ol>
+<li>Within the <code>{</code> and <code>}</code>, make a new line</li>
+<li>Add code to set the <code>health</code> variable to equal itself minus <code>1</code></li>
+<li>Under that, still within the <code>{</code> and <code>}</code>, add a <code>Console.WriteLine</code></li>
+<li>Make the <code>WriteLine</code> say that the pastry tasted good</li>
+</ol>
+<p>Run the program, and verify that entering &quot;A&quot; as the choice will make the message display! Entering anything else won&apos;t do anything yet...</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">if</span> (choice == <span class="hljs-string">&quot;A&quot;</span>)
+{
+    health = health - <span class="hljs-number">1</span>;
+    Console.WriteLine(<span class="hljs-string">&quot;You eat the donut, and it is delicious.&quot;</span>);
+}
+</code></pre>
+<h3 id="else-if"><code>else if</code></h3>
+<p>Now the <code>&quot;A&quot;</code> choice has been handled, but what about <code>&quot;B&quot;</code>? Use an <code>else if</code> clause to handle the second option.</p>
+<ol>
+<li>Under the <code>}</code> from the <code>if</code>, type in <code>else if</code></li>
+<li>After the <code>else if</code>, add parentheses <code>()</code></li>
+<li>After the parentheses, add curly brackets <code>{}</code></li>
+<li>Make the <code>if</code> condition (between parentheses) check if <code>choice</code> is <code>&quot;B&quot;</code></li>
+<li>In the body (between curly brackets), set <code>health</code> to itself minus <code>2</code></li>
+<li>Under that, still in the <code>else if</code> body, add a <code>Console.WriteLine</code></li>
+<li>Make the <code>WriteLine</code> say that the player is dealing with emotional pain</li>
+</ol>
+<p>Run the program again, and verify that entering either option will display the proper result!</p>
+<pre><code class="lang-java"><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (choice == <span class="hljs-string">&quot;B&quot;</span>)
+{
+    health = health - <span class="hljs-number">2</span>;
+    Console.WriteLine(<span class="hljs-string">&quot;You do not eat the donut, and the emotional pain takes its toll.&quot;</span>);
+}
+</code></pre>
+<h2 id="another-question">Another Question</h2>
+<p>Adding another question to the game will be very similar to the first question. For the next question, ask the player how they want to get to school.</p>
+<ol>
+<li>Under the end of the <code>else if</code> block (after the <code>}</code>), make a new line</li>
+<li>Display a blank line, and then print out the current <code>health</code> variable valuable</li>
+<li>Under that, display the question - ask the player how they get to school.</li>
+<li>Under that, display the <code>&quot;  A. Walk&quot;</code> option</li>
+<li>Similarly, display the <code>&quot;  B. Take the bus&quot;</code> option</li>
+<li>Display a new empty line</li>
+<li>Write the <code>&quot;&gt; &quot;</code> for the player to answer using <code>Console.Write</code></li>
+<li>Create a new variable named <code>choice2</code> of type <code>string</code></li>
+<li>Set the <code>choice2</code> variable to <code>Console.ReadLine()</code></li>
+<li>Clear the console to clean things up</li>
+</ol>
+<p>Run the program again, and verify that the second question appears and they player can answer.</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;Your current health level is: &quot;</span> + health);
+
+Console.WriteLine(<span class="hljs-string">&quot;You need to get to school. How do you get there?&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  A. Walk&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  B. Take the bus&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+Console.Write(<span class="hljs-string">&quot;&gt; &quot;</span>);
+<span class="hljs-keyword">string</span> choice2 = Console.ReadLine();
+
+Console.Clear();
+</code></pre>
+<h2 id="handling-the-players-second-choice">Handling the Player&apos;s Second Choice</h2>
+<p>So what should happen based on the answers? If the player walks to school, their health should go up because they get some exercise. If they take the bus, they will inevitably trip and everyone will laugh at them. Write code to handle these results.</p>
+<ol>
+<li>Under the <code>Console.Clear</code>, create an <code>if</code> structure<ul>
+<li><code>if</code> keyword</li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>For the <code>if</code> condition, check if <code>choice2</code> is <code>&quot;A&quot;</code></li>
+<li>In the body of the <code>if</code> (between curly brackets):<ul>
+<li>Set <code>health</code> to <code>health + 1</code></li>
+<li>Display a message saying that the exercise helped the health</li>
+</ul>
+</li>
+<li>After the <code>}</code>, create an <code>else if</code> structure<ul>
+<li><code>else if</code></li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>For the <code>else if</code> condition, check if <code>choice2</code> is <code>&quot;B&quot;</code></li>
+<li>In the body of the <code>else if</code> (between curly brackets):<ul>
+<li>Set <code>health</code> to <code>health - 3</code></li>
+<li>Display a message saying that the player tripped and people laughed</li>
+</ul>
+</li>
+</ol>
+<p>Run the program again, and verify that both questions can be answered!</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span> (choice2 == <span class="hljs-string">&quot;A&quot;</span>)
+{
+    health = health + <span class="hljs-number">1</span>;
+    Console.WriteLine(<span class="hljs-string">&quot;You get some exercise by walking.&quot;</span>);
+}
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (choice2 == <span class="hljs-string">&quot;B&quot;</span>)
+{
+    health = health - <span class="hljs-number">3</span>;
+    Console.WriteLine(<span class="hljs-string">&quot;You trip as you get on the bus, and everyone laughs.&quot;</span>);
+}
+</code></pre>
+<h2 id="the-end">The End</h2>
+<p>Now that the player has gone through a decent amount of their day, it&apos;s time to end the game. If the player&apos;s <code>health</code> value has dipped below <code>1</code>, they will lose the game. Otherwise, they wil find a bunch of money.</p>
+<ol>
+<li>Under the <code>else if</code> structure, make a new line</li>
+<li>Use <code>Console.WriteLine</code> to display an empty line</li>
+<li>Under that, create an entire <code>if</code>/<code>else</code> structure<ul>
+<li><code>if</code> keyword</li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+<li><code>else</code> keyword</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>For the <code>if</code> condition, check if the <code>health</code> value is less than <code>1</code></li>
+<li>In the body of the <code>if</code>, print a message saying the player has lost the game<ul>
+<li>This will happen if the condition is <code>true</code></li>
+</ul>
+</li>
+<li>In the body of the <code>else</code>, print a message saying the player has found some money<ul>
+<li>This will happen if the condition is <code>false</code></li>
+</ul>
+</li>
+</ol>
+<p>Run the program, and verify that the proper results happen based on the choices made! The player should only lose if they choose not to eat the donut, and they choose to take the bus.</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+
+<span class="hljs-keyword">if</span> (health &lt; <span class="hljs-number">1</span>)
+{
+    Console.WriteLine(<span class="hljs-string">&quot;You have died.&quot;</span>);
 }
 <span class="hljs-keyword">else</span>
 {
-    Console.WriteLine(<span class="hljs-string">&quot;High School&quot;</span>)
+    Console.WriteLine(<span class="hljs-string">&quot;When you get to school, you immediately find $500.&quot;</span>);
+}
+</code></pre>
+<h2 id="final-code">Final Code</h2>
+<pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">MainClass</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span> (<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+    </span>{
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.BackgroundColor = ConsoleColor.White;
+        Console.Clear();
+
+        Console.WriteLine(<span class="hljs-string">&quot;Welcome to the Path.&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+
+        <span class="hljs-keyword">int</span> health = <span class="hljs-number">5</span>;
+        Console.WriteLine(<span class="hljs-string">&quot;Your current health level is: &quot;</span> + health);
+
+        Console.WriteLine(<span class="hljs-string">&quot;You see a giant donut. What do you do?&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;  A. Eat it&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;  B. Ignore it&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+
+        Console.Write(<span class="hljs-string">&quot;&gt; &quot;</span>);
+        <span class="hljs-keyword">string</span> choice = Console.ReadLine();
+        Console.Clear();
+
+        <span class="hljs-keyword">if</span> (choice == <span class="hljs-string">&quot;A&quot;</span>)
+        {
+            health = health - <span class="hljs-number">1</span>;
+            Console.WriteLine(<span class="hljs-string">&quot;You eat the donut, and it is delicious.&quot;</span>);
+        }
+        <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">choice == <span class="hljs-string">&quot;B&quot;</span></span>)
+        </span>{
+            health = health - <span class="hljs-number">2</span>;
+            Console.WriteLine(<span class="hljs-string">&quot;You do not eat the donut, and the emotional pain takes its toll.&quot;</span>);
+        }
+
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;Your current health level is: &quot;</span> + health);
+
+        Console.WriteLine(<span class="hljs-string">&quot;You need to get to school. How do you get there?&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;  A. Walk&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;  B. Take the bus&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+        Console.Write(<span class="hljs-string">&quot;&gt; &quot;</span>);
+        <span class="hljs-keyword">string</span> choice2 = Console.ReadLine();
+
+        Console.Clear();
+
+        <span class="hljs-keyword">if</span> (choice2 == <span class="hljs-string">&quot;A&quot;</span>)
+        {
+            health = health + <span class="hljs-number">1</span>;
+            Console.WriteLine(<span class="hljs-string">&quot;You get some exercise by walking.&quot;</span>);
+        }
+        <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">choice2 == <span class="hljs-string">&quot;B&quot;</span></span>)
+        </span>{
+            health = health - <span class="hljs-number">3</span>;
+            Console.WriteLine(<span class="hljs-string">&quot;You trip as you get on the bus, and everyone laughs.&quot;</span>);
+        }
+
+        Console.WriteLine(<span class="hljs-string">&quot;&quot;</span>);
+
+        <span class="hljs-keyword">if</span> (health &lt; <span class="hljs-number">1</span>)
+        {
+            Console.WriteLine(<span class="hljs-string">&quot;You have died.&quot;</span>);
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            Console.WriteLine(<span class="hljs-string">&quot;When you get to school, you immediately find $500.&quot;</span>);
+        }
+    }
 }
 </code></pre>
 
@@ -697,7 +985,7 @@ Console.WriteLine(<span class="hljs-string">&quot;What grade are you in?&quot;</
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.5.2","depth":2,"next":{"title":"Exercises","level":"1.5.3","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.5.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalsCodeAlong.md","mtime":"2020-11-20T19:31:54.417Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-20T19:32:35.828Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.5.2","depth":2,"next":{"title":"Exercises","level":"1.5.3","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.5.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalsCodeAlong.md","mtime":"2021-02-04T14:29:29.109Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-04T14:30:08.898Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

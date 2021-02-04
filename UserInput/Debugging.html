@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>About Me Individual Exercises · GitBook</title>
+        <title>Debugging · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Conditionals/StudentDesc.html" />
+    <link rel="next" href="AboutYouIndividualExercises.html" />
     
     
-    <link rel="prev" href="AboutMeCodeAlong.html" />
+    <link rel="prev" href="AboutYouCodeAlong.html" />
     
 
     </head>
@@ -204,12 +204,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.4.2" data-path="AboutYouCodeAlong.html">
             
-                <a href="AboutMeCodeAlong.html">
+                <a href="AboutYouCodeAlong.html">
             
                     
-                    About Me Code-Along
+                    About You Code-Along
             
                 </a>
             
@@ -217,12 +217,25 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.3" data-path="AboutMeIndividualExercises.html">
+        <li class="chapter active" data-level="1.4.3" data-path="Debugging.html">
             
-                <a href="AboutMeIndividualExercises.html">
+                <a href="Debugging.html">
             
                     
-                    About Me Individual Exercises
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="AboutYouIndividualExercises.html">
+            
+                <a href="AboutYouIndividualExercises.html">
+            
+                    
+                    About You Individual Exercises
             
                 </a>
             
@@ -607,7 +620,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >About Me Individual Exercises</a>
+        <a href=".." >Debugging</a>
     </h1>
 </div>
 
@@ -622,27 +635,114 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="about-me---individual-exercises">About Me - Individual Exercises</h1>
-<h2 id="1-more-questions">1. More Questions</h2>
-<p>Ask the user for the following information, and then print it out:</p>
+                                <h1 id="debugging">Debugging</h1>
+<p>One of the most important parts of programming is <a href="https://en.wikipedia.org/wiki/Debugging" target="_blank">debugging</a>. <strong>Debugging</strong> is the process of finding and fixing errors in computer programs. Legend has it that computer science pioneer Admiral Grace Hopper discovered the first ever computer bug back in the 1940s: an actual physical moth.</p>
+<p><img src="https://i.imgur.com/WkKTe19.jpg" alt=""></p>
+<p>Today, most debugging is done by walking through the code step-by-step. Repl.it does not have this capability for C#, but there are other ways to test code.</p>
+<h2 id="error-messages">Error Messages</h2>
+<p>The most basic form of debugging involves running the code, and looking for error messages. They often look something like this:</p>
+<p><img src="https://i.imgur.com/jkirlQL.png" alt=""></p>
+<p>An error like that one contains some important information:</p>
 <ul>
-<li>Phone Number</li>
-<li>Birth Year</li>
-<li>Hometown</li>
-<li>Height in Inches</li>
-<li>Wears Glasses (true/false)</li>
-<li>GPA</li>
+<li>File: <code>main.cs</code></li>
+<li>Line Number and Position: <code>(5,5)</code></li>
+<li>Error Code: <code>error CS0103</code></li>
+<li>Error Message: <code>The name &apos;console&apos; does not exist in the current context</code></li>
 </ul>
-<p>Consider the data type to use for each piece of information.</p>
-<h2 id="2-formatting">2. Formatting</h2>
-<p>Print the data in a nice formatted ASCII table, like so:</p>
-<pre><code>+--------+-----+------+--------+
-|  Name  | Age | Pets | School |
-+--------+-----+------+--------+
-| Jordan |  27 |    2 | Medina |
-+--------+-----+------+--------+
-</code></pre><h2 id="3-multiple-people">3. Multiple People</h2>
-<p>Instead of keeping information about one person, ask the user for information about multiple people.</p>
+<p>Using these clues, it will be possible to find the issue in the code.</p>
+<h2 id="misbehaving-code">Misbehaving Code</h2>
+<p>If there are no errors, but the program does not run as expected, it can be a little more difficult to debug (especially without a true debugger tool).</p>
+<p>One of the most common ways to figure out what&apos;s happening is to use print statements. In the case of C#, this means using <code>Console.WriteLine</code>. Printing out the value of a variable at a certain point in the code can make it much easier to tell what&apos;s going on. For example, in a complex math equation:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> velocity = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">int</span> acceleration = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">int</span> time = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">int</span> start = <span class="hljs-number">5</span> + <span class="hljs-number">9</span>;
+<span class="hljs-keyword">int</span> additionalVel = velocity * time;
+<span class="hljs-keyword">int</span> additionalAcc = <span class="hljs-number">.5</span> * acceleration * time * time;
+
+Console.WriteLine(start + additionalVel + additionalAcc);
+</code></pre>
+<p>If the result is not expected, printing out each value (<code>start</code>, <code>additionalVel</code>, and <code>additionalAcc</code>) may indicate where the code went wrong. If the value of <code>start</code> is correct, and the value of <code>additionalVel</code> is correct, but the value of <code>additionalAcc</code> is <em>not</em> correct, that means something is wrong with the <code>int additionalAcc</code> line:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> velocity = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">int</span> acceleration = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">int</span> time = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">int</span> start = <span class="hljs-number">5</span> + <span class="hljs-number">9</span>;
+Console.WriteLine(start);
+
+<span class="hljs-keyword">int</span> additionalVel = velocity * time;
+Console.WriteLine(additionalVel);
+
+<span class="hljs-keyword">int</span> additionalAcc = <span class="hljs-number">.5</span> * acceleration * time * time;
+Console.WriteLine(additionalAcc);
+
+Console.WriteLine(start + additionalVel + additionalAcc);
+</code></pre>
+<h2 id="a-buggy-example">A Buggy Example</h2>
+<p>Try out an example to see how the bug fixing process can work. There are five total bugs to be found! Fork <a href="https://repl.it/@JosephMaxwell/DebuggingExample" target="_blank">this Repl project</a> to begin.</p>
+<h3 id="bug-1">Bug 1</h3>
+<p>Run the code to see what&apos;s happening. Oh no! There are multiple errors! In Repl.it for C#, error messages appear in red.</p>
+<pre><code>main.cs(6,2): error CS1525: Unexpected symbol &apos;Console&apos;
+main.cs(7,78): error CS1525: Unexpected symbol &apos;;&apos;, expecting &apos;)&apos; or &apos;,&apos;
+</code></pre><p>Whenever there are multiple errors, try not to become to overwhelmed. Start with the first one:</p>
+<pre><code>main.cs(6,2): error CS1525: Unexpected symbol &apos;Console&apos;
+</code></pre><p>It looks like something is wrong on line <strong>6</strong>... take a look at that line:</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Welcome to the Graduation Year Calculator!&quot;</span>);
+</code></pre>
+<p>Is there anything wrong with that code? It actually looks fine... but sometimes, an &quot;Unexpected symbol&quot; error happens on the line <em>after</em> where the error occurs. Check out line <strong>5</strong>:</p>
+<pre><code class="lang-cs">Console.Clear()
+</code></pre>
+<p>Is there anything wrong with that code? ...Yes! It is missing a semi-colon (<code>;</code>). Add a semi-colon to the end of the line, run the code again, and verify that the error message is gone!</p>
+<h3 id="bug-2">Bug 2</h3>
+<p>One of the error messages is gone, but there is still one remaining. Take a look at this one:</p>
+<pre><code>main.cs(7,78): error CS1525: Unexpected symbol &apos;;&apos;, expecting &apos;)&apos; or &apos;,&apos;
+</code></pre><p>Based on the output, something is going wrong on line <strong>7</strong>, at character <strong>78</strong>. The error message says there is a <code>;</code> when there should be a <code>)</code> or a <code>,</code>. Take a look at line <strong>7</strong>:</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;We can estimate how long it will be until you graduate.&quot;</span>;
+</code></pre>
+<p>Toward the end of the statement... aha! There is no closing parenthesis. Before the semi-colon, add a <code>)</code>. Run the code again, and verify that <em>this</em> error message is gone!</p>
+<h3 id="bug-3">Bug 3</h3>
+<p>Two down, three to go. After fixing those two errors, a couple more have cropped up. As before, start with the first error message:</p>
+<pre><code>main.cs(9,11): error CS0117: &apos;System.Console&apos; does not contain a definition for &apos;Writeline&apos;
+</code></pre><p>Based on the message, it is possible to deduce that the error is on line <strong>9</strong>, character <strong>11</strong>. It looks like <strong>Writeline</strong> is not defined, but that&apos;s strange... it seems to be working on the other lines. Take a look at the code on line <strong>9</strong>:</p>
+<pre><code class="lang-cs">Console.Writeline(<span class="hljs-string">&quot;&quot;</span>);
+</code></pre>
+<p>Hmm... I see! Instead of <code>WriteLine</code>, it has <code>Writeline</code>. The <code>L</code> must be capitalized in order for the code to work! Change it to <code>WriteLine</code>, run the code again, and verify that the error message disappears.</p>
+<h3 id="bug-4">Bug 4</h3>
+<p>Now, only one error should appear when the code runs. Take a look at the message:</p>
+<pre><code>main.cs(11,21): error CS0029: Cannot implicitly convert type &apos;string&apos; to &apos;int&apos;
+</code></pre><p>Line <strong>11</strong>, character <strong>21</strong> - it seems to be something related to types. Go to line <strong>11</strong> to see what&apos;s happening:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> age = Console.ReadLine();
+</code></pre>
+<p>The syntax all looks okay... what could it be? Oh yeah! <code>Console.ReadLine()</code> returns a <code>string</code> value, but the <code>age</code> variable is an <code>int</code>.</p>
+<p>One idea would be to change the <code>int</code> to <code>string</code> in the code, but that will actually mess up some of the code below. Instead, the code should <em>convert</em> the <code>string</code> value from <code>Console.ReadLine</code> into an <code>int</code> value. Luckily, <code>Convert.ToInt32</code> does just that.</p>
+<p>Wrap the <code>Console.ReadLine</code> in a <code>Convert.ToInt32()</code>, run the code again, and verify that the error message disappears!</p>
+<h3 id="bug-5">Bug 5</h3>
+<p>Now, the program actually runs! Looks like there&apos;s nothing left to do... but wait. It would be a good idea to test out the program before calling it a day.</p>
+<p>Run the program, enter an age, and see how the calculation works. Not quite as intended. For example, entering <code>17</code> will say there are <code>-35</code> years until graduation! That&apos;s not right. Entering <code>14</code> will say there are <code>-32</code> years. The program definitely still has a bug.</p>
+<p>Looking at the code, it may not be immediately obvious where the bug occurs. One way to figure out what the code is doing is to add <code>Console.WriteLine</code> statements under each part, displaying information about the program at a certain point. This can help pinpoint the issue.</p>
+<ol>
+<li>Add a <code>Console.WriteLine</code> statement under <code>int age</code> printing out the <code>age</code>: <code>&quot;Age: &quot; + age</code></li>
+<li>Add a <code>Console.WriteLine</code> statement under <code>int birthYear</code> printing out the <code>birthYear</code> value</li>
+<li>Add additional <code>Console.WriteLine</code> statements for the other two variables: <code>gradYear</code> and <code>yearsUntilGraduation</code></li>
+<li>Run the program</li>
+<li>Enter an age of <code>17</code> for testing purposes</li>
+<li>View the output, and notice that everything seems fine until the <code>gradYear</code> variable</li>
+<li>Check the line where <code>gradYear</code> is set... there must be an issue</li>
+<li>Notice that the calculation is wrong - it should be addition, not subtraction!</li>
+<li>Fix the bug</li>
+<li>Remove the extraneous <code>Console.WriteLine</code> statements</li>
+<li>Test the program again, and verify that it works!</li>
+</ol>
+<p>Well, that program had a lot of bugs, but fixing them one-by-one makes it much less overwhelming.</p>
+<h2 id="more-bug-fixes">More Bug Fixes</h2>
+<p>Practice debugging with these additional activities! Visit each Repl project, find the bugs, and make the programs work as intended.</p>
+<ul>
+<li><a href="https://repl.it/@JosephMaxwell/InputBug-1#main.cs" target="_blank">Bug 1</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/InputBug-2#main.cs" target="_blank">Bug 2</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/InputBug-3#main.cs" target="_blank">Bug 3</a></li>
+<li><a href="https://repl.it/@JosephMaxwell/InputBug-4#main.cs" target="_blank">Bug 4</a></li>
+</ul>
 
                                 
                                 </section>
@@ -670,12 +770,12 @@
 
             
                 
-                <a href="AboutMeCodeAlong.html" class="navigation navigation-prev " aria-label="Previous page: About Me Code-Along">
+                <a href="AboutYouCodeAlong.html" class="navigation navigation-prev " aria-label="Previous page: About You Code-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Conditionals/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 3 - Conditionals">
+                <a href="AboutYouIndividualExercises.html" class="navigation navigation-next " aria-label="Next page: About You Individual Exercises">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -686,7 +786,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"next":{"title":"Week 3 - Conditionals","level":"1.5","depth":1,"path":"Conditionals/StudentDesc.md","ref":"Conditionals/StudentDesc.md","articles":[{"title":"Recap","level":"1.5.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},{"title":"Code-Along","level":"1.5.2","depth":2,"path":"Conditionals/ConditionalsCodeAlong.md","ref":"Conditionals/ConditionalsCodeAlong.md","articles":[]},{"title":"Exercises","level":"1.5.3","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},{"title":"Challenges","level":"1.5.4","depth":2,"path":"Conditionals/ConditionalChallenges.md","ref":"Conditionals/ConditionalChallenges.md","articles":[]}]},"previous":{"title":"About Me Code-Along","level":"1.4.2","depth":2,"path":"UserInput/AboutMeCodeAlong.md","ref":"UserInput/AboutMeCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UserInput/AboutMeIndividualExercises.md","mtime":"2020-11-20T19:31:54.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-20T19:32:35.828Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Debugging","level":"1.4.3","depth":2,"next":{"title":"About You Individual Exercises","level":"1.4.4","depth":2,"path":"UserInput/AboutYouIndividualExercises.md","ref":"UserInput/AboutYouIndividualExercises.md","articles":[]},"previous":{"title":"About You Code-Along","level":"1.4.2","depth":2,"path":"UserInput/AboutYouCodeAlong.md","ref":"UserInput/AboutYouCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UserInput/Debugging.md","mtime":"2021-02-04T14:29:29.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-04T14:30:08.898Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

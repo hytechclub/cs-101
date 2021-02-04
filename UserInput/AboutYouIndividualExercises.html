@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>About Me Code-Along · GitBook</title>
+        <title>About You Individual Exercises · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="AboutMeIndividualExercises.html" />
+    <link rel="next" href="../Conditionals/StudentDesc.html" />
     
     
-    <link rel="prev" href="UserInputRecap.html" />
+    <link rel="prev" href="Debugging.html" />
     
 
     </head>
@@ -204,12 +204,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.4.2" data-path="AboutYouCodeAlong.html">
             
-                <a href="AboutMeCodeAlong.html">
+                <a href="AboutYouCodeAlong.html">
             
                     
-                    About Me Code-Along
+                    About You Code-Along
             
                 </a>
             
@@ -217,12 +217,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.4.3" data-path="Debugging.html">
             
-                <a href="AboutMeIndividualExercises.html">
+                <a href="Debugging.html">
             
                     
-                    About Me Individual Exercises
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="AboutYouIndividualExercises.html">
+            
+                <a href="AboutYouIndividualExercises.html">
+            
+                    
+                    About You Individual Exercises
             
                 </a>
             
@@ -607,7 +620,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >About Me Code-Along</a>
+        <a href=".." >About You Individual Exercises</a>
     </h1>
 </div>
 
@@ -622,109 +635,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="about-me-code-along-asking-the-user-for-values">About Me Code-Along: Asking the User for Values</h1>
-<p>Create a program that asks the user for information, and then prints it out in a sentence format. Start by creating a new C# Repl, and then follow the steps below.</p>
-<h2 id="asking-for-a-name">Asking for a Name</h2>
-<p>First, ask the user for their name.</p>
-<ol>
-<li>Remove any existing code within the <code>Main</code> block</li>
-<li>Add a <code>Console.WriteLine</code> statement to print a message: &quot;What is your name?&quot;</li>
-<li>Under the <code>Console.WriteLine</code>, add a <code>Console.ReadLine()</code> statement</li>
-<li>Store the answer in a new <code>string</code> variable named <code>userName</code></li>
-</ol>
-<p>Run the program and make sure there are no errors.</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What is your name?&quot;</span>);
-<span class="hljs-keyword">string</span> userName = Console.ReadLine();
-</code></pre>
-<h2 id="asking-for-an-age">Asking for an Age</h2>
-<p>Next, ask the user how old they are. This will be used to calculate their upcoming birthday age.</p>
-<ol>
-<li>Make a new line under the previous statement</li>
-<li>Add a <code>Console.WriteLine</code> statement to print a message: &quot;How old are you?&quot;</li>
-<li>Under the <code>Console.WriteLine</code>, add a <code>Console.ReadLine()</code> statement</li>
-<li>Wrap the <code>Console.ReadLine()</code> in a <code>Convert.ToInt32()</code> so the result becomes a number</li>
-<li>Store the answer in a new <code>int</code> variable named <code>userAge</code></li>
-<li>Under that, set another variable named <code>userNextAge</code> to the user&apos;s current age plus one</li>
-</ol>
-<p>Run the program and make sure there are no errors.</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;How old are you?&quot;</span>);
-<span class="hljs-keyword">int</span> userAge = Convert.ToInt32(Console.ReadLine());
-<span class="hljs-keyword">int</span> userNextAge = userAge + <span class="hljs-number">1</span>;
-</code></pre>
-<h2 id="asking-for-pets">Asking for Pets</h2>
-<p>Next, ask the user how many pets they have.</p>
-<ol>
-<li>Make a new line under the previous statement</li>
-<li>Add a <code>Console.WriteLine</code> statement to print a message: &quot;How many pets do you have?&quot;</li>
-<li>Under the <code>Console.WriteLine</code>, add a <code>Console.ReadLine()</code> statement</li>
-<li>Wrap the <code>Console.ReadLine()</code> in a <code>Convert.ToInt32()</code> so the result becomes a number</li>
-<li>Store the answer in a new <code>int</code> variable named <code>numberOfPets</code></li>
-</ol>
-<p>Run the program and make sure there are no errors.</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;How many pets do you have?&quot;</span>);
-<span class="hljs-keyword">int</span> numberOfPets = Convert.ToInt32(Console.ReadLine());
-</code></pre>
-<h2 id="asking-for-school">Asking for School</h2>
-<p>Next, ask the user which school they attend.</p>
-<ol>
-<li>Make a new line under the previous statement</li>
-<li>Add a <code>Console.WriteLine</code> statement to print a message: &quot;How many pets do you have?&quot;</li>
-<li>Under the <code>Console.WriteLine</code>, add a <code>Console.ReadLine()</code> statement</li>
-<li>Store the answer in a new <code>string</code> variable named <code>school</code></li>
-</ol>
-<p>Run the program and make sure there are no errors.</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What school do you go to?&quot;</span>);
-<span class="hljs-keyword">string</span> school = Console.ReadLine();
-</code></pre>
-<h2 id="printing-the-results">Printing the Results</h2>
-<p>Finally, it&apos;s time to print out all of the information!</p>
-<ol>
-<li>Make a new line under the previous statement</li>
-<li>Create a <code>Console.WriteLine</code> statement</li>
-<li>Set the message to say &quot;Hello! My name is &quot;</li>
-<li>Add the <code>userName</code> variable to the end of the message string using <code>+</code></li>
-<li>Under that statement, create another <code>Console.WriteLine</code></li>
-<li>Set the message to say &quot;I am &quot;</li>
-<li>Add the <code>userAge</code> variable to the end of the message string using <code>+</code></li>
-<li>Add &quot; years old&quot; to the end of the message string using <code>+</code></li>
-<li>Under that statement, create another <code>Console.WriteLine</code></li>
-<li>Set the message to say &quot;Next year I will be &quot;</li>
-<li>Add the <code>userNextAge</code> variable to the end of the message string using <code>+</code></li>
-<li>Under that statement, create another <code>Console.WriteLine</code></li>
-<li>Set the message to say &quot;I have &quot;</li>
-<li>Add the <code>numberOfPets</code> variable to the end of the message string using <code>+</code></li>
-<li>Add &quot; pets&quot; to the end of the message string using <code>+</code></li>
-<li>Under that statement, create another <code>Console.WriteLine</code></li>
-<li>Set the message to say &quot;I attend &quot;</li>
-<li>Add the <code>school</code> variable to the end of the message string using <code>+</code></li>
-</ol>
-<p>Run the program and make sure that all the proper information is displayed!</p>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
-Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;Next year I will be &quot;</span> + userNextAge);
-Console.WriteLine(<span class="hljs-string">&quot;I have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;I attend &quot;</span> + school);
-</code></pre>
-<h2 id="final-code">Final Code</h2>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What is your name?&quot;</span>);
-<span class="hljs-keyword">string</span> userName = Console.ReadLine();
+                                <h1 id="about-me---individual-exercises">About Me - Individual Exercises</h1>
+<p>Complete each of the exercises below to practice using <code>Console.ReadLine</code> and <code>Convert.ToInt32</code>.</p>
+<h2 id="1-more-questions">1. More Questions</h2>
+<p>Ask the user for the following information, and then print it out:</p>
+<ul>
+<li>Phone Number</li>
+<li>Birth Year</li>
+<li>Hometown</li>
+<li>Height in Inches<ul>
+<li>CHALLENGE: Convert the inches given to feet!</li>
+</ul>
+</li>
+<li>Wears Glasses (true/false)</li>
+<li>GPA</li>
+</ul>
+<p>Consider the data type to use for each piece of information. For each one, it should look something like this:</p>
+<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What is your phone number?&quot;</span>);
+<span class="hljs-keyword">int</span> phoneNumber = Console.ReadLine();
 
-Console.WriteLine(<span class="hljs-string">&quot;How old are you?&quot;</span>);
-<span class="hljs-keyword">int</span> userAge = Convert.ToInt32(Console.ReadLine());
-<span class="hljs-keyword">int</span> userNextAge = userAge + <span class="hljs-number">1</span>;
-
-Console.WriteLine(<span class="hljs-string">&quot;How many pets do you have?&quot;</span>);
-<span class="hljs-keyword">int</span> numberOfPets = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(<span class="hljs-string">&quot;What school do you go to?&quot;</span>);
-<span class="hljs-keyword">string</span> school = Console.ReadLine();
-
-Console.WriteLine(<span class="hljs-string">&quot;Hello! My name is &quot;</span> + userName);
-Console.WriteLine(<span class="hljs-string">&quot;I am &quot;</span> + userAge + <span class="hljs-string">&quot; years old&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;Next year I will be &quot;</span> + userNextAge);
-Console.WriteLine(<span class="hljs-string">&quot;I have &quot;</span> + numberOfPets + <span class="hljs-string">&quot; pets&quot;</span>);
-Console.WriteLine(<span class="hljs-string">&quot;I attend &quot;</span> + school);
+Console.WriteLine(<span class="hljs-string">&quot;You can call me at &quot;</span> + phoneNumber);
 </code></pre>
+<p>Add as many questions as possible. Note that in some cases, it may be necessary to use <code>Convert.ToInt32</code>, but in some cases it may not.</p>
+<h2 id="2-challenge-multiple-people">2. CHALLENGE: Multiple People</h2>
+<p>Instead of keeping information about one person, ask the user for information about multiple people. This will be very similar to the original questions, but do not copy and paste! Practicing manually will help build muscle memory and make coding feel more comfortable.</p>
+<h2 id="3-challenge-mad-libs">3. CHALLENGE: Mad Libs</h2>
+<p>Create an entirely new Repl project for this challenge. The goal will be to make a project that runs through a <a href="https://www.madlibs.com/" target="_blank">mad libs</a> story.</p>
+<h3 id="non-code-setup">Non-Code Setup</h3>
+<p>First, prepare a mad libs story on paper.</p>
+<ol>
+<li>On paper (or in a text file or document), write a short story - it should be a few sentences long</li>
+<li>Pick a few key words in the story, and replace them with blanks</li>
+<li>Figure out the part of speech for each replaced word (noun, verb, adjective, etc)</li>
+</ol>
+<p>Now the story should be ready for the program!</p>
+<h3 id="code">Code</h3>
+<p>Make the story into a playable C# game. Create a new C# Repl Project, and write code that does the following:</p>
+<ol>
+<li>For each blank in the story, ask the user to input a word of the proper part of speech</li>
+<li>Store each word in its own variable</li>
+<li>Display the full story, but replace the blanks with the words in the variables</li>
+</ol>
+<p>Run the program. Enter as many words as required, and read the customized story at the end!</p>
 
                                 
                                 </section>
@@ -752,12 +704,12 @@ Console.WriteLine(<span class="hljs-string">&quot;I attend &quot;</span> + schoo
 
             
                 
-                <a href="UserInputRecap.html" class="navigation navigation-prev " aria-label="Previous page: Recap">
+                <a href="Debugging.html" class="navigation navigation-prev " aria-label="Previous page: Debugging">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="AboutMeIndividualExercises.html" class="navigation navigation-next " aria-label="Next page: About Me Individual Exercises">
+                <a href="../Conditionals/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: Week 3 - Conditionals">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -768,7 +720,7 @@ Console.WriteLine(<span class="hljs-string">&quot;I attend &quot;</span> + schoo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Code-Along","level":"1.4.2","depth":2,"next":{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"path":"UserInput/AboutMeIndividualExercises.md","ref":"UserInput/AboutMeIndividualExercises.md","articles":[]},"previous":{"title":"Recap","level":"1.4.1","depth":2,"path":"UserInput/UserInputRecap.md","ref":"UserInput/UserInputRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UserInput/AboutMeCodeAlong.md","mtime":"2020-11-20T19:31:54.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-20T19:32:35.828Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"About You Individual Exercises","level":"1.4.4","depth":2,"next":{"title":"Week 3 - Conditionals","level":"1.5","depth":1,"path":"Conditionals/StudentDesc.md","ref":"Conditionals/StudentDesc.md","articles":[{"title":"Recap","level":"1.5.1","depth":2,"path":"Conditionals/ConditionalsRecap.md","ref":"Conditionals/ConditionalsRecap.md","articles":[]},{"title":"Code-Along","level":"1.5.2","depth":2,"path":"Conditionals/ConditionalsCodeAlong.md","ref":"Conditionals/ConditionalsCodeAlong.md","articles":[]},{"title":"Exercises","level":"1.5.3","depth":2,"path":"Conditionals/ConditionalExercises.md","ref":"Conditionals/ConditionalExercises.md","articles":[]},{"title":"Challenges","level":"1.5.4","depth":2,"path":"Conditionals/ConditionalChallenges.md","ref":"Conditionals/ConditionalChallenges.md","articles":[]}]},"previous":{"title":"Debugging","level":"1.4.3","depth":2,"path":"UserInput/Debugging.md","ref":"UserInput/Debugging.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"UserInput/AboutYouIndividualExercises.md","mtime":"2021-02-04T14:29:29.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-04T14:30:08.898Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

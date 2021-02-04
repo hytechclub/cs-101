@@ -204,12 +204,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutYouCodeAlong.html">
             
-                <a href="../UserInput/AboutMeCodeAlong.html">
+                <a href="../UserInput/AboutYouCodeAlong.html">
             
                     
-                    About Me Code-Along
+                    About You Code-Along
             
                 </a>
             
@@ -217,12 +217,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../UserInput/AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.4.3" data-path="../UserInput/Debugging.html">
             
-                <a href="../UserInput/AboutMeIndividualExercises.html">
+                <a href="../UserInput/Debugging.html">
             
                     
-                    About Me Individual Exercises
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../UserInput/AboutYouIndividualExercises.html">
+            
+                <a href="../UserInput/AboutYouIndividualExercises.html">
+            
+                    
+                    About You Individual Exercises
             
                 </a>
             
@@ -623,13 +636,20 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="about-me-challenge">About Me Challenge</h1>
-<p>Add more information to the &quot;About Me&quot; program. For each piece of information:</p>
+<p>Add more information to the &quot;About Me&quot; program. This can be any type of information about you that you would like to share with the user of your program.</p>
+<p>Repeat these steps:</p>
 <ol>
-<li>Figure out the data type: <code>string</code>, <code>int</code>, <code>double</code>, <code>boolean</code></li>
-<li>Figure out a good name for the variable</li>
-<li>Declare and set the variable&apos;s value</li>
-<li>Display the information to the console in a nice message</li>
+<li>Come up with an interesting piece of information to share (feel free to use the ideas listed below)</li>
+<li>Determine the <em>data type</em> for the information: <code>string</code>, <code>int</code>, <code>double</code>, or <code>boolean</code></li>
+<li>Come up with a good <em>variable name</em></li>
+<li>Declare and set the <em>variable value</em> to your information</li>
+<li>Finally, display the information to the console in a nice message.</li>
 </ol>
+<p>The code may look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">int</span> numFollowers = <span class="hljs-number">40</span>;
+Console.WriteLine(<span class="hljs-string">&quot;Number of Followers: &quot;</span> + numFollowers);
+</code></pre>
+<p>Try to add as much information as possible!</p>
 <h2 id="ideas-for-information">Ideas for Information</h2>
 <ul>
 <li>Favorite Sport</li>
@@ -646,6 +666,14 @@
 <li>Vegetarian</li>
 <li>Grade Level</li>
 </ul>
+<h2 id="console-colors-challenge">Console Colors Challenge</h2>
+<p>Before each piece of information, set the color of the text in the console. The code to do that looks like this:</p>
+<pre><code class="lang-cs">Console.ForegroundColor = ConsoleColor.Cyan;
+</code></pre>
+<p>For more information, and for the complete list of possible colors, check out <a href="https://docs.microsoft.com/en-us/dotnet/api/system.consolecolor?view=netframework-4.8#fields" target="_blank">this page</a>. Try to change every single piece of information to be a different color!</p>
+<h2 id="ascii-art">ASCII Art</h2>
+<p>Try to add some ASCII art to the page to make it a little more flashy. Try out this <a href="https://manytools.org/hacker-tools/convert-images-to-ascii-art/" target="_blank">image to ASCII converter</a> or this <a href="https://www.colorschemer.com/ascii-art-generator/#p=display&amp;f=Graffiti&amp;t=type%20something..." target="_blank">text generator</a>. Use <code>Console.WriteLine</code> statements to make the art appear in the program!s</p>
+<p>Note that in C#, the backslash character (<code>\</code>) will not work within a string. Use two backslashes in a row to make one appear.</p>
 
                                 
                                 </section>
@@ -689,7 +717,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About Me Challenge","level":"1.3.3","depth":2,"next":{"title":"Week 2 - User Input","level":"1.4","depth":1,"path":"UserInput/StudentDesc.md","ref":"UserInput/StudentDesc.md","articles":[{"title":"Recap","level":"1.4.1","depth":2,"path":"UserInput/UserInputRecap.md","ref":"UserInput/UserInputRecap.md","articles":[]},{"title":"About Me Code-Along","level":"1.4.2","depth":2,"path":"UserInput/AboutMeCodeAlong.md","ref":"UserInput/AboutMeCodeAlong.md","articles":[]},{"title":"About Me Individual Exercises","level":"1.4.3","depth":2,"path":"UserInput/AboutMeIndividualExercises.md","ref":"UserInput/AboutMeIndividualExercises.md","articles":[]}]},"previous":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"path":"Variables/AboutMeCodeAlong.md","ref":"Variables/AboutMeCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeChallenge.md","mtime":"2020-11-20T19:31:54.425Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-20T19:32:35.828Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"About Me Challenge","level":"1.3.3","depth":2,"next":{"title":"Week 2 - User Input","level":"1.4","depth":1,"path":"UserInput/StudentDesc.md","ref":"UserInput/StudentDesc.md","articles":[{"title":"Recap","level":"1.4.1","depth":2,"path":"UserInput/UserInputRecap.md","ref":"UserInput/UserInputRecap.md","articles":[]},{"title":"About You Code-Along","level":"1.4.2","depth":2,"path":"UserInput/AboutYouCodeAlong.md","ref":"UserInput/AboutYouCodeAlong.md","articles":[]},{"title":"Debugging","level":"1.4.3","depth":2,"path":"UserInput/Debugging.md","ref":"UserInput/Debugging.md","articles":[]},{"title":"About You Individual Exercises","level":"1.4.4","depth":2,"path":"UserInput/AboutYouIndividualExercises.md","ref":"UserInput/AboutYouIndividualExercises.md","articles":[]}]},"previous":{"title":"About Me Code-Along","level":"1.3.2","depth":2,"path":"Variables/AboutMeCodeAlong.md","ref":"Variables/AboutMeCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Variables/AboutMeChallenge.md","mtime":"2021-02-04T14:29:29.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-04T14:30:08.898Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

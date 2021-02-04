@@ -204,12 +204,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutMeCodeAlong.html">
+        <li class="chapter " data-level="1.4.2" data-path="../UserInput/AboutYouCodeAlong.html">
             
-                <a href="../UserInput/AboutMeCodeAlong.html">
+                <a href="../UserInput/AboutYouCodeAlong.html">
             
                     
-                    About Me Code-Along
+                    About You Code-Along
             
                 </a>
             
@@ -217,12 +217,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../UserInput/AboutMeIndividualExercises.html">
+        <li class="chapter " data-level="1.4.3" data-path="../UserInput/Debugging.html">
             
-                <a href="../UserInput/AboutMeIndividualExercises.html">
+                <a href="../UserInput/Debugging.html">
             
                     
-                    About Me Individual Exercises
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../UserInput/AboutYouIndividualExercises.html">
+            
+                <a href="../UserInput/AboutYouIndividualExercises.html">
+            
+                    
+                    About You Individual Exercises
             
                 </a>
             
@@ -622,41 +635,147 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="conditional-exercise---number-guessing">Conditional Exercise - Number Guessing</h1>
-<p>Challenges 1-3 build on each other, so do not create three separate programs. Start with a new C# project, and complete the activity in the <code>Main</code> method.</p>
-<h2 id="part-1---just-an-if">Part 1 - Just an <code>if</code></h2>
+                                <h1 id="conditional-exercises">Conditional Exercises</h1>
+<p>After completing the <a href="ConditionalCodeAlong.md">code-along activity</a>, work on the exercises below.</p>
+<h2 id="one-more-question">One More Question</h2>
+<p>Building from the Choose Your Path project, add an additional question to make the game a little more involved.</p>
 <ol>
-<li>Ask the user to guess a number between 1 and 10<ul>
-<li>Remember to convert it to an int: <code>int num = Convert.ToInt32(input);</code></li>
+<li>In the <strong>main.cs</strong> file, in the <code>Main</code> body, find the final <code>if</code> statement</li>
+<li>Above that, use <code>Console.WriteLine</code> to ask another question - <code>&quot;You get to school. Do you stop at the water fountain?&quot;</code></li>
+<li>Display the options: <code>&quot;  A. Yes&quot;</code> / <code>&quot;  B. No&quot;</code></li>
+<li>Use <code>Console.Write</code> to print <code>&quot;&gt; &quot;</code></li>
+<li>Under that, create a new <code>string</code> variable named <code>choice3</code></li>
+<li>Set the <code>choice3</code> variable to <code>Console.ReadLine()</code></li>
+<li>Use <code>Console.Clear()</code> to clear the console</li>
+<li>Under that, create an <code>if</code> structure<ul>
+<li><code>if</code> keyword</li>
+<li>Parentheses (condition)</li>
+<li>Curly brackets (body)</li>
 </ul>
 </li>
-<li>Use an <code>if</code> statement to test if the number is greater than 4, i.e. <code>if (num &gt; 4)</code></li>
-<li>If it is greater, use <code>Console.WriteLine</code> to say &quot;Too High!&quot;</li>
-<li>Run the Program and fix any mistakes before moving on</li>
+<li>For the condition (between the parentheses), check if <code>choice3</code> equals <code>&quot;A&quot;</code></li>
+<li>In the body (between the curly brackets), set the <code>health</code> variable to <code>health + 1</code></li>
+<li>Also in the body of the <code>if</code>, display a message saying &quot;You drink some water.&quot;</li>
+<li>Under the <code>if</code> body (after the <code>}</code>), create an <code>else if</code> structure<ul>
+<li><code>else if</code> keyword</li>
+<li>Parentheses (condition)</li>
+<li>Curly brackets (body)</li>
+</ul>
+</li>
+<li>For the <code>else if</code> condition, check if <code>choice3</code> equals <code>&quot;B&quot;</code></li>
+<li>In the body of the <code>else if</code>, set the <code>health</code> variable to <code>health - 1</code></li>
+<li>Also in the body of the <code>else if</code>, display a message saying &quot;You do not drink water.&quot;</li>
 </ol>
-<h2 id="part-2---adding-an-else-if">Part 2 - Adding an <code>else if</code></h2>
+<p>Run the program again, and verify that the third question properly impacts the game!</p>
+<h2 id="a-new-project---chat-bot">A New Project - Chat Bot</h2>
+<p>Using conditional statements, a whole lot of things are possible.</p>
+<p><img src="https://i.imgur.com/KETf3GL.jpg" alt=""></p>
+<p>While the definition of &quot;artificial intelligence&quot; may not always include simple <code>if</code> statements, it is certainly possible to create the illusion of intelligence using conditionals!</p>
+<p>Create a program that can respond to a number of different chat messages.</p>
+<h3 id="setup">Setup</h3>
+<p>Start by creating the new project.</p>
 <ol>
-<li>Ask the user to guess a number between 1 and 10</li>
-<li>Use an <code>if</code> statement to test if the number is greater than 4</li>
-<li>If it is greater, use <code>Console.WriteLine</code> to say &quot;Too High!&quot;</li>
-<li>Use an <code>else if</code> to test if the number is less than 4, i.e. <code>num &lt; 4</code></li>
-<li>If it is less, use <code>Console.WriteLine</code> to say &quot;Too Low&quot;</li>
-<li>Run the Program and fix any mistakes before moving on</li>
+<li>Create a <a href="https://repl.it/new/csharp" target="_blank">new C# Repl project</a></li>
+<li>Name it &quot;Chatbot&quot;</li>
+<li>In the <strong>main.cs</strong> file, in the <code>Main</code> body, set the text color:  <pre><code class="lang-cs"> Console.ForegroundColor = ConsoleColor.Black;
+</code></pre>
+</li>
+<li>Under that, set the background color:  <pre><code class="lang-cs"> Console.BackgroundColor = ConsoleColor.White;
+</code></pre>
+</li>
+<li>Under that, clear the console to make it a little cleaner:  <pre><code class="lang-cs"> Console.Clear();
+</code></pre>
+</li>
+<li>Next, use <code>Console.WriteLine</code> to display a message saying &quot;Welcome to the Chatbot&quot;</li>
+<li>Under that, add an empty <code>Console.WriteLine</code> to make some extra space</li>
 </ol>
-<h2 id="part-3---adding-an-else">Part 3 - Adding an <code>else</code></h2>
+<p>Run the program, and verify that the message appears in the proper color.</p>
+<h3 id="a-question">A Question</h3>
+<p>Next, the program should ask the user a question. This can theoretically be any question.</p>
 <ol>
-<li>Ask the user to guess a number between 1 and 10</li>
-<li>Use an <code>if</code> statement to test if the number is greater than 4</li>
-<li>If it is greater, use <code>Console.WriteLine</code> to say &quot;Too High!&quot;</li>
-<li>Use an <code>else if</code> to test if the number is less than 4, i.e. <code>num &lt; 4</code></li>
-<li>If it is less, use <code>Console.WriteLine</code> to say &quot;Too Low&quot;</li>
-<li>Use an &quot;else&quot;, to test if the number is equal to 4</li>
-<li>If it is, use <code>Console.WriteLine</code> to say &quot;Just Right&quot;</li>
-<li>Run the Program and fix any mistakes before moving on</li>
+<li>Under the lowest <code>Console.WriteLine</code>, create another <code>Console.WriteLine</code></li>
+<li>Display a message with a question, like &quot;What do you want to say?&quot;</li>
+<li>Under that, create a new <code>string</code> variable named <code>answer</code></li>
+<li>Set the <code>answer</code> variable to be a <code>Console.ReadLine()</code></li>
 </ol>
-<h2 id="super-challenge">Super Challenge</h2>
-<p>Use the System.Random class to generate your number for Number Guesser:
-<a href="https://msdn.microsoft.com/en-us/library/system.random(v=vs.110).aspx" target="_blank">https://msdn.microsoft.com/en-us/library/system.random(v=vs.110).aspx</a></p>
+<p>Run the program. Verify that the question appears, and it is possible to enter an answer!</p>
+<h3 id="a-response">A Response</h3>
+<p>Now that the user has entered an answer, it is possible to respond to that answer. The response should depend on what the user said. For example, if the user says &quot;You talkin&apos; to me?&quot; the bot could say &quot;Well I&apos;m the only one here.&quot;</p>
+<p>Use an <code>if</code> statement to create that response!</p>
+<ol>
+<li>Under the <code>answer</code> variable, create an <code>if</code> structure<ul>
+<li><code>if</code> keyword</li>
+<li>Parentheses (condition)</li>
+<li>Curly brackets (body)</li>
+</ul>
+</li>
+<li>For the condition (between the parentheses), check if the <code>answer</code> variable equals <code>&quot;You talkin&apos; to me?&quot;</code></li>
+<li>In the body (between the curly brackets), add a <code>Console.WriteLine</code> statement</li>
+<li>Make the <code>WriteLine</code> display a message saying <code>&quot;Well I&apos;m the only one here.&quot;</code></li>
+</ol>
+<p>Run the program again. Verify that entering the exact answer &quot;You talkin&apos; to me?&quot; will make the program display the correct response!</p>
+<p>The code should look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">if</span> (answer == <span class="hljs-string">&quot;You talkin&apos; to me?&quot;</span>)
+{
+    Console.WriteLine(<span class="hljs-string">&quot;Well I&apos;m the only one here.&quot;</span>);
+}
+</code></pre>
+<h3 id="other-responses">Other Responses</h3>
+<p>Using the same type of structure, it&apos;s possible to make the program respond to any message at all! Add some more <code>if</code> statements, each of them checking the <code>answer</code> value and printing a different response based on the answer. Feel free to customize the responses, or use the ones from this table:</p>
+<table>
+<thead>
+<tr>
+<th><code>answer</code></th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;You killed my father.&quot;</td>
+<td>&quot;No, I am your father!&quot;</td>
+</tr>
+<tr>
+<td>&quot;I&apos;m going to Mordor alone.&quot;</td>
+<td>&quot;Of course you are, and I&apos;m coming with you!&quot;</td>
+</tr>
+<tr>
+<td>&quot;You look like my grandpa.&quot;</td>
+<td>&quot;Oh, is your grandpa super cool?&quot;</td>
+</tr>
+<tr>
+<td>&quot;Your grandpa invented baseball?&quot;</td>
+<td>&quot;Did I say baseball? I meant spray-on eyebrows.&quot;</td>
+</tr>
+<tr>
+<td>&quot;Is this the Krusty Krab?&quot;</td>
+<td>&quot;No, this is Patrick.&quot;</td>
+</tr>
+<tr>
+<td>&quot;This is the worst day of my life.&quot;</td>
+<td>&quot;The worst day of your life <em>so far</em>.&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dynamic-colors">Dynamic Colors</h3>
+<p>Instead of simply setting the colors at the beginning of the program, ask the user which colors to use!</p>
+<ol>
+<li>At the top of the <code>Main</code> body, above the <code>Console.ForegroundColor</code>, make a new space</li>
+<li>There, use <code>Console.WriteLine</code> to display a message: &quot;Which text color?&quot;</li>
+<li>Under that, create a new <code>string</code> variable named <code>colorAnswer</code></li>
+<li>Set the <code>colorAnswer</code> variable to be <code>Console.ReadLine()</code></li>
+<li>Under that, create an <code>if</code> structure<ul>
+<li><code>if</code> keyword</li>
+<li>Parentheses</li>
+<li>Curly brackets</li>
+</ul>
+</li>
+<li>For the condition (between the parentheses), check if <code>colorAnswer</code> is <code>Red</code></li>
+<li>In the body (between the curly brackets), use <code>Console.ForegroundColor = ConsoleColor.Red</code> to set the color</li>
+</ol>
+<p>Run the program, and verify that it is possible to select &quot;Red&quot; as the text color!</p>
+<p>Add additional <code>if</code> structures for some additional colors, like <code>ConsoleColor.Green</code>, <code>ConsoleColor.Cyan</code>, and <code>ConsoleColor.Yellow</code>.</p>
+<h2 id="challenges">Challenges</h2>
+<p>After completing these exercises, start working on the <a href="ConditionalChallenges.html">challenges</a>.</p>
 
                                 
                                 </section>
@@ -700,7 +819,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Exercises","level":"1.5.3","depth":2,"next":{"title":"Challenges","level":"1.5.4","depth":2,"path":"Conditionals/ConditionalChallenges.md","ref":"Conditionals/ConditionalChallenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.5.2","depth":2,"path":"Conditionals/ConditionalsCodeAlong.md","ref":"Conditionals/ConditionalsCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalExercises.md","mtime":"2020-11-20T19:31:54.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-20T19:32:35.828Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Exercises","level":"1.5.3","depth":2,"next":{"title":"Challenges","level":"1.5.4","depth":2,"path":"Conditionals/ConditionalChallenges.md","ref":"Conditionals/ConditionalChallenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.5.2","depth":2,"path":"Conditionals/ConditionalsCodeAlong.md","ref":"Conditionals/ConditionalsCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/ConditionalExercises.md","mtime":"2021-02-04T14:29:29.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-04T14:30:08.898Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
