@@ -1,4 +1,4 @@
-# Factorial using a While Loop: Follow-Along
+# Factorial using a While Loop: Code-Along
 Start by creating a new `.cs` file/project. Then, follow the instructions below to create a factorial while loop application.
 
 >Factorial is the product of an integer and all the integers below it; e.g. factorial four (`4!`) is equal to `4 * 3 * 2 * 1 = 24`
@@ -25,13 +25,13 @@ Second, we will create the while loop. To start, we will initialize the counter 
 We want to use a counter that starts at the integer the user provided and the result starts at 1. 
 
 1. Since we will be counting backwards, we want to start the counter at the number the user provides.
-
 1. Also, we are going to be multiplying the result by the counter, so we don't want to start at 0 or the result will always be 0!
 
 ### Code
 
 ```cs
-int i = num, result = 1;
+int i = num;
+int result = 1;
 ```
 
 ### While Loop Condition
@@ -46,7 +46,7 @@ while (i > 0)
 ```
 
 ### While Loop Body
-Now, we need to do the math function! Start with brackets and then add the arithmetic statement that we learned last week to multiply the variable by a number and assign the result to the variable. 
+Now, we need to do the math function! Start with brackets. Then, set the `result` variable to be itself multiplied by the current value of `i`.
 
 We also need to decrement the counter to keep the loop going. We do this with `i--;`.
 
@@ -55,8 +55,7 @@ We also need to decrement the counter to keep the loop going. We do this with `i
 ```cs
 while (i > 0)
 {
-    result *= i;
-
+    result = result * i;
     i--;
 }
 ```
@@ -67,7 +66,7 @@ Finally, we need to let the user know what the answer is! We will do this with `
 ### Code 
 
 ```cs
-Console.WriteLine("Factorial of " + num + "is " + result);
+Console.WriteLine("Factorial of " + num + " is " + result);
 ```
 
 ## Final Code
@@ -79,22 +78,19 @@ public class Program
 {
 	public static void Main()
 	{
+        Console.WriteLine("Enter a whole number");
+        int num = Convert.ToInt32(Console.ReadLine());
 
-         Console.WriteLine("Enter a whole number");
-         int num = Convert.ToInt32(Console.ReadLine());
+        int i = num;
+        int result = 1;
 
-         int i = num, result = 1;
+        while (i > 0)
+        {
+            result = result * i;
+            i--;
+        }
 
-         while (i > 0)
-         {
-             result *= i;
-
-             i--;
-         }
-
-         Console.WriteLine("Factorial of " + num + "is " + result);
+        Console.WriteLine("Factorial of " + num + " is " + result);
     }
 }
 ```
-
-

@@ -13,16 +13,10 @@ The [PowerPoint](WhileLoops.pptx) covers the syntax of while loops, along with s
 For the [code-along](FactorialFollowAlong.md), build up an application that calculates a factorial given a number from the user.
 
 ## Individual Coding: Even numbers
-The students will follow the [instructions](EvenNumbersIndividualExercise.md) to create a program that prints out all even numbers from 0-100.
+The students will follow the [instructions](EvenNumbersIndividualExercise.md) to create a program that prints out all even numbers from 0-100. This exercise could be completed in a group or pair setting.
+
+## Basic Exercises
+Have students complete the [basic exercises](WhileLoopBasicExercises.md). These should help reinforce the concept of while loops, and give students extra practice writing them.
 
 ## Challenges
 There are many [challenges](WhileLoopChallenges.md) for the students to complete.
-
-## Suggested Schedule
-| Activity | Time |
-|-|-|
-| Warmup | 5m |
-| Lecture | 20m |
-| Follow-Along | 30m |
-| Break | 5m |
-| Individual Exercise/Challenge | 60m |

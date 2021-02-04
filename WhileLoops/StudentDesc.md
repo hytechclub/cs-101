@@ -1,8 +1,5 @@
 # While Loops
-Learn how to use `while` loops to execute code blocks multiple times. Review the PowerPoint presentation, and check out the [recap](WhileLoopRecap.md) for further review. After that, complete the [Factorial Follow-Along](FactorialFollowAlong.md) activity and the [Even Numbers Individual Exercise](EvenNumbersIndividualExercise.md). Beyond that, there are some challenges to complete as well.
-
-## Session Recording
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/Ft8Lr3EaB8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Learn how to use `while` loops to execute code blocks multiple times. Review the PowerPoint presentation, and check out the [recap](WhileLoopRecap.md) for further review. After that, complete the [Factorial Follow-Along](FactorialFollowAlong.md) activity and the [Even Numbers Individual Exercise](EvenNumbersIndividualExercise.md). For more practice, work on the [Basic Exercises](WhileLoopBasicExercises.md). Beyond that, there are some challenges to complete as well.
 
 ## While Loops PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/WhileLoops/WhileLoops.pptx' width='100%' height='450px' frameborder='0'></iframe>
@@ -15,4 +12,5 @@ Learn how to use `while` loops to execute code blocks multiple times. Review the
 
 ## Other Material
 - [Even Numbers Individual Exercise](EvenNumbersIndividualExercise.md)
+- [Basic Exercises](WhileLoopBasicExercises.md)
 - [While Loop Challenges](WhileLoopChallenges.md)
