@@ -20,3 +20,6 @@ Have students complete the [basic exercises](WhileLoopBasicExercises.md). These 
 
 ## Challenges
 There are many [challenges](WhileLoopChallenges.md) for the students to complete.
+
+## Practice Week
+For an extra week of practice, play the [While Loops Practice Game](WhileLoopsPracticeGame.pptx). Instructions are within the PowerPoint presentation. After that, have students work on the [While Loops Practice](WhileLoopsPractice.md), where they can basically do whatever they want using `while` loops. Possibly have students present at the end of the practice week.
