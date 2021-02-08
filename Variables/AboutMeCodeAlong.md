@@ -27,6 +27,8 @@ After the first variable is declared and set, it's time to add some additional v
 
 Run the program, and make sure there are no errors.
 
+>Note: There may be warnings saying that these variables are never used - that is to be expected at this point
+
 ```cs
 int userAge = 27;
 int numberOfPets = 2;
