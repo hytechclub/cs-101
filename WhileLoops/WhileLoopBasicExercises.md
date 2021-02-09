@@ -73,7 +73,7 @@ In this exercise, pester the user until they respond in a very particular way.
 Run the program, and enter a few responses. Verify that the loop continues forever, _unless_ the message of "You are not annoying" is entered.
 
 ## 4. Rainbow Road Forever
-It is also possible to make a `while` loop that continues forever. Note that an infinite loop _can_ be a serious issue, but it can also be used for a useful purpose.
+It is also possible to make a `while` loop that continues forever. Note that an infinite loop _can_ be a serious code error, but it can also be used for a useful purpose.
 
 In this exercise, create a program that infinitely prints out a rainbow road.
 

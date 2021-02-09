@@ -1,7 +1,7 @@
 # Methods Challenges
 Complete the following challenges.
 
-## Bugs
+## _Optional Practice: Bugs_
 Visit each of the Repl projects below. They all have something wrong with them; try to fix the errors!
 
 - [Bug 1](https://repl.it/@JosephMaxwell/MethodBug#main.cs)
