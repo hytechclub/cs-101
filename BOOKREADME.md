@@ -45,7 +45,7 @@ Points can be redeemed for a variety of rewards.
 
 | Points | Reward |
 | -- | -- |
-| 3 | Short online game with an instructor (e.g. [Connect 4](https://www.mathsisfun.com/games/connect4.html), [Soccer](https://www.agame.com/game/1-on-1-soccer-classic), [Chess](https://lichess.org/setup/friend)) |
+| 3 | Short online game with an instructor (e.g. [Connect 4](https://connect-4.org/en), [Chess](https://lichess.org/setup/friend)) |
 | 5 | An instructor has to show you an old picture of themselves |
 | 7 | Choose a theme for the day |
 | 10 | Lead a Kahoot |

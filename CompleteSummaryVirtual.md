@@ -22,6 +22,7 @@
 - [Week 5 - While Loops Practice](WhileLoops/WhileLoopsPractice.md)
 - [Week 6 - Methods](Methods/StudentDesc.md)
     - [Code-Along](Methods/MethodsCodeAlong.md)
+    - [Exercises](Methods/MethodsExercises.md)
     - [Challenges](Methods/MethodsChallenges.md)
 - [Week 7 - Method Parameters](MethodParameters/StudentDesc.md)
     - [Recap](MethodParameters/MethodsRecap.md)
