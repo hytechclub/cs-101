@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Calculator Follow-Along · GitBook</title>
+        <title>Exercises · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="CalculatorIndividualInstructions.html" />
+    <link rel="next" href="MethodsChallenges.html" />
     
     
-    <link rel="prev" href="MethodsRecap.html" />
+    <link rel="prev" href="MethodsCodeAlong.html" />
     
 
     </head>
@@ -416,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../Methods/StudentDesc.html">
+        <li class="chapter " data-level="1.8" data-path="StudentDesc.html">
             
-                <a href="../Methods/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     Week 6 - Methods
@@ -430,9 +430,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../Methods/MethodsCodeAlong.html">
+        <li class="chapter " data-level="1.8.1" data-path="MethodsCodeAlong.html">
             
-                <a href="../Methods/MethodsCodeAlong.html">
+                <a href="MethodsCodeAlong.html">
             
                     
                     Code-Along
@@ -443,9 +443,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../Methods/MethodsExercises.html">
+        <li class="chapter active" data-level="1.8.2" data-path="MethodsExercises.html">
             
-                <a href="../Methods/MethodsExercises.html">
+                <a href="MethodsExercises.html">
             
                     
                     Exercises
@@ -456,9 +456,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../Methods/MethodsChallenges.html">
+        <li class="chapter " data-level="1.8.3" data-path="MethodsChallenges.html">
             
-                <a href="../Methods/MethodsChallenges.html">
+                <a href="MethodsChallenges.html">
             
                     
                     Challenges
@@ -474,9 +474,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.9" data-path="../MethodParameters/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../MethodParameters/StudentDesc.html">
             
                     
                     Week 7 - Method Parameters
@@ -488,9 +488,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="MethodsRecap.html">
+        <li class="chapter " data-level="1.9.1" data-path="../MethodParameters/MethodsRecap.html">
             
-                <a href="MethodsRecap.html">
+                <a href="../MethodParameters/MethodsRecap.html">
             
                     
                     Recap
@@ -501,9 +501,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.2" data-path="CalculatorFollowAlong.html">
+        <li class="chapter " data-level="1.9.2" data-path="../MethodParameters/CalculatorFollowAlong.html">
             
-                <a href="CalculatorFollowAlong.html">
+                <a href="../MethodParameters/CalculatorFollowAlong.html">
             
                     
                     Calculator Follow-Along
@@ -514,9 +514,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="CalculatorIndividualInstructions.html">
+        <li class="chapter " data-level="1.9.3" data-path="../MethodParameters/CalculatorIndividualInstructions.html">
             
-                <a href="CalculatorIndividualInstructions.html">
+                <a href="../MethodParameters/CalculatorIndividualInstructions.html">
             
                     
                     Calculator Individual Instructions
@@ -527,9 +527,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="MethodsChallenges.html">
+        <li class="chapter " data-level="1.9.4" data-path="../MethodParameters/MethodsChallenges.html">
             
-                <a href="MethodsChallenges.html">
+                <a href="../MethodParameters/MethodsChallenges.html">
             
                     
                     Challenges
@@ -646,7 +646,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Calculator Follow-Along</a>
+        <a href=".." >Exercises</a>
     </h1>
 </div>
 
@@ -661,114 +661,166 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="calculator-code-along">Calculator: Code-Along</h1>
-<p>Start by creating a new <code>.cs</code> file/project. Then, follow the instructions below to create a simple calculator application.</p>
-<h2 id="part-1---user-input">Part 1 - User Input</h2>
-<p>To begin, the program should ask the user to enter two numbers, and then enter the operation to perform. Assume the user will enter valid integer numbers.</p>
-<h3 id="first-number">First Number</h3>
-<ol>
-<li>Use <code>Console.WriteLine</code> to ask the user to enter the first number</li>
-<li>Use <code>Console.ReadLine</code> to receive the input from the user</li>
-<li>Use <code>Convert.ToInt32</code> to convert the user&apos;s input into an <code>int</code></li>
-<li>Make sure to store the result in a variable</li>
-</ol>
-<h4 id="code">Code</h4>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Enter a:&quot;</span>);
-<span class="hljs-keyword">int</span> a = Convert.ToInt32(Console.ReadLine());
-</code></pre>
-<h3 id="second-number">Second Number</h3>
-<p>Repeat the steps for the first number, but store a second <code>int</code> variable for the second number.</p>
-<h4 id="code">Code</h4>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;Enter b:&quot;</span>);
-<span class="hljs-keyword">int</span> b = Convert.ToInt32(Console.ReadLine());
-</code></pre>
-<h3 id="operation">Operation</h3>
-<ol>
-<li>Use <code>Console.WriteLine</code> to ask the user for an operation</li>
-<li>Use <code>Console.ReadLine</code> to receive the input from the user</li>
-<li>Make sure to restore the result in a <code>string</code> variable</li>
-</ol>
-<pre><code class="lang-cs">Console.WriteLine(<span class="hljs-string">&quot;What operation to perform?&quot;</span>);
-<span class="hljs-keyword">string</span> operation = Console.ReadLine();
-</code></pre>
-<h2 id="part-2---addition">Part 2 - Addition</h2>
-<p>Create a method to add two numbers together, and use it when the user would like to perform the plus operation.</p>
-<h3 id="defining-the-method">Defining the Method</h3>
-<p>Start with the method signature:</p>
-<ul>
-<li>Visibility: <code>public</code></li>
-<li>Modifier: <code>static</code></li>
-<li>Return type: <code>int</code></li>
-<li>Name: <code>AddNumbers</code></li>
-<li>Parameters: <code>int integer1</code>, <code>int integer2</code></li>
-</ul>
-<p>In the body of the method:</p>
-<ul>
-<li>Add the two <code>int</code>s together</li>
-<li>Return the result</li>
-</ul>
-<h4 id="code">Code</h4>
-<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">AddNumbers</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> integer1, <span class="hljs-keyword">int</span> integer2</span>)
-</span>{        
-    <span class="hljs-keyword">return</span> integer1 + integer2;
-}
-</code></pre>
-<h3 id="calling-the-method">Calling the Method</h3>
-<ol>
-<li>In the <code>Main</code> method, after retrieving the input from the user, use an <code>if</code> to check if the user would like to add numbers</li>
-<li>If the user would like to add numbers, call the <code>AddNumbers</code> method and store the result in a new variable  <ul>
-<li>The parameters for the <code>AddNumbers</code> call should be the input from the user (<code>a</code> and <code>b</code>)</li>
-</ul>
-</li>
-<li>Print the sum to the console</li>
-</ol>
-<h4 id="code">Code</h4>
-<pre><code class="lang-cs"><span class="hljs-keyword">if</span> (operation == <span class="hljs-string">&quot;+&quot;</span>)
-{
-    <span class="hljs-keyword">int</span> sum = AddNumbers(a, b);
-    Console.WriteLine(sum);
-}
-</code></pre>
-<h2 id="part-3---subtraction">Part 3 - Subtraction</h2>
-<p>Repeat the steps for the addition method, but use subtraction instead of addition.</p>
-<h2 id="final-code">Final Code</h2>
+                                <h1 id="methods-exercises---creating-a-zoo">Methods Exercises - Creating a Zoo</h1>
+<p>After completing the [code-along](MethodsCodeAlong.md] activity, complete the exercises to practice using methods. Use the same Repl project from the code-along. The goal of these exercises is to add several other animals to the program.</p>
+<h2 id="starter-code">Starter Code</h2>
+<p>To begin, the code in the <strong>main.cs</strong> file should look something like this:</p>
 <pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
 {
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
     </span>{
-        Console.WriteLine(<span class="hljs-string">&quot;Enter a:&quot;</span>);
-        <span class="hljs-keyword">int</span> a = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine(<span class="hljs-string">&quot;Enter b:&quot;</span>);
-        <span class="hljs-keyword">int</span> a = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine(<span class="hljs-string">&quot;What operation to perform?&quot;</span>);
-        <span class="hljs-keyword">string</span> operation = Console.ReadLine();
-
-        <span class="hljs-keyword">if</span> (operation == <span class="hljs-string">&quot;+&quot;</span>)
-        {
-            <span class="hljs-keyword">int</span> sum = AddNumbers(a, b);
-            Console.WriteLine(sum);
-        }
-        <span class="hljs-function"><span class="hljs-keyword">else</span> <span class="hljs-title">if</span> (<span class="hljs-params">operation == <span class="hljs-string">&quot;-&quot;</span></span>)
-        </span>{
-            <span class="hljs-keyword">int</span> difference = SubtractNumbers(a, b);
-            Console.WriteLine(difference);
-        }
+        drawBunny();
+        drawBunny();
+        drawBunny();
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">AddNumbers</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> integer1, <span class="hljs-keyword">int</span> integer2</span>)
-    </span>{        
-        <span class="hljs-keyword">return</span> integer1 + integer2;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">SubtractNumbers</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> integer1, <span class="hljs-keyword">int</span> integer2</span>)
-    </span>{        
-        <span class="hljs-keyword">return</span> integer1 - integer2;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawBunny</span>(<span class="hljs-params"></span>)
+    </span>{
+        Console.WriteLine();
+        Console.WriteLine(<span class="hljs-string">&quot; () ()&quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot; (. .) &quot;</span>);
+        Console.WriteLine(<span class="hljs-string">&quot; (u u) &quot;</span>);
+        Console.WriteLine();
     }
 }
+</code></pre>
+<p>Here, there are two method definitions: <code>Main</code> and <code>drawBunny</code>. The <code>drawBunny</code> method is <em>called</em> within the body of the <code>Main</code> method. Note the placement of the curly brackets:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-comment">// All important stuff is in this class block</span>
+}
+</code></pre>
+<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+</span>{ <span class="hljs-comment">// open</span>
+    drawBunny();
+    drawBunny();
+    drawBunny();
+} <span class="hljs-comment">// close</span>
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drawBunny</span>(<span class="hljs-params"></span>)
+</span>{ <span class="hljs-comment">// open</span>
+    Console.WriteLine();
+    Console.WriteLine(<span class="hljs-string">&quot; () ()&quot;</span>);
+    Console.WriteLine(<span class="hljs-string">&quot; (. .) &quot;</span>);
+    Console.WriteLine(<span class="hljs-string">&quot; (u u) &quot;</span>);
+    Console.WriteLine();
+} <span class="hljs-comment">// close</span>
+</code></pre>
+<p>Every additional method should be defined within the same class block, but outside of the other method blocks.</p>
+<h2 id="1-drawing-a-cat">1. Drawing a Cat</h2>
+<p>Define and call a new method in the program that prints a cat to the console. The method should be named <code>drawCat</code>.</p>
+<h3 id="defining-the-method">Defining the Method</h3>
+<p>The first step is <em>defining</em> the <code>drawCat</code> method.</p>
+<ol>
+<li>Find the place in the code <em>under</em> the closing <code>}</code> for the <code>drawBunny</code> method, <em>above</em> the closing <code>}</code> for the class block</li>
+<li>There, add the three keywords needed to define a basic method:<ul>
+<li><code>public static void</code></li>
+</ul>
+</li>
+<li>After that, make a space and add the name of the method:<ul>
+<li><code>drawCat</code></li>
+</ul>
+</li>
+<li>After that, add the opening and closing parentheses: <code>()</code></li>
+<li>Make a new line</li>
+<li>Add the opening and closing curly brackets: <code>{}</code></li>
+<li>Press enter between them to open up the <em>body</em> of the method</li>
+<li>In the body (between the curly brackets), add code to draw a cat:  <pre><code class="lang-cs"> Console.WriteLine();
+ Console.WriteLine(<span class="hljs-string">&quot; /\\_/\\&quot;</span>);
+ Console.WriteLine(<span class="hljs-string">&quot;( o.o )&quot;</span>);
+ Console.WriteLine(<span class="hljs-string">&quot; &gt; ^ &lt;&quot;</span>);
+ Console.WriteLine();
+</code></pre>
+</li>
+</ol>
+<p>Now the method should be properly defined! But the program won&apos;t do anything new yet...</p>
+<h3 id="calling-the-method">Calling the Method</h3>
+<p>To actually use a method after it has been defined, it must be <em>called</em> in the code.</p>
+<ol>
+<li>Find the body of the <code>Main</code> method (between the curly brackets)</li>
+<li>At the bottom, make a new line (above the closing <code>}</code>)</li>
+<li>Type in the name of the method: <code>drawCat</code></li>
+<li>After that, type in opening and closing parentheses: <code>()</code></li>
+<li>Add a semi-colon to end the statement</li>
+<li>Use the same code to call the method two more times</li>
+</ol>
+<p>Run the program, and three cats should appear!</p>
+<h2 id="2-drawing-a-dog">2. Drawing a Dog</h2>
+<p>Define and call a new method in the program that prints a dog to the console. The method should be named <code>drawDog</code>. This will be incredibly similar to the <code>drawCat</code> method - the only difference is the name of the method, and the text printed to the console.</p>
+<h3 id="defining-the-method">Defining the Method</h3>
+<p>The first step is <em>defining</em> the <code>drawDog</code> method.</p>
+<ol>
+<li>Find the place in the code <em>under</em> the closing <code>}</code> for the <code>drawCat</code> method, <em>above</em> the closing <code>}</code> for the class block</li>
+<li>There, add the three keywords needed to define a basic method</li>
+<li>After that, make a space and add the name of the method</li>
+<li>After that, add the opening and closing parentheses</li>
+<li>Make a new line</li>
+<li>Add the opening and closing curly brackets</li>
+<li>Press enter between them to open up the <em>body</em> of the method</li>
+<li>In the body, add code to draw a dog:  <pre><code class="lang-cs"> Console.WriteLine();
+ Console.WriteLine(<span class="hljs-string">&quot;  __      _&quot;</span>);
+ Console.WriteLine(<span class="hljs-string">&quot;o&apos;&apos;)}____//&quot;</span>);
+ Console.WriteLine(<span class="hljs-string">&quot; `_/      )&quot;</span>);
+ Console.WriteLine(<span class="hljs-string">&quot; (_(_/-(_/ &quot;</span>);
+ Console.WriteLine();
+</code></pre>
+</li>
+</ol>
+<p>Now the method should be properly defined! But the program won&apos;t do anything new yet...</p>
+<h3 id="calling-the-method">Calling the Method</h3>
+<p>To actually use a method after it has been defined, it must be <em>called</em> in the code.</p>
+<ol>
+<li>Find the body of the <code>Main</code> method </li>
+<li>At the bottom, make a new line</li>
+<li>Type in the name of the method</li>
+<li>After that, type in opening and closing parentheses</li>
+<li>Add a semi-colon to end the statement</li>
+<li>Use the same code to call the method two more times</li>
+</ol>
+<p>Run the program, and three dogs should appear!</p>
+<h2 id="3-drawing-more-animals">3. Drawing More Animals</h2>
+<p>Following the steps from the exercises above, define and call some new methods that draw new animals. Each student should have an opportunity to complete one of the parts below. The name of the method, along with the code for the <em>body</em> of the method, is provided for each animal below.</p>
+<h3 id="drawfish-method"><code>drawFish</code> Method</h3>
+<pre><code class="lang-cs">Console.WriteLine();
+Console.WriteLine(<span class="hljs-string">&quot;  _&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;&gt;&lt;_&gt;&quot;</span>);
+Console.WriteLine();
+</code></pre>
+<h3 id="drawelephant-method"><code>drawElephant</code> Method</h3>
+<pre><code class="lang-cs">Console.WriteLine();
+Console.WriteLine(<span class="hljs-string">&quot;     __&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot; .--()&#xB0;&apos;.&apos;&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;&apos;|, . ,&apos;&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot; !_-(_\\&quot;</span>);
+Console.WriteLine();
+</code></pre>
+<h3 id="drawbat-method"><code>drawBat</code> Method</h3>
+<pre><code class="lang-cs">Console.WriteLine();
+Console.WriteLine(<span class="hljs-string">&quot;   _   ,_,   _&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  / `&apos;=) (=&apos;` \\&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot; /.-.-.\\ /.-.-.\\&quot;</span>); 
+Console.WriteLine(<span class="hljs-string">&quot; `      &apos;       `&quot;</span>);
+Console.WriteLine();
+</code></pre>
+<h3 id="drawowl-method"><code>drawOwl</code> Method</h3>
+<pre><code class="lang-cs">Console.WriteLine();
+Console.WriteLine(<span class="hljs-string">&quot; ,_, &quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;(O,O)&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;(   )&quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;-m-m-&quot;</span>);
+Console.WriteLine();
+</code></pre>
+<h3 id="drawduck-method"><code>drawDuck</code> Method</h3>
+<pre><code class="lang-cs">Console.WriteLine();
+Console.WriteLine(<span class="hljs-string">&quot;  __     &quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;&lt;(o )___ &quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot; ( ._&gt; / &quot;</span>);
+Console.WriteLine(<span class="hljs-string">&quot;  `---&apos;  &quot;</span>);
+Console.WriteLine();
 </code></pre>
 
                                 
@@ -797,12 +849,12 @@
 
             
                 
-                <a href="MethodsRecap.html" class="navigation navigation-prev " aria-label="Previous page: Recap">
+                <a href="MethodsCodeAlong.html" class="navigation navigation-prev " aria-label="Previous page: Code-Along">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="CalculatorIndividualInstructions.html" class="navigation navigation-next " aria-label="Next page: Calculator Individual Instructions">
+                <a href="MethodsChallenges.html" class="navigation navigation-next " aria-label="Next page: Challenges">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -813,7 +865,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Calculator Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Calculator Individual Instructions","level":"1.9.3","depth":2,"path":"MethodParameters/CalculatorIndividualInstructions.md","ref":"MethodParameters/CalculatorIndividualInstructions.md","articles":[]},"previous":{"title":"Recap","level":"1.9.1","depth":2,"path":"MethodParameters/MethodsRecap.md","ref":"MethodParameters/MethodsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MethodParameters/CalculatorFollowAlong.md","mtime":"2021-02-09T20:11:26.568Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-09T20:12:06.001Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Exercises","level":"1.8.2","depth":2,"next":{"title":"Challenges","level":"1.8.3","depth":2,"path":"Methods/MethodsChallenges.md","ref":"Methods/MethodsChallenges.md","articles":[]},"previous":{"title":"Code-Along","level":"1.8.1","depth":2,"path":"Methods/MethodsCodeAlong.md","ref":"Methods/MethodsCodeAlong.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Methods/MethodsExercises.md","mtime":"2021-02-09T20:11:26.572Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-09T20:12:06.001Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
