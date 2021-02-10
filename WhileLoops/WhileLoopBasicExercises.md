@@ -1,4 +1,4 @@
-# While Loop Basic Exercises
+# While Loop Additional Exercises
 After completing the [code-along](FactorialFollowAlong.md), complete these exercises.
 
 ## 1. Print Fifty Smiles

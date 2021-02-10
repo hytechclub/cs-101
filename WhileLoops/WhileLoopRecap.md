@@ -19,7 +19,7 @@ while (/* some condition is TRUE */)
 So what can this some condition be? Well it can be anything that equates to a boolean expression, some examples:
  
 ```cs
-while (Console.Readline() != "STOP") // as long as our user doesn't type 'STOP' we keep running our code
+while (Console.ReadLine() != "STOP") // as long as our user doesn't type 'STOP' we keep running our code
 ```
  
 ```cs

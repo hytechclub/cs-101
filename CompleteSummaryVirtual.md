@@ -17,7 +17,7 @@
     - [Recap](WhileLoops/WhileLoopRecap.md)
     - [Factorial Follow-Along](WhileLoops/FactorialFollowAlong.md)
     - [Even Numbers Individual Exercise](WhileLoops/EvenNumbersIndividualExercise.md)
-    - [Basic Exercises](WhileLoops/WhileLoopBasicExercises.md)
+    - [Additional Exercises](WhileLoops/WhileLoopBasicExercises.md)
     - [Challenges](WhileLoops/WhileLoopChallenges.md)
 - [Week 5 - While Loops Practice](WhileLoops/WhileLoopsPractice.md)
 - [Week 6 - Methods](Methods/StudentDesc.md)
