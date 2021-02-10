@@ -1,5 +1,5 @@
 # Methods Exercises - Creating a Zoo
-After completing the [code-along](MethodsCodeAlong.md] activity, complete the exercises to practice using methods. Use the same Repl project from the code-along. The goal of these exercises is to add several other animals to the program.
+After completing the [code-along](MethodsCodeAlong.md) activity, complete the exercises to practice using methods. Use the same Repl project from the code-along. The goal of these exercises is to add several other animals to the program.
 
 ## Starter Code
 To begin, the code in the **main.cs** file should look something like this:
