@@ -28,6 +28,7 @@
     - [Recap](MethodParameters/MethodsRecap.md)
     - [Calculator Follow-Along](MethodParameters/CalculatorFollowAlong.md)
     - [Calculator Individual Instructions](MethodParameters/CalculatorIndividualInstructions.md)
+    - [Exercises](MethodParameters/ParametersExercises.md)
     - [Challenges](MethodParameters/MethodsChallenges.md)
 - [Week 8 - Review and Practice](Practice/StudentDesc.md)
     - [Print Smileys](Practice/PrintSmileysFollowAlong.md)

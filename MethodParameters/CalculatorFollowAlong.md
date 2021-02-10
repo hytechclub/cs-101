@@ -36,7 +36,7 @@ string operation = Console.ReadLine();
 ```
 
 ## Part 2 - Addition
-Create a method to add two numbers together, and use it when the user would like to perform the plus operation.
+Create a method to add two numbers together, and use it when the user would like to perform the plus operation. Make sure to define the method in the proper place, and call it in the proper place as well.
 
 ### Defining the Method
 Start with the method signature:
@@ -59,7 +59,7 @@ public static int AddNumbers(int integer1, int integer2)
 ```
 
 ### Calling the Method
-1. In the `Main` method, after retrieving the input from the user, use an `if` to check if the user would like to add numbers
+1. In the body of the `Main` method, after retrieving the input from the user, use an `if` to check if the user would like to add numbers
 1. If the user would like to add numbers, call the `AddNumbers` method and store the result in a new variable  
     - The parameters for the `AddNumbers` call should be the input from the user (`a` and `b`)
 1. Print the sum to the console
@@ -74,7 +74,7 @@ if (operation == "+")
 ```
 
 ## Part 3 - Subtraction
-Repeat the steps for the addition method, but use subtraction instead of addition.
+Repeat the steps for the addition method, but use subtraction instead of addition. This should be almost identical, with two key differences: the name of the method should be `SubtractNumbers`, and the math should use `-` instead of `+`.
 
 ## Final Code
 ```cs

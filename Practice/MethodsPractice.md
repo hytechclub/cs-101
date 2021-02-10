@@ -1,5 +1,5 @@
 # Methods Practice
-Complete the following exercises in a `Program.cs` file.
+Complete the following exercises in a **main.cs** file.
 
 ## Reference
 Remember the syntax for defining and calling methods:
@@ -35,7 +35,7 @@ MyMethodName(myString);
 Complete the following exercises to practice using methods!
 
 ## Print Hat
-1. Define a new method named `PrintHat` in the `Program.cs` file
+1. Define a new method named `PrintHat` in the **main.cs** file
     - The method should take in no parameters
     - The method should return `void` (nothing)
 1. In the body of the `PrintHat` method, use 6 `Console.WriteLine` statements to print the following ASCII hat:
@@ -50,7 +50,7 @@ Complete the following exercises to practice using methods!
 1. In the body of the `Main` method, call the `PrintHat` method a few times to see multiple hats appear!
 
 ## Inches to Centimeters
-1. Define a new method named `InToCm` in the `Program.cs` file
+1. Define a new method named `InToCm` in the **main.cs** file
     - The method should take in no parameters
     - The method should return a `double` (the value in centimeters)
 1. In the body of the `InToCm` method, ask the user for a measurement in inches using `Console.ReadLine`
@@ -66,7 +66,7 @@ Complete the following exercises to practice using methods!
     - Ex: If the user entered 2.1, display "5.334 cm"
 
 ## Hi Name
-1. Define a new method named `HiName` in the `Program.cs` file
+1. Define a new method named `HiName` in the **main.cs** file
     - The method should take in no parameters
     - The method should return a `string` (the message)
 1. In the body of the `HiName` method, ask the user to input their name, and store their input in a variable
@@ -77,7 +77,7 @@ Complete the following exercises to practice using methods!
 1. Display the returned message to the user
 
 ## Password Check
-1. Define a new method named `PasswordCheck` in the `Program.cs` file
+1. Define a new method named `PasswordCheck` in the **main.cs** file
     - The method should take in a `string` (the password to check) as a parameter
     - The method should return `void` (nothing)
 1. In the body of the `PasswordCheck` method, use an `if` statement to check if the password is equal to your password
@@ -89,13 +89,13 @@ Complete the following exercises to practice using methods!
 ## (CHALLENGE) Coupon Code
 The goal of this method is to calculate the final price of a service depending on a coupon code.
 
-1. Define a new method named `CouponCode` in the `Program.cs` file
+1. Define a new method named `CouponCode` in the **main.cs** file
     - The method should take in a `double` (the initial price) and a `string` (the coupon code) as parameters
     - The method should return a `double` (the final price)
 1. In the body of the `CouponCode` method, check if the value of the coupon code is "PUNCH"
     - If it is, return the initial price with a 15% discount applied
 1. Check if the value of the coupon code is "HANDBOOK"
-    - If it is, return the intial price with a 25% discount applied
+    - If it is, return the initial price with a 25% discount applied
 1. Check if the value of the coupon code is "FREE"
     - If it is, return the initial price with a 100% discount applied
 1. In body of the `Main` method, ask the user to input their initial price

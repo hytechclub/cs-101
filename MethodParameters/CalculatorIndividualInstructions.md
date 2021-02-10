@@ -1,5 +1,5 @@
 # Calculator - Individual
-Update the existing calculator to make it more robust.
+Update the existing calculator to make it more robust. For these additions, use the existing methods as a reference. The new methods will generally be very similar to the ones from the [code-along](CalculatorFollowAlong.md) activity.
 
 ## Multiplication
 Add the option to multiply the two integers the user provides.
@@ -24,7 +24,7 @@ In the body of the method:
 1. Print the product to the console
 
 ## Division
-Add the option to divide the two integers the user provides. Follow the steps for multiplication, but use the division operator instead.
+Add the option to divide the two integers the user provides. Follow the steps for multiplication, but name the method `DivideNumbers`, and use division instead of multiplication.
 
 ## CHALLENGE: Quadratic Formula
 1. Allow the user to enter an additional number (`c`)
