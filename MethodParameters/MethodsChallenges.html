@@ -38,6 +38,8 @@
 
     
         
+        <link rel="stylesheet" href="../styles/website.css">
+        
     
         
     
@@ -64,7 +66,7 @@
     <link rel="next" href="../Practice/StudentDesc.html" />
     
     
-    <link rel="prev" href="CalculatorIndividualInstructions.html" />
+    <link rel="prev" href="ParametersExercises.html" />
     
 
     </head>
@@ -527,7 +529,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.4" data-path="MethodsChallenges.html">
+        <li class="chapter " data-level="1.9.4" data-path="ParametersExercises.html">
+            
+                <a href="ParametersExercises.html">
+            
+                    
+                    Exercises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5" data-path="MethodsChallenges.html">
             
                 <a href="MethodsChallenges.html">
             
@@ -663,7 +678,7 @@
                                 
                                 <h1 id="methods-challenges">Methods Challenges</h1>
 <p>Complete the exercises below using a single <code>.cs</code> file. In the <code>Main</code> method, <em>call</em> each of the methods you <em>define</em>.</p>
-<h2 id="1---calculate-the-next-leap-years">1 - Calculate the next leap years</h2>
+<h2 id="1---is-it-a-leap-year">1 - Is it a Leap Year?</h2>
 <p>Write a method that takes in a year and determines if it is a leap year.</p>
 <p>Leap years are defined as follows:</p>
 <ul>
@@ -672,12 +687,6 @@
 <li>Except if the year is divisible by 400 then it IS a leap year</li>
 </ul>
 <p>Write a program that asks the user for a year, and writes a message to the console telling the user whether or not the year they entered was a leap year.</p>
-<h3 id="challenge">Challenge</h3>
-<p>Write a method that does the following:</p>
-<ul>
-<li>Using the current year, generate the next 50 leap years</li>
-<li>Print these years out to the console</li>
-</ul>
 <h2 id="2---bunny-eyes">2 - Bunny Eyes</h2>
 <p>Define a method named <code>drawBunny</code> that prints an ASCII bunny to the console. It should look something like this:</p>
 <pre><code>() ()
@@ -696,23 +705,22 @@
 <pre><code>() ()
 (- -)
 (u u)
-</code></pre><h2 id="3---countdown">3 - Countdown</h2>
-<p>Create a program that will ask the user for a date and the name of an event, and then display how many days there are until that date. For example, if today was 03/10/20 and the user entered <code>05/01/2020</code> as the date and <code>my birthday</code> as the event name, the program should say &quot;There are 52 days until my birthday.&quot;</p>
+</code></pre><h2 id="3---repeat-message">3 - Repeat Message</h2>
+<p>A user would like to be able to enter a message, and repeat it a certain number of times. For example, they could enter <code>&quot;Hello&quot;</code> and <code>3</code>, and see the message <code>&quot;Hello Hello Hello&quot;</code>. Define a method to handle this functionality.</p>
+<h3 id="method-definition">Method Definition</h3>
+<ul>
+<li>Name: <code>repeatMessage</code></li>
+<li>Return type: <code>void</code></li>
+<li>Parameters: <code>string message, int numberOfTimes</code></li>
+</ul>
+<p>Use a <code>while</code> loop in the body of the <code>repeatMessage</code> function to print out the message the proper number of times. Use <code>Console.Write</code> instead of <code>Console.WriteLine</code> to write all of the repetitions on the same line.</p>
+<h3 id="method-call">Method Call</h3>
 <ol>
-<li>Write a method that takes the date and determines the number of days until that date</li>
-<li>Write another that asks the user to input a date and event name and outputs the message with the countdown</li>
+<li>Use <code>Console.WriteLine</code> and <code>Console.ReadLine</code> to ask the user for a message, and store it in a variable named <code>userMessage</code></li>
+<li>Use <code>Console.WriteLine</code>, <code>Console.ReadLine</code>, and <code>Convert.ToInt32</code> to get the number of times to repeat the message, stored in a variable named <code>num</code></li>
+<li>Call the <code>repeatMessage</code> method, and pass in <code>userMessage</code> and <code>num</code></li>
 </ol>
-<h3 id="challenge-items">Challenge items</h3>
-<ul>
-<li>The program should calculate the amount of time remaining in years, months, weeks, days, hours, minutes, and seconds</li>
-<li>The program should properly handle invalid input (e.g., fake months like <code>Smarch</code> or invalid numbers like <code>the 28.3th of April</code>)</li>
-<li>The program should be able to handle a date provided in as many forms as possible (e.g., <code>03/09/2019</code>, <code>March 9th, 2019</code>, <code>9 Mar 2019</code>, <code>the 9th of March in 2019</code>)</li>
-</ul>
-<h3 id="extra-challenge">Extra challenge</h3>
-<ul>
-<li>The program should be able to display multiple countdowns at once</li>
-<li>The program should store each countdown name/date in a text file, and load them from the text file each time the program runs</li>
-</ul>
+<p>Run the code, and verify that it is possible to enter a message and a number, and see the message repeat!</p>
 <h2 id="4---while-loop-methods">4 - While Loop Methods</h2>
 <p>Update the code from the <a href="../WhileLoops/WhileLoopChallenges.html">While Loop Challenges</a> so that each program is defined as one method. The <code>Main</code> method should have a menu that allows the user to select which method to run.</p>
 <h2 id="5---recursion">5 - Recursion</h2>
@@ -736,6 +744,26 @@
 </ul>
 <h4 id="hint">Hint</h4>
 <p>The trick to defining a recursive method is to pretend the method is already defined. In the body of the <code>fibonacci</code> method, call the <code>fibonacci</code> method as if it will always return exactly what it should return.</p>
+<h2 id="6---countdown">6 - Countdown</h2>
+<blockquote>
+<p>Note: Google may be helpful for this challenge</p>
+</blockquote>
+<p>Create a program that will ask the user for a date and the name of an event, and then display how many days there are until that date. For example, if today was 03/10/20 and the user entered <code>05/01/2020</code> as the date and <code>my birthday</code> as the event name, the program should say &quot;There are 52 days until my birthday.&quot;</p>
+<ol>
+<li>Write a method that takes the date and determines the number of days until that date</li>
+<li>Write another that asks the user to input a date and event name and outputs the message with the countdown</li>
+</ol>
+<h3 id="challenge-items">Challenge items</h3>
+<ul>
+<li>The program should calculate the amount of time remaining in years, months, weeks, days, hours, minutes, and seconds</li>
+<li>The program should properly handle invalid input (e.g., fake months like <code>Smarch</code> or invalid numbers like <code>the 28.3th of April</code>)</li>
+<li>The program should be able to handle a date provided in as many forms as possible (e.g., <code>03/09/2019</code>, <code>March 9th, 2019</code>, <code>9 Mar 2019</code>, <code>the 9th of March in 2019</code>)</li>
+</ul>
+<h3 id="extra-challenge">Extra challenge</h3>
+<ul>
+<li>The program should be able to display multiple countdowns at once</li>
+<li>The program should store each countdown name/date in a text file, and load them from the text file each time the program runs</li>
+</ul>
 
                                 
                                 </section>
@@ -763,7 +791,7 @@
 
             
                 
-                <a href="CalculatorIndividualInstructions.html" class="navigation navigation-prev " aria-label="Previous page: Calculator Individual Instructions">
+                <a href="ParametersExercises.html" class="navigation navigation-prev " aria-label="Previous page: Exercises">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -779,7 +807,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.9.4","depth":2,"next":{"title":"Week 8 - Review and Practice","level":"1.10","depth":1,"path":"Practice/StudentDesc.md","ref":"Practice/StudentDesc.md","articles":[{"title":"Print Smileys","level":"1.10.1","depth":2,"path":"Practice/PrintSmileysFollowAlong.md","ref":"Practice/PrintSmileysFollowAlong.md","articles":[]},{"title":"Bug Fixing","level":"1.10.2","depth":2,"path":"Practice/BugsPractice.md","ref":"Practice/BugsPractice.md","articles":[]},{"title":"Methods Practice","level":"1.10.3","depth":2,"path":"Practice/MethodsPractice.md","ref":"Practice/MethodsPractice.md","articles":[]}]},"previous":{"title":"Calculator Individual Instructions","level":"1.9.3","depth":2,"path":"MethodParameters/CalculatorIndividualInstructions.md","ref":"MethodParameters/CalculatorIndividualInstructions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MethodParameters/MethodsChallenges.md","mtime":"2021-02-10T17:12:57.289Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-10T17:13:36.503Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Challenges","level":"1.9.5","depth":2,"next":{"title":"Week 8 - Review and Practice","level":"1.10","depth":1,"path":"Practice/StudentDesc.md","ref":"Practice/StudentDesc.md","articles":[{"title":"Print Smileys","level":"1.10.1","depth":2,"path":"Practice/PrintSmileysFollowAlong.md","ref":"Practice/PrintSmileysFollowAlong.md","articles":[]},{"title":"Bug Fixing","level":"1.10.2","depth":2,"path":"Practice/BugsPractice.md","ref":"Practice/BugsPractice.md","articles":[]},{"title":"Methods Practice","level":"1.10.3","depth":2,"path":"Practice/MethodsPractice.md","ref":"Practice/MethodsPractice.md","articles":[]}]},"previous":{"title":"Exercises","level":"1.9.4","depth":2,"path":"MethodParameters/ParametersExercises.md","ref":"MethodParameters/ParametersExercises.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MethodParameters/MethodsChallenges.md","mtime":"2021-02-10T18:56:22.745Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-10T18:57:02.746Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

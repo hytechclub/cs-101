@@ -38,6 +38,8 @@
 
     
         
+        <link rel="stylesheet" href="../styles/website.css">
+        
     
         
     
@@ -527,7 +529,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="MethodsChallenges.html">
+        <li class="chapter " data-level="1.9.4" data-path="ParametersExercises.html">
+            
+                <a href="ParametersExercises.html">
+            
+                    
+                    Exercises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="MethodsChallenges.html">
             
                 <a href="MethodsChallenges.html">
             
@@ -692,7 +707,7 @@
 <span class="hljs-keyword">string</span> operation = Console.ReadLine();
 </code></pre>
 <h2 id="part-2---addition">Part 2 - Addition</h2>
-<p>Create a method to add two numbers together, and use it when the user would like to perform the plus operation.</p>
+<p>Create a method to add two numbers together, and use it when the user would like to perform the plus operation. Make sure to define the method in the proper place, and call it in the proper place as well.</p>
 <h3 id="defining-the-method">Defining the Method</h3>
 <p>Start with the method signature:</p>
 <ul>
@@ -715,7 +730,7 @@
 </code></pre>
 <h3 id="calling-the-method">Calling the Method</h3>
 <ol>
-<li>In the <code>Main</code> method, after retrieving the input from the user, use an <code>if</code> to check if the user would like to add numbers</li>
+<li>In the body of the <code>Main</code> method, after retrieving the input from the user, use an <code>if</code> to check if the user would like to add numbers</li>
 <li>If the user would like to add numbers, call the <code>AddNumbers</code> method and store the result in a new variable  <ul>
 <li>The parameters for the <code>AddNumbers</code> call should be the input from the user (<code>a</code> and <code>b</code>)</li>
 </ul>
@@ -730,7 +745,7 @@
 }
 </code></pre>
 <h2 id="part-3---subtraction">Part 3 - Subtraction</h2>
-<p>Repeat the steps for the addition method, but use subtraction instead of addition.</p>
+<p>Repeat the steps for the addition method, but use subtraction instead of addition. This should be almost identical, with two key differences: the name of the method should be <code>SubtractNumbers</code>, and the math should use <code>-</code> instead of <code>+</code>.</p>
 <h2 id="final-code">Final Code</h2>
 <pre><code class="lang-cs"><span class="hljs-keyword">using</span> System;
 
@@ -813,7 +828,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Calculator Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Calculator Individual Instructions","level":"1.9.3","depth":2,"path":"MethodParameters/CalculatorIndividualInstructions.md","ref":"MethodParameters/CalculatorIndividualInstructions.md","articles":[]},"previous":{"title":"Recap","level":"1.9.1","depth":2,"path":"MethodParameters/MethodsRecap.md","ref":"MethodParameters/MethodsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MethodParameters/CalculatorFollowAlong.md","mtime":"2021-02-10T17:12:57.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-10T17:13:36.503Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Calculator Follow-Along","level":"1.9.2","depth":2,"next":{"title":"Calculator Individual Instructions","level":"1.9.3","depth":2,"path":"MethodParameters/CalculatorIndividualInstructions.md","ref":"MethodParameters/CalculatorIndividualInstructions.md","articles":[]},"previous":{"title":"Recap","level":"1.9.1","depth":2,"path":"MethodParameters/MethodsRecap.md","ref":"MethodParameters/MethodsRecap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MethodParameters/CalculatorFollowAlong.md","mtime":"2021-02-10T18:56:22.745Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-10T18:57:02.746Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
