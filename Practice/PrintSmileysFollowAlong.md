@@ -1,17 +1,22 @@
-# Print Smileys: Follow-Along
-Create a program that will print some smiley faces based on a user's input.
+# Print Smileys: Code-Along
+Create a program that will print some smiley faces based on a user's input. Start from a [new C# Repl project](https://repl.it/new/csharp) named "Print Smileys" and follow the instructions below.
+
+The code for the final program is available, but try to complete the exercise before checking the solution.
 
 ## Part 1 - Defining the smiley face method
 The smiley face method should print a certain number of smiley faces based on a parameter.
 
-1. Define a new method named `PrintSmiley` in the `Program.cs` file
+1. Define a new method named `PrintSmiley` in the **main.cs** file
     - The method should take in one `int` parameter (`numSmileys`)
     - The method should return `void` (nothing)
 1. In the body of the `PrintSmiley` method, create a `while` loop
     - The `while` loop should execute `numSmileys` times
 1. In the body of the `while` loop, print a smiley face (`:)`)
 
-#### Code
+<input type="checkbox" id="reveal1" class="reveal-checkbox" />
+
+<label for="reveal1" class="reveal-label">Click to Reveal Code</label>
+
 ```cs
 public static void PrintSmileys(int numSmileys)
 {
@@ -33,7 +38,10 @@ The main program should ask the user how many smileys to print. If they enter a 
     - If it is positive, call the `PrintSmiley` method with the number as an argument
     - If it is not positive, display a message saying "Please enter a positive number"
 
-#### Code
+<input type="checkbox" id="reveal2" class="reveal-checkbox" />
+
+<label for="reveal2" class="reveal-label">Click to Reveal Code</label>
+
 ```cs
 Console.WriteLine("How many smileys would you like?");
 int num = Convert.ToInt32(Console.ReadLine());
