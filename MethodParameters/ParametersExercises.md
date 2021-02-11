@@ -208,7 +208,7 @@ Run the code, and verify that the proper message appears in the console!
 <label for="reveal8" class="reveal-label">Click to Reveal Code</label>
 
 ```cs
-int cTemp = kelvinToCelsius(290);
+int cTemp = kelvinToCelsius(295);
 Console.WriteLine("The temperature is " + cTemp);
 ```
 
