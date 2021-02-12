@@ -14,7 +14,7 @@ The course should be administered in a flexible way. The schedule is not meant t
 - Week 2: [User Input](UserInput/)
 - Week 3: [Conditionals](Conditionals/)
 - Week 4: [While Loops](WhileLoops/)
-- Week 5: While Loops Practice
+- Week 5: While Loops Practice + [Mid-semester project/assessment](HalfProject/)
 - Week 6: [Methods](Methods/)
 - Week 7: [Method Parameters + Returns](MethodParameters/)
 - Week 8: [Review + Practice](Practice/)
