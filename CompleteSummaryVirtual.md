@@ -19,7 +19,7 @@
     - [Even Numbers Individual Exercise](WhileLoops/EvenNumbersIndividualExercise.md)
     - [Additional Exercises](WhileLoops/WhileLoopBasicExercises.md)
     - [Challenges](WhileLoops/WhileLoopChallenges.md)
-- [Week 5 - While Loops Practice](WhileLoops/WhileLoopsPractice.md)
+- [Week 5 - Mid-Semester Project](HalfProject/StudentDesc.md)
 - [Week 6 - Methods](Methods/StudentDesc.md)
     - [Code-Along](Methods/MethodsCodeAlong.md)
     - [Exercises](Methods/MethodsExercises.md)
