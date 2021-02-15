@@ -6,10 +6,10 @@ All changes should take place in the `Main` block (between the `{` and `}`). Ref
 ## Part 1 - User Input
 The first step is to retrieve some information from the user. Use `Console.WriteLine`, `Convert.ToInt32`, and `Console.ReadLine` to accomplish the two pieces below.
 
-### How Many Times?
+#### How Many Times?
 Print out a message asking the user how many times they would like to repeat the message. Then, store their answer in a variable, converted to the proper numeric type.
 
-### What Color?
+#### What Color?
 Print out a message asking the user which color they would like to use. Then, store their answer in a new variable.
 
 ## Part 2 - Color Changer
@@ -38,4 +38,8 @@ Now that all the code should be complete, test the program and make sure it work
 - Enter a number of times (like 10)
 - The program should print a message asking which color to use
 - Enter a color (like Red)
-- The program should repeat the message the proper number of times in the proper color! 
+- The program should repeat the message the proper number of times in the proper color!
+
+It should look something like this:
+
+![](https://i.imgur.com/hwvldnK.png)
