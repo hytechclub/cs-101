@@ -20,6 +20,7 @@
     - [Additional Exercises](WhileLoops/WhileLoopBasicExercises.md)
     - [Challenges](WhileLoops/WhileLoopChallenges.md)
 - [Week 5 - Mid-Semester Project](HalfProject/StudentDesc.md)
+    - [Message Repeater](HalfProject/MessageRepeater.md)
 - [Week 6 - Methods](Methods/StudentDesc.md)
     - [Code-Along](Methods/MethodsCodeAlong.md)
     - [Exercises](Methods/MethodsExercises.md)
