@@ -1,5 +1,5 @@
 # Conditional Exercises
-After completing the [code-along activity](ConditionalCodeAlong.md), work on the exercises below.
+After completing the [code-along activity](ConditionalsCodeAlong.md), work on the exercises below.
 
 ## One More Question
 Building from the Choose Your Path project, add an additional question to make the game a little more involved.
