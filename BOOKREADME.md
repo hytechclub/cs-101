@@ -25,7 +25,7 @@ Follow the links below to view each week of material.
 - [Week 2 (2/24) - User Input](UserInput/StudentDesc.md)
 - [Week 3 (3/3) - Conditionals](Conditionals/StudentDesc.md)
 - [Week 4 (3/10) - While Loops](WhileLoops/StudentDesc.md)
-- [Week 5 (3/17) - While Loops Practice](WhileLoops/WhileLoopsPractice.md)
+- [Week 5 (3/17) - Mid-semester Project](HalfProject/StudentDesc.md)
 - [Week 6 (3/24) - Methods](Methods/StudentDesc.md)
 - **NO CLUB 3/31**
 - [Week 7 (4/7) - Method Parameters](MethodParameters/StudentDesc.md)
