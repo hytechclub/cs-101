@@ -1,5 +1,11 @@
 # Mid-Semester Practice / Assessment
-The goal of this week is to build a program that uses all of the skills introduced in this course so far. There are no specific functional requirements, but the program should utilize all of the following:
+The goal of this week is to build a program that uses all of the skills introduced in this course so far.
+
+## Session Recording
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/D3Yet-HH4IE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Requirements
+There are no specific functional requirements, but the program should utilize all of the following:
 
 - At least one `while` loop
   - Refer to the [While Loops content](../WhileLoops/StudentDesc.md) to review
