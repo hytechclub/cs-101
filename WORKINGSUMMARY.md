@@ -1,4 +1,4 @@
-- [Using Repl.it](ReplSetup.md)
+- [Replit Setup](ReplitSetup.md)
 - [Week 1 - C# Introduction](HelloCs/StudentDesc.md)
 - [Week 2 - Variables](Variables/StudentDesc.md)
     - [Recap](Variables/VariablesRecap.md)
