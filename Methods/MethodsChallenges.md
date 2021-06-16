@@ -4,12 +4,12 @@ Complete the following challenges.
 ## _Optional Practice: Bugs_
 Visit each of the Repl projects below. They all have something wrong with them; try to fix the errors!
 
-- [Bug 1](https://repl.it/@JosephMaxwell/MethodBug#main.cs)
-- [Bug 2](https://repl.it/@JosephMaxwell/MethodBug-1#main.cs)
-- [Bug 3](https://repl.it/@JosephMaxwell/MethodBug-2#main.cs)
-- [Bug 4](https://repl.it/@JosephMaxwell/MethodBug-3#main.cs)
-- [Bug 5](https://repl.it/@JosephMaxwell/MethodBug-4#main.cs)
-- [Bug 6](https://repl.it/@JosephMaxwell/MethodBug-5#main.cs)
+- [Bug 1](https://replit.com/@JosephMaxwell/MethodBug#main.cs)
+- [Bug 2](https://replit.com/@JosephMaxwell/MethodBug-1#main.cs)
+- [Bug 3](https://replit.com/@JosephMaxwell/MethodBug-2#main.cs)
+- [Bug 4](https://replit.com/@JosephMaxwell/MethodBug-3#main.cs)
+- [Bug 5](https://replit.com/@JosephMaxwell/MethodBug-4#main.cs)
+- [Bug 6](https://replit.com/@JosephMaxwell/MethodBug-5#main.cs)
 
 ## Many Methods
 Create a new Repl project, and complete the challenges below. For each challenge:

@@ -40,7 +40,7 @@ Create a program that can respond to a number of different chat messages.
 ### Setup
 Start by creating the new project.
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "Chatbot"
 1. In the **main.cs** file, in the `Main` body, set the text color:  
     ```cs

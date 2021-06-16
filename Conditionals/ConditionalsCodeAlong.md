@@ -4,7 +4,7 @@ In this code-along activity, create a basic game that allows the player to choos
 ## Setup
 First, do some basic setup for the game.
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "Choose Your Path"
 1. In the **main.cs** file, in the `Main` body, set the text color:  
     ```cs

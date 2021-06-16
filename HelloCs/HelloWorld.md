@@ -3,8 +3,8 @@ In this lesson, create a simple application to show a message in the console usi
 
 ![](https://preview.redd.it/j0gld2s2skq31.jpg?auto=webp&s=0f76300784177a603a9743a369a5f39be86c1ec4)
 
-## Getting Started with a New Repl Account
-Follow the [Repl Setup guide](../ReplSetup.md) to create an account and a new Repl project.
+## Getting Started with a New Replit Account
+Follow the [Replit Setup guide](../ReplitSetup.md) to create an account and a new Repl project.
 
 ## Using `Console.WriteLine`
 The default code in the new Repl project should look something like this:

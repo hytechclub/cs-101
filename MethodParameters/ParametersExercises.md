@@ -2,7 +2,7 @@
 After completing the [calculator](CalculatorIndividualInstructions.md), work on these exercises to practice using method parameters and returns.
 
 ## Setup
-1. Create a [new Repl project](https://repl.it/new/csharp)
+1. Create a [new Repl project](https://replit.com/new/csharp)
 1. Name the project "Parameters Practice"
 1. Print a welcome message saying "Parameters Practice"
 

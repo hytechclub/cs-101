@@ -1,5 +1,5 @@
 # Message Repeater
-This program should repeat a message a number of times using a user-defined color. Start by creating a [new Repl project](https://repl.it/new/csharp), and then complete each part below.
+This program should repeat a message a number of times using a user-defined color. Start by creating a [new Repl project](https://replit.com/new/csharp), and then complete each part below.
 
 All changes should take place in the `Main` block (between the `{` and `}`). Refer back to the previous lessons for help.
 

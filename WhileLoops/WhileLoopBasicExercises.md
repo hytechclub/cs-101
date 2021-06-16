@@ -6,7 +6,7 @@ Using `while` loops, it is possible to repeat things a certain number of times. 
 
 For this exercise, print out fifty smiley face emoji: 😊
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "Fifty Smiles"
 1. In the **main.cs** file, in the `Main` body, print a welcome message
 1. Under that, declare a new `int` variable named `i`
@@ -33,7 +33,7 @@ Console.WriteLine(" `.___,'");
 Console.WriteLine("");
 ```
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "A Dozen Eggs"
 1. In the **main.cs** file, in the `Main` body, print a welcome message
 1. Under that, declare a new `int` variable named `i`
@@ -53,7 +53,7 @@ It is also possible to use `while` loops more dynamically. Instead of repeating 
 
 In this exercise, pester the user until they respond in a very particular way.
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "Annoying Bot"
 1. In the **main.cs** file, in the `Main` body, print a welcome message
 1. Under that, declare a new `string` variable named `answer`
@@ -77,7 +77,7 @@ It is also possible to make a `while` loop that continues forever. Note that an 
 
 In this exercise, create a program that infinitely prints out a rainbow road.
 
-1. Create a [new C# Repl project](https://repl.it/new/csharp)
+1. Create a [new C# Repl project](https://replit.com/new/csharp)
 1. Name it "Rainbow Road"
 1. In the **main.cs** file, in the `Main` body, print a welcome message
 1. Under that, create a `while` loop structure

@@ -1,5 +1,5 @@
 # Print Smileys: Code-Along
-Create a program that will print some smiley faces based on a user's input. Start from a [new C# Repl project](https://repl.it/new/csharp) named "Print Smileys" and follow the instructions below.
+Create a program that will print some smiley faces based on a user's input. Start from a [new C# Repl project](https://replit.com/new/csharp) named "Print Smileys" and follow the instructions below.
 
 The code for the final program is available, but try to complete the exercise before checking the solution.
 

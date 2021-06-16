@@ -1,4 +1,4 @@
-- [Repl Setup](ReplSetup.md)
+- [Replit Setup](ReplitSetup.md)
 - [Week 1 - C# Introduction](HelloCs/StudentDesc.md)
     - [Hello World](HelloCs/HelloWorld.md)
     - [About Me Code-Along](Variables/AboutMeCodeAlong.md)

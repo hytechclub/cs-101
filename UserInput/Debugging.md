@@ -3,7 +3,7 @@ One of the most important parts of programming is [debugging](https://en.wikiped
 
 ![](https://i.imgur.com/WkKTe19.jpg)
 
-Today, most debugging is done by walking through the code step-by-step. Repl.it does not have this capability for C#, but there are other ways to test code.
+Today, most debugging is done by walking through the code step-by-step. Replit does not have this capability for C#, but there are other ways to test code.
 
 ## Error Messages
 The most basic form of debugging involves running the code, and looking for error messages. They often look something like this:
@@ -56,10 +56,10 @@ Console.WriteLine(start + additionalVel + additionalAcc);
 ```
 
 ## A Buggy Example
-Try out an example to see how the bug fixing process can work. There are five total bugs to be found! Fork [this Repl project](https://repl.it/@JosephMaxwell/DebuggingExample) to begin.
+Try out an example to see how the bug fixing process can work. There are five total bugs to be found! Fork [this Repl project](https://replit.com/@JosephMaxwell/DebuggingExample) to begin.
 
 ### Bug 1
-Run the code to see what's happening. Oh no! There are multiple errors! In Repl.it for C#, error messages appear in red.
+Run the code to see what's happening. Oh no! There are multiple errors! In Replit for C#, error messages appear in red.
 
 ```
 main.cs(6,2): error CS1525: Unexpected symbol 'Console'
@@ -159,7 +159,7 @@ Well, that program had a lot of bugs, but fixing them one-by-one makes it much l
 ## More Bug Fixes
 Practice debugging with these additional activities! Visit each Repl project, find the bugs, and make the programs work as intended.
 
-- [Bug 1](https://repl.it/@JosephMaxwell/InputBug-1#main.cs)
-- [Bug 2](https://repl.it/@JosephMaxwell/InputBug-2#main.cs)
-- [Bug 3](https://repl.it/@JosephMaxwell/InputBug-3#main.cs)
-- [Bug 4](https://repl.it/@JosephMaxwell/InputBug-4#main.cs)
+- [Bug 1](https://replit.com/@JosephMaxwell/InputBug-1#main.cs)
+- [Bug 2](https://replit.com/@JosephMaxwell/InputBug-2#main.cs)
+- [Bug 3](https://replit.com/@JosephMaxwell/InputBug-3#main.cs)
+- [Bug 4](https://replit.com/@JosephMaxwell/InputBug-4#main.cs)

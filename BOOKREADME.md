@@ -1,8 +1,8 @@
 # <span>C# 101: Introduction to C#</span>
 Welcome to the C# 101 Hy-Tech Club course!
 
-## Repl Setup
-The C# 101 course will use [Repl](https://repl.it). Please complete the [Repl setup steps](ReplSetup.md) before the course begins.
+## Replit Setup
+The C# 101 course will use [Replit](https://replit.com). Please complete the [Replit setup steps](ReplitSetup.md) before the course begins.
 
 ## Zoom Meetings
 The course will meet weekly on Wednesdays via **Zoom** from 4:00 p.m. to 6:00 p.m. ET.
