@@ -48,6 +48,8 @@ For this option, build a choose-your-own adventure game.
 ### Store
 For this option, build a store that has transactions. It can be an economy simulator - the prices will be randomized each time.
 
+>Decided not to go with the store - it may be too advanced for all students, but could be used for something in the future.
+
 #### Architecture
 - `while` loop for each day at the market, continue until player quits
 - methods for printing stats, printing items
