@@ -36,3 +36,7 @@
     - [Bug Fixing](Practice/BugsPractice.md)
     - [Methods Practice](Practice/MethodsPractice.md)
 - [Week 9 - Final Project](FinalProject/FinalProject.md)
+- [Big Picture Code-Along](BigPicture/BigPicture.md)
+  - [Code-Along 1](BigPicture/CodeAlong1.md)
+  - [Code-Along 2](BigPicture/CodeAlong2.md)
+  - [Code-Along 3](BigPicture/CodeAlong3.md)

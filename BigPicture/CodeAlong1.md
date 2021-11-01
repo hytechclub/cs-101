@@ -52,7 +52,7 @@ Next, add some more text. This time, create new _variables_ to track the informa
 1. Create a new `string` variable named `name` set to `"Jules"`
 1. Create a new `int` variable named `health` set to `5`
 1. Under that, use `Console.WriteLine` to print out the `name` value
-    - "Your name is " + `name`
+    - "Hello " + `name`
 1. Under that, use `Console.WriteLine` to print out the `health` value
     - "Your health is " + `health`
 
@@ -62,7 +62,7 @@ Run the program and verify that the new text appears in the console! The code sh
 string name = "Jules";
 int health = 5;
 
-Console.WriteLine("\nYour name is " + name);
+Console.WriteLine("\nHello " + name);
 Console.WriteLine("Your health is " + health);
 ```
 
@@ -85,7 +85,7 @@ class Program {
     string name = "Jules";
     int health = 5;
 
-    Console.WriteLine("\nYour name is " + name);
+    Console.WriteLine("\nHello " + name);
     Console.WriteLine("Your health is " + health);
   }
 }
