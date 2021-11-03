@@ -40,3 +40,4 @@
   - [Code-Along 1](BigPicture/CodeAlong1.md)
   - [Code-Along 2](BigPicture/CodeAlong2.md)
   - [Code-Along 3](BigPicture/CodeAlong3.md)
+  - [Code-Along 4](BigPicture/CodeAlong4.md)
