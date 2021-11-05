@@ -5,3 +5,5 @@ Throughout the semester, keep track of how every topic fits together with one bi
 - [Code-Along 2](CodeAlong2.md)
 - [Code-Along 3](CodeAlong3.md)
 - [Code-Along 4](CodeAlong4.md)
+- [Code-Along 5](CodeAlong5.md)
+- [Code-Along 6](CodeAlong6.md)
