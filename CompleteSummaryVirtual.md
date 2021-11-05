@@ -41,3 +41,5 @@
   - [Code-Along 2](BigPicture/CodeAlong2.md)
   - [Code-Along 3](BigPicture/CodeAlong3.md)
   - [Code-Along 4](BigPicture/CodeAlong4.md)
+  - [Code-Along 5](BigPicture/CodeAlong5.md)
+  - [Code-Along 6](BigPicture/CodeAlong6.md)
