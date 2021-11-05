@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Code-Along 5 · GitBook</title>
+        <title>Code-Along 6 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -63,10 +63,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="CodeAlong6.html" />
     
-    
-    <link rel="prev" href="CodeAlong4.html" />
+    <link rel="prev" href="CodeAlong5.html" />
     
 
     </head>
@@ -716,7 +714,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.12.5" data-path="CodeAlong5.html">
+        <li class="chapter " data-level="1.12.5" data-path="CodeAlong5.html">
             
                 <a href="CodeAlong5.html">
             
@@ -729,7 +727,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.6" data-path="CodeAlong6.html">
+        <li class="chapter active" data-level="1.12.6" data-path="CodeAlong6.html">
             
                 <a href="CodeAlong6.html">
             
@@ -777,7 +775,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Code-Along 5</a>
+        <a href=".." >Code-Along 6</a>
     </h1>
 </div>
 
@@ -792,61 +790,95 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="choose-your-adventure-game---part-5">Choose Your Adventure Game - Part 5</h1>
-<p>For the next part, re-organize some code without changing the functionality of the game. This code-along covers basic methods.</p>
+                                <h1 id="choose-your-adventure-game---part-6">Choose Your Adventure Game - Part 6</h1>
+<p>For the next part, add a name checker. This code-along covers method parameters and returns.</p>
 <h2 id="starting-point">Starting Point</h2>
-<p>For this code-along, start from the ending point of <a href="CodeAlong4.html">part four</a>. If needed, fork <a href="https://replit.com/@HylandOutreach/ChooseYourAdventurePartFour" target="_blank">this Repl</a> project to begin.</p>
-<p>Note that for this activity, the game will not change. The code will change, but it will function the same. This is mostly for demonstrative purposes.</p>
-<h2 id="defining-a-new-method">Defining a New Method</h2>
-<p>Start by <em>defining</em> a new method that will kick things off for the program by setting the colors and printing the messages.</p>
+<p>For this code-along, start from the ending point of <a href="CodeAlong5.html">part five</a>. If needed, fork <a href="https://replit.com/@HylandOutreach/ChooseYourAdventurePartFive" target="_blank">this Repl</a> project to begin.</p>
+<h2 id="defining-the-method">Defining the Method</h2>
+<p>Start by <em>defining</em> a new method that will check if a given name is good or not.</p>
 <ol>
 <li>Make a new line under the <code>Main</code> block<ul>
 <li>Make sure to be within the <code>Program</code> block still</li>
 </ul>
 </li>
-<li>Start with the three words to define a method: <code>public static void</code></li>
-<li>Next, put the method name: <code>PrintIntro</code></li>
+<li>Start with the two words to define a method: <code>public static</code></li>
+<li>This method should return a true/false value, so put <code>bool</code> after</li>
+<li>Next, put the method name: <code>NameCheck</code></li>
 <li>After that, put parentheses and curly brackets: <code>() { }</code></li>
+<li>This method should take in a name, so put <code>string name</code> in the parentheses</li>
 </ol>
-<p>Run the code to make sure it works - it should not do anything different though. The code for this part should look something like this:</p>
-<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">PrintIntro</span>(<span class="hljs-params"></span>)
+<p>The code for the basic method definition should look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">NameCheck</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> name</span>)
 </span>{
 
 }
 </code></pre>
-<h2 id="filling-in-the-method-body">Filling In the Method Body</h2>
-<p>Next, it&apos;s time to make the method do something!</p>
+<h3 id="filling-out-the-body">Filling Out the Body</h3>
+<p>Now it&apos;s time to make the method actually do something! It should take the <code>name</code> parameter and check if it is a good name. For this game, a good name is either &quot;Wirt&quot; or &quot;Greg&quot;.</p>
 <ol>
-<li>Find the line in the <code>Main</code> method that sets the foreground to white</li>
-<li>Find the line in the <code>Main</code> method that prints the intro statements</li>
-<li>Highlight and copy the six lines between</li>
-<li>Paste the six lines into the body of the <code>PrintIntro</code> method</li>
-<li>Remove the six lines from the <code>Main</code> method</li>
-</ol>
-<p>Run the program, and verify that the console does not change colors and the opening statements are not printed. This may seem like a step back, but it is necessary to help move things forward.</p>
-<p>The code for the method should now look something like this:</p>
-<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">PrintIntro</span>(<span class="hljs-params"></span>)
-</span>{
-    Console.ForegroundColor = ConsoleColor.White;
-    Console.BackgroundColor = ConsoleColor.DarkRed;
-    Console.Clear();
-
-    Console.WriteLine(<span class="hljs-string">&quot;You awaken in a strange place.&quot;</span>);
-    Console.WriteLine(<span class="hljs-string">&quot;You see a barn, a big tree, and a path through the woods.\n&quot;</span>);
-}
-</code></pre>
-<h2 id="calling-the-method">Calling the Method</h2>
-<p>Now, all that&apos;s left is to <em>call</em> the method from the <code>Main</code> method. This will make it so that all the code in the body of the method is executed at the beginning of each program run.</p>
-<ol>
-<li>Find the top of the <code>Main</code> method<ul>
-<li>Where the code from the <code>PrintIntro</code> body used to be</li>
+<li>In the body block of the <code>NameCheck</code> method, make a new <code>if</code>/<code>else</code></li>
+<li>For the <code>if</code> condition (between <code>(</code> and <code>)</code>), check if <code>name</code> is <code>&quot;Wirt&quot;</code> or <code>&quot;Greg&quot;</code></li>
+<li>If the name is Wirt or Greg, <code>return</code> a value of <code>true</code><ul>
+<li>This should be in the body of the <code>if</code></li>
 </ul>
 </li>
-<li>Make a new line</li>
-<li>Call the method with the method name (<code>PrintIntro</code>) followed by parentheses <code>()</code></li>
+<li>In all other cases, <code>return</code> a value of <code>false</code><ul>
+<li>This should be in the body of the <code>else</code></li>
+</ul>
+</li>
 </ol>
-<p>Run the program, and verify that the console changes colors and the opening statements are printed again! The code should look something like this:</p>
-<pre><code class="lang-cs">PrintIntro();
+<p>The code for the full method definition should look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">NameCheck</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> name</span>)
+</span>{
+    <span class="hljs-keyword">if</span> (name == <span class="hljs-string">&quot;Wirt&quot;</span> || name == <span class="hljs-string">&quot;Greg&quot;</span>)
+    {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+    <span class="hljs-keyword">else</span>
+    {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+}
+</code></pre>
+<p>Note that running the program still will not do anything with this code yet!</p>
+<h2 id="calling-the-method">Calling the Method</h2>
+<p>The next step is to <em>call</em> the <code>NameCheck</code> method.</p>
+<ol>
+<li>Find the part of the code where the <code>keepGoing</code> variable is first declared</li>
+<li>Make a new line under that</li>
+<li>There, declare a new <code>bool</code> variable named <code>goodName</code></li>
+<li>Set <code>goodName</code> to a call of <code>NameCheck</code></li>
+<li>Pass in the <code>name</code> variable to the <code>NameCheck</code> call</li>
+</ol>
+<p>The code for this part should look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">bool</span> goodName = NameCheck(name);
+</code></pre>
+<p>It still won&apos;t do anything new yet, but now the method code is running!</p>
+<h3 id="using-the-result">Using the Result</h3>
+<p>The last step is to use the result for something interesting. The game should continue if the player has entered a good name, and stop otherwise.</p>
+<ol>
+<li>Under the <code>goodName</code> variable declaration, create an <code>if</code>/<code>else</code> structure</li>
+<li>For the <code>if</code> condition, use <code>goodName</code></li>
+<li>If the name is good, write a message to the console saying the name is good<ul>
+<li>This should go in the body of the <code>if</code></li>
+</ul>
+</li>
+<li>If the name is no good, write a message saying the player cannot play</li>
+<li>Also, set the <code>keepGoing</code> variable to <code>false</code><ul>
+<li>Both of these should happen in the <code>else</code> body</li>
+</ul>
+</li>
+</ol>
+<p>Now, run the program, and verify that it is only possible to continue when a good name is entered! The code for this part should look something like this:</p>
+<pre><code class="lang-cs"><span class="hljs-keyword">if</span> (goodName)
+{
+    Console.WriteLine(<span class="hljs-string">&quot;That name is good...&quot;</span>);
+}
+<span class="hljs-keyword">else</span>
+{
+    Console.WriteLine(<span class="hljs-string">&quot;You cannot play.&quot;</span>);
+    keepGoing = <span class="hljs-keyword">false</span>;
+}
 </code></pre>
 <h2 id="final-program">Final Program</h2>
 <p>By the end of this code-along, the <strong>main.cs</strong> file should look something like this:</p>
@@ -860,6 +892,18 @@
     <span class="hljs-keyword">string</span> name = Console.ReadLine();
     <span class="hljs-keyword">int</span> health = <span class="hljs-number">5</span>;
     <span class="hljs-keyword">bool</span> keepGoing = <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-keyword">bool</span> goodName = NameCheck(name);
+
+    <span class="hljs-keyword">if</span> (goodName)
+    {
+      Console.WriteLine(<span class="hljs-string">&quot;That name is good...&quot;</span>);
+    }
+    <span class="hljs-keyword">else</span>
+    {
+      Console.WriteLine(<span class="hljs-string">&quot;You cannot play.&quot;</span>);
+      keepGoing = <span class="hljs-keyword">false</span>;
+    }
 
     <span class="hljs-keyword">while</span> (keepGoing)
     {
@@ -912,6 +956,18 @@
     Console.WriteLine(<span class="hljs-string">&quot;You awaken in a strange place.&quot;</span>);
     Console.WriteLine(<span class="hljs-string">&quot;You see a barn, a big tree, and a path through the woods.\n&quot;</span>);
   }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">NameCheck</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> name</span>)
+  </span>{
+    <span class="hljs-keyword">if</span> (name == <span class="hljs-string">&quot;Wirt&quot;</span> || name == <span class="hljs-string">&quot;Greg&quot;</span>)
+    {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+    <span class="hljs-keyword">else</span>
+    {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+  }
 }
 </code></pre>
 
@@ -941,14 +997,10 @@
 
             
                 
-                <a href="CodeAlong4.html" class="navigation navigation-prev " aria-label="Previous page: Code-Along 4">
+                <a href="CodeAlong5.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Code-Along 5">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="CodeAlong6.html" class="navigation navigation-next " aria-label="Next page: Code-Along 6">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -957,7 +1009,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along 5","level":"1.12.5","depth":2,"next":{"title":"Code-Along 6","level":"1.12.6","depth":2,"path":"BigPicture/CodeAlong6.md","ref":"BigPicture/CodeAlong6.md","articles":[]},"previous":{"title":"Code-Along 4","level":"1.12.4","depth":2,"path":"BigPicture/CodeAlong4.md","ref":"BigPicture/CodeAlong4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BigPicture/CodeAlong5.md","mtime":"2021-11-05T18:21:12.886Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T18:21:51.275Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along 6","level":"1.12.6","depth":2,"previous":{"title":"Code-Along 5","level":"1.12.5","depth":2,"path":"BigPicture/CodeAlong5.md","ref":"BigPicture/CodeAlong5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"CompleteSummaryVirtual.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"BigPicture/CodeAlong6.md","mtime":"2021-11-05T18:21:12.886Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T18:21:51.275Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
