@@ -12,6 +12,9 @@ This recording is from Fall 2020.
 ## Review Resources
 - [While Loops Recap](WhileLoopRecap.md)
 
+## Choose Your Own Adventure Code-Along
+- [Part 4](../BigPicture/CodeAlong4.md)
+
 ## Code-Along
 - [Factorial Follow-Along](FactorialFollowAlong.md)  
 

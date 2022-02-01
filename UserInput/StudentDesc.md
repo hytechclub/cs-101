@@ -7,6 +7,9 @@ Learn how to use `Console.ReadLine` to read input from the console, and store th
 ## User Input PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/UserInput/UserInput.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
+## Choose Your Own Adventure Code-Along
+- [Part 2](../BigPicture/CodeAlong2.md)
+
 ## Material
 - [User Input Recap](UserInputRecap.md)
 - [About You Code-Along](AboutYouCodeAlong.md)
