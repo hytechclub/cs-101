@@ -10,6 +10,9 @@ Get started with C#. First, complete the [Hello World](HelloWorld.md) activity a
 ## Variables & Data Types PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechclub.com/cs-101/Variables/Variables.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
+## Choose Your Own Adventure Code-Along
+- [Part 1](../BigPicture/CodeAlong1.md)
+
 ## Material
 - [About Me Code-Along](../Variables/AboutMeCodeAlong.md)
 - [About Me Challenge](../Variables/AboutMeChallenge.md)
