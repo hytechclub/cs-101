@@ -7,7 +7,10 @@ Present the [User Input](UserInput.pptx) PowerPoint presentation to introduce th
 ## Kahoot
 Present the [Kahoot quiz](https://create.kahoot.it/share/1604df76-071b-4777-92e3-1f13559d874c).
 
-## Code-Along
+## CYA Code-Along
+Instructors should lead [Part 2](../BigPicture/CodeAlong2.md) of the Big Picture Code-Along.
+
+## About You Code-Along
 Create a new Repl project, and add code for the [About You](AboutYouCodeAlong.md) code-along activity.
 
 ## Bug Fixing
