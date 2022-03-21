@@ -10,5 +10,9 @@ Start by playing the [While Loops Practice Game](WhileLoopsPracticeGame.pptx). I
 ## Project Work
 After the game, introduce the [Mid-Semester Project](StudentDesc.md). The students will have the majority of class time to work on their projects. There are no specific requirements, other than successfully utilizing some input/output, at least one `while` loop, and at least one `if` statement.
 
+## Quizizz Assessment
+- Have students complete the quizizz: https://quizizz.com/admin/quiz/623897fee53355001d3ad0e4/c-101-mid-semester-review
+- Make sure to save the results
+
 ## Project Presentations / Submissions
 By the end of the meeting, each student should either present or submit their projects. Submissions can be via private Zoom chat, Discord, e-mail, or google form. This will give the instructors a chance to review, and make sure that no students are falling behind significantly.
